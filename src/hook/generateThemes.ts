@@ -29,7 +29,7 @@ class Utils {
     // {{{
     return {
       dark: {
-        name: "Everforest Dark",
+        name: "Stellarized Dark",
         type: "dark",
         semanticHighlighting: true,
         semanticTokenColors: getSemantic(configuration, "dark"),
@@ -37,7 +37,7 @@ class Utils {
         tokenColors: getSyntax(configuration, "dark"),
       },
       light: {
-        name: "Everforest Light",
+        name: "Stellarized Light",
         type: "light",
         semanticHighlighting: true,
         semanticTokenColors: getSemantic(configuration, "light"),
@@ -65,8 +65,8 @@ const configuration: Configuration = {
 };
 
 utils.generate(
-  join(__dirname, "..", "..", "themes", "everforest-dark.json"),
-  join(__dirname, "..", "..", "themes", "everforest-light.json"),
+  join(__dirname, "..", "..", "themes", "stellarized-dark.json"),
+  join(__dirname, "..", "..", "themes", "stellarized-light.json"),
   utils.getThemeData(configuration)
 );
 

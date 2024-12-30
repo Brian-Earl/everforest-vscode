@@ -1,6 +1,6 @@
 {
-  "name": "everforest",
-  "displayName": "Everforest",
+  "name": "stellarized",
+  "displayName": "Stellarized",
   "description": "Comfortable & Pleasant Color Scheme for Visual Studio Code",
   "version": "0.3.0",
   "publisher": "sainnhe",
@@ -43,14 +43,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Everforest Dark",
+        "label": "Stellarized Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/everforest-dark.json"
+        "path": "./themes/stellarized-dark.json"
       },
       {
-        "label": "Everforest Light",
+        "label": "Stellarized Light",
         "uiTheme": "vs",
-        "path": "./themes/everforest-light.json"
+        "path": "./themes/stellarized-light.json"
       }
     ],
     "configuration": {
@@ -218,6 +218,8 @@
     "lint-staged": "13.1.0",
     "prettier": "2.8.1",
     "rimraf": "3.0.2",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "@types/color": "^4.2.0",
+    "color": "^4.2.3"
   }
 }
