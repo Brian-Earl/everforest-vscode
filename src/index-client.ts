@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------
- *  Homepage:   https://github.com/sainnhe/everforest-vscode
+ *  Homepage:   https://github.com/sainnhe/stellarized-vscode
  *  Copyright:  2020 Sainnhe Park <i@sainnhe.dev>
  *  License:    MIT
  *--------------------------------------------------------------*/
@@ -15,8 +15,8 @@ export function activate() {
   workspace.onDidChangeConfiguration((event) => {
     utils.detectConfigChanges(event, () => {
       utils.generate(
-        join(__dirname, "..", "themes", "everforest-dark.json"),
-        join(__dirname, "..", "themes", "everforest-light.json"),
+        join(__dirname, "..", "themes", "stellarized-dark.json"),
+        join(__dirname, "..", "themes", "stellarized-light.json"),
         utils.getThemeData(utils.getConfiguration())
       );
     });
@@ -28,8 +28,8 @@ export function activate() {
     !utils.isDefaultConfiguration(utils.getConfiguration())
   ) {
     utils.generate(
-      join(__dirname, "..", "themes", "everforest-dark.json"),
-      join(__dirname, "..", "themes", "everforest-light.json"),
+      join(__dirname, "..", "themes", "stellarized-dark.json"),
+      join(__dirname, "..", "themes", "stellarized-light.json"),
       utils.getThemeData(utils.getConfiguration())
     );
   }

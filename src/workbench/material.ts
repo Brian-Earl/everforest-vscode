@@ -239,7 +239,7 @@ export function materialWorkbench(
     }
   } // }}}
   const tokens = {
-    foreground: `${palette.grey2}`,
+    foreground: `${palette.fg}`,
     focusBorder: `${palette.bg}00`,
     "widget.shadow": `${palette.shadow}`,
     "selection.background": `${selectionBg}`,

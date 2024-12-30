@@ -14,8 +14,8 @@ const DarkTheme: themeBasePalette = {
   },
   background: {
     bg: Color("#222532"),
-    grey: Color("#9d8875"),
-    shadow: Color("#00000070"),
+    grey: Color("#bead9d"),
+    shadow: Color("#000000"),
   },
 };
 

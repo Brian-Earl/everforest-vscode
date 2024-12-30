@@ -20,12 +20,13 @@ import {
 } from "../utils/paletteUtils";
 import { backgroundPalette } from "../types/backgroundPalette";
 import { foregroundPalette } from "../types/foregroundPalette";
+import { themeBasePalette } from "../types/themeBasePalette";
 
 export function getPalette(
   configuration: Configuration,
   variant: string
 ): Palette {
-  let palette = DarkTheme;
+  let palette: themeBasePalette = DarkTheme;
   let paletteBackground: backgroundPalette = generateDarkMediumBackground(
     palette.background
   );

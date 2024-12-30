@@ -7,61 +7,64 @@ import { Palette } from "../interface";
 function generateDarkSoftBackground(
   base: backgroundBasePalette
 ): backgroundPalette {
-  return {
-    bg0: base.bg.darken(13).hex(),
+  const palette: backgroundPalette = {
+    bg0: base.bg.darken(0.13).hex(),
     bg1: base.bg.hex(),
-    bg: base.bg.lighten(3.5).hex(),
-    bg2: base.bg.lighten(3.5).lighten(4).hex(),
-    bg3: base.bg.lighten(3.5).lighten(9).hex(),
-    bg4: base.bg.lighten(3.5).lighten(15).hex(),
-    bg5: base.bg.lighten(3.5).lighten(19).hex(),
-    grey0: base.grey.darken(4).hex(),
+    bg: base.bg.lighten(0.035).hex(),
+    bg2: base.bg.lighten(0.035).lighten(0.04).hex(),
+    bg3: base.bg.lighten(0.035).lighten(0.09).hex(),
+    bg4: base.bg.lighten(0.035).lighten(0.15).hex(),
+    bg5: base.bg.lighten(0.035).lighten(0.19).hex(),
+    grey0: base.grey.darken(0.04).hex(),
     grey1: base.grey.hex(),
-    grey2: base.grey.lighten(17.5).hex(),
-    shadow: base.shadow.hex(),
+    grey2: base.grey.lighten(0.175).hex(),
+    shadow: base.shadow.hex() + "70",
   };
+  return palette;
 }
 
 function generateDarkMediumBackground(
   base: backgroundBasePalette
 ): backgroundPalette {
-  return {
-    bg0: base.bg.darken(27).hex(),
-    bg1: base.bg.darken(13).hex(),
+  const palette: backgroundPalette = {
+    bg0: base.bg.darken(0.27).hex(),
+    bg1: base.bg.darken(0.13).hex(),
     bg: base.bg.hex(),
-    bg2: base.bg.lighten(4).hex(),
-    bg3: base.bg.lighten(9).hex(),
-    bg4: base.bg.lighten(15).hex(),
-    bg5: base.bg.lighten(19).hex(),
-    grey0: base.grey.darken(4).hex(),
+    bg2: base.bg.lighten(0.04).hex(),
+    bg3: base.bg.lighten(0.09).hex(),
+    bg4: base.bg.lighten(0.15).hex(),
+    bg5: base.bg.lighten(0.19).hex(),
+    grey0: base.grey.darken(0.04).hex(),
     grey1: base.grey.hex(),
-    grey2: base.grey.lighten(17.5).hex(),
-    shadow: base.shadow.hex(),
+    grey2: base.grey.lighten(0.175).hex(),
+    shadow: base.shadow.hex() + "70",
   };
+  return palette;
 }
 
 function generateDarkHardBackground(
   base: backgroundBasePalette
 ): backgroundPalette {
-  return {
-    bg0: base.bg.darken(13).darken(30).hex(),
-    bg1: base.bg.darken(13).darken(15).hex(),
-    bg: base.bg.darken(13).hex(),
-    bg2: base.bg.darken(13).lighten(4).hex(),
-    bg3: base.bg.darken(13).lighten(9).hex(),
-    bg4: base.bg.darken(13).lighten(15).hex(),
-    bg5: base.bg.darken(13).lighten(19).hex(),
-    grey0: base.grey.darken(4).hex(),
+  const palette: backgroundPalette = {
+    bg0: base.bg.darken(0.13).darken(0.3).hex(),
+    bg1: base.bg.darken(0.13).darken(0.15).hex(),
+    bg: base.bg.darken(0.13).hex(),
+    bg2: base.bg.darken(0.13).lighten(0.04).hex(),
+    bg3: base.bg.darken(0.13).lighten(0.09).hex(),
+    bg4: base.bg.darken(0.13).lighten(0.15).hex(),
+    bg5: base.bg.darken(0.13).lighten(0.19).hex(),
+    grey0: base.grey.darken(0.4).hex(),
     grey1: base.grey.hex(),
-    grey2: base.grey.lighten(17.5).hex(),
-    shadow: base.shadow.hex(),
+    grey2: base.grey.lighten(0.175).hex(),
+    shadow: base.shadow.hex() + "70",
   };
+  return palette;
 }
 
 function generateDarkForeground(
   base: foregroundBasePalette
 ): foregroundPalette {
-  return {
+  const palette: foregroundPalette = {
     fg: base.fg.hex(),
     red: base.red.hex(),
     orange: base.orange.hex(),
@@ -70,75 +73,139 @@ function generateDarkForeground(
     aqua: base.aqua.hex(),
     blue: base.blue.hex(),
     purple: base.purple.hex(),
-    dimRed: base.red.desaturate(10).lighten(4).hex(),
-    dimOrange: base.orange.desaturate(4).lighten(11).hex(),
-    dimYellow: base.yellow.desaturate(14).lighten(15).hex(),
-    dimGreen: base.green.desaturate(54).lighten(19).hex(),
-    dimAqua: base.aqua.desaturate(11).lighten(17).hex(),
-    dimBlue: base.blue.desaturate(11).lighten(10).hex(),
-    dimPurple: base.purple.desaturate(9).lighten(9).hex(),
+    dimRed: base.red.desaturate(0.1).lighten(0.04).hex(),
+    dimOrange: base.orange.desaturate(0.04).lighten(0.11).hex(),
+    dimYellow: base.yellow.desaturate(0.14).lighten(0.15).hex(),
+    dimGreen: base.green.desaturate(0.54).lighten(0.19).hex(),
+    dimAqua: base.aqua.desaturate(0.11).lighten(0.17).hex(),
+    dimBlue: base.blue.desaturate(0.11).lighten(0.1).hex(),
+    dimPurple: base.purple.desaturate(0.09).lighten(0.09).hex(),
     badge: base.green.hex(),
   };
+  return palette;
 }
 
 function generateLightSoftBackground(
   base: backgroundBasePalette
 ): backgroundPalette {
-  return {
-    bg0: base.bg.darken(5).desaturate(30).darken(4).desaturate(19).hex(),
-    bg1: base.bg.darken(5).desaturate(30).darken(4).desaturate(14).hex(),
-    bg: base.bg.darken(5).desaturate(30).hex(),
-    bg2: base.bg.darken(5).desaturate(30).darken(4).desaturate(14).hex(),
-    bg3: base.bg.darken(5).desaturate(30).darken(4).desaturate(19).hex(),
-    bg4: base.bg.darken(5).desaturate(30).darken(9).desaturate(26).hex(),
-    bg5: base.bg.darken(5).desaturate(30).darken(11).desaturate(29).hex(),
-    grey0: base.grey.lighten(15).hex(),
+  const palette: backgroundPalette = {
+    bg0: base.bg
+      .darken(0.05)
+      .desaturate(0.3)
+      .darken(0.04)
+      .desaturate(0.19)
+      .hex(),
+    bg1: base.bg
+      .darken(0.05)
+      .desaturate(0.3)
+      .darken(0.04)
+      .desaturate(0.14)
+      .hex(),
+    bg: base.bg.darken(0.05).desaturate(0.3).hex(),
+    bg2: base.bg
+      .darken(0.05)
+      .desaturate(0.3)
+      .darken(0.04)
+      .desaturate(0.14)
+      .hex(),
+    bg3: base.bg
+      .darken(0.05)
+      .desaturate(0.3)
+      .darken(0.04)
+      .desaturate(0.19)
+      .hex(),
+    bg4: base.bg
+      .darken(0.05)
+      .desaturate(0.3)
+      .darken(0.09)
+      .desaturate(0.26)
+      .hex(),
+    bg5: base.bg
+      .darken(0.05)
+      .desaturate(0.3)
+      .darken(0.11)
+      .desaturate(0.29)
+      .hex(),
+    grey0: base.grey.lighten(0.15).hex(),
     grey1: base.grey.hex(),
-    grey2: base.grey.darken(7.5).hex(),
-    shadow: base.shadow.hex(),
+    grey2: base.grey.darken(0.075).hex(),
+    shadow: base.shadow.hex() + "20",
   };
+  return palette;
 }
 
 function generateLightMediumBackground(
   base: backgroundBasePalette
 ): backgroundPalette {
-  return {
-    bg0: base.bg.darken(6).desaturate(42).hex(),
-    bg1: base.bg.darken(4).desaturate(33).hex(),
+  const palette: backgroundPalette = {
+    bg0: base.bg.darken(0.06).desaturate(0.42).hex(),
+    bg1: base.bg.darken(0.04).desaturate(0.33).hex(),
     bg: base.bg.hex(),
-    bg2: base.bg.darken(4).desaturate(33).hex(),
-    bg3: base.bg.darken(6).desaturate(42).hex(),
-    bg4: base.bg.darken(9).desaturate(54).hex(),
-    bg5: base.bg.darken(9).desaturate(59).hex(),
-    grey0: base.grey.lighten(15).hex(),
+    bg2: base.bg.darken(0.04).desaturate(0.33).hex(),
+    bg3: base.bg.darken(0.06).desaturate(0.42).hex(),
+    bg4: base.bg.darken(0.09).desaturate(0.54).hex(),
+    bg5: base.bg.darken(0.09).desaturate(0.59).hex(),
+    grey0: base.grey.lighten(0.15).hex(),
     grey1: base.grey.hex(),
-    grey2: base.grey.darken(7.5).hex(),
-    shadow: base.shadow.hex(),
+    grey2: base.grey.darken(0.075).hex(),
+    shadow: base.shadow.hex() + "20",
   };
+  return palette;
 }
 
 function generateLightHardBackground(
   base: backgroundBasePalette
 ): backgroundPalette {
-  return {
-    bg0: base.bg.lighten(3).saturate(13).darken(6).desaturate(58).hex(),
-    bg1: base.bg.lighten(3).saturate(13).darken(3).desaturate(41).hex(),
-    bg: base.bg.lighten(3).saturate(13).hex(),
-    bg2: base.bg.lighten(3).saturate(13).darken(3).desaturate(41).hex(),
-    bg3: base.bg.lighten(3).saturate(13).darken(6).desaturate(58).hex(),
-    bg4: base.bg.lighten(3).saturate(13).darken(8).desaturate(65).hex(),
-    bg5: base.bg.lighten(3).saturate(13).darken(10).desaturate(71).hex(),
+  const palette: backgroundPalette = {
+    bg0: base.bg
+      .lighten(0.03)
+      .saturate(0.13)
+      .darken(0.06)
+      .desaturate(0.58)
+      .hex(),
+    bg1: base.bg
+      .lighten(0.03)
+      .saturate(0.13)
+      .darken(0.03)
+      .desaturate(0.41)
+      .hex(),
+    bg: base.bg.lighten(0.03).saturate(0.13).hex(),
+    bg2: base.bg
+      .lighten(0.03)
+      .saturate(0.13)
+      .darken(0.03)
+      .desaturate(0.41)
+      .hex(),
+    bg3: base.bg
+      .lighten(0.03)
+      .saturate(0.13)
+      .darken(0.06)
+      .desaturate(0.58)
+      .hex(),
+    bg4: base.bg
+      .lighten(0.03)
+      .saturate(0.13)
+      .darken(0.08)
+      .desaturate(0.65)
+      .hex(),
+    bg5: base.bg
+      .lighten(0.03)
+      .saturate(0.13)
+      .darken(0.1)
+      .desaturate(0.71)
+      .hex(),
     grey0: base.grey.lighten(15).hex(),
     grey1: base.grey.hex(),
-    grey2: base.grey.darken(7.5).hex(),
-    shadow: base.shadow.hex(),
+    grey2: base.grey.darken(0.075).hex(),
+    shadow: base.shadow.hex() + "20",
   };
+  return palette;
 }
 
 function generateLightForeground(
   base: foregroundBasePalette
 ): foregroundPalette {
-  return {
+  const palette: foregroundPalette = {
     fg: base.fg.hex(),
     red: base.red.hex(),
     orange: base.orange.hex(),
@@ -147,22 +214,23 @@ function generateLightForeground(
     aqua: base.aqua.hex(),
     blue: base.blue.hex(),
     purple: base.purple.hex(),
-    dimRed: base.red.desaturate(10).lighten(4).hex(),
-    dimOrange: base.orange.desaturate(4).lighten(11).hex(),
-    dimYellow: base.yellow.desaturate(14).lighten(15).hex(),
-    dimGreen: base.green.desaturate(54).lighten(19).hex(),
-    dimAqua: base.aqua.desaturate(11).lighten(17).hex(),
-    dimBlue: base.blue.desaturate(11).lighten(10).hex(),
-    dimPurple: base.purple.desaturate(9).lighten(9).hex(),
+    dimRed: base.red.desaturate(0.1).lighten(0.04).hex(),
+    dimOrange: base.orange.desaturate(0.04).lighten(0.11).hex(),
+    dimYellow: base.yellow.desaturate(0.14).lighten(0.15).hex(),
+    dimGreen: base.green.desaturate(0.54).lighten(0.19).hex(),
+    dimAqua: base.aqua.desaturate(0.11).lighten(0.17).hex(),
+    dimBlue: base.blue.desaturate(0.11).lighten(0.1).hex(),
+    dimPurple: base.purple.desaturate(0.09).lighten(0.09).hex(),
     badge: base.green.hex(),
   };
+  return palette;
 }
 
 function generatePalette(
   foreground: foregroundPalette,
   background: backgroundPalette
 ): Palette {
-  return {
+  const palette: Palette = {
     bg0: background.bg0,
     bg1: background.bg1,
     bg: background.bg,
@@ -191,6 +259,7 @@ function generatePalette(
     dimPurple: foreground.dimPurple,
     badge: foreground.badge,
   };
+  return palette;
 }
 
 export {

@@ -8,7 +8,7 @@ import { workspace, window } from "vscode";
 
 export function activate() {
   workspace.onDidChangeConfiguration((event) => {
-    if (event.affectsConfiguration("everforest")) {
+    if (event.affectsConfiguration("stellarized")) {
       window.showInformationMessage(
         "Configuration options are currently not available in vscode web."
       );

@@ -18,13 +18,13 @@ export default class Utils {
     event: ConfigurationChangeEvent,
     onConfigChange: () => void
   ): void {
-    if (event.affectsConfiguration("everforest")) {
+    if (event.affectsConfiguration("stellarized")) {
       onConfigChange();
     }
   } // }}}
   getConfiguration(): Configuration {
     // {{{
-    const workspaceConfiguration = workspace.getConfiguration("everforest");
+    const workspaceConfiguration = workspace.getConfiguration("stellarized");
     return {
       darkContrast: workspaceConfiguration.get<string>("darkContrast"),
       lightContrast: workspaceConfiguration.get<string>("lightContrast"),
