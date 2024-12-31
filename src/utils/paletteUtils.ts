@@ -53,7 +53,7 @@ function generateDarkHardBackground(
     bg3: base.bg.darken(0.13).lighten(0.09).hex(),
     bg4: base.bg.darken(0.13).lighten(0.15).hex(),
     bg5: base.bg.darken(0.13).lighten(0.19).hex(),
-    grey0: base.grey.darken(0.4).hex(),
+    grey0: base.grey.darken(0.04).hex(),
     grey1: base.grey.hex(),
     grey2: base.grey.lighten(0.175).hex(),
     shadow: base.shadow.hex() + "70",

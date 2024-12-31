@@ -78,7 +78,7 @@
         },
         "stellarized.darkWorkbench": {
           "type": "string",
-          "default": "material",
+          "default": "high-contrast",
           "description": "Workbench style for the dark variant.",
           "enum": [
             "material",
@@ -88,7 +88,7 @@
         },
         "stellarized.lightWorkbench": {
           "type": "string",
-          "default": "material",
+          "default": "high-contrast",
           "description": "Workbench style for the light variant.",
           "enum": [
             "material",

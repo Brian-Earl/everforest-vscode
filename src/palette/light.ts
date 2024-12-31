@@ -14,7 +14,7 @@ const LightTheme: themeBasePalette = {
   },
   background: {
     bg: Color("#fceee0"),
-    grey: Color("#4a5067"),
+    grey: Color("#666c85"),
     shadow: Color("#2d3243"),
   },
 };

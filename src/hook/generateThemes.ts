@@ -52,8 +52,8 @@ const utils = new Utils();
 const configuration: Configuration = {
   darkContrast: "medium",
   lightContrast: "medium",
-  darkWorkbench: "material",
-  lightWorkbench: "material",
+  darkWorkbench: "high-contrast",
+  lightWorkbench: "high-contrast",
   darkSelection: "grey",
   lightSelection: "grey",
   darkCursor: "white",
