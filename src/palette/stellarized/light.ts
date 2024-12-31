@@ -1,7 +1,7 @@
-import { themeBasePalette } from "../types/themeBasePalette";
+import { themeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
-const LightTheme: themeBasePalette = {
+const StellarizedLightTheme: themeBasePalette = {
   foreground: {
     fg: Color("#4a5067"),
     red: Color("#c6394c"),
@@ -19,4 +19,4 @@ const LightTheme: themeBasePalette = {
   },
 };
 
-export { LightTheme };
+export { StellarizedLightTheme };

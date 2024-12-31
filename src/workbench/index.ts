@@ -10,8 +10,12 @@ import { flatWorkbench } from "./flat";
 import { highContrastWorkbench } from "./highContrast";
 import { materialWorkbench } from "./material";
 
-export function getWorkbench(configuration: Configuration, variant: string) {
-  const palette: Palette = getPalette(configuration, variant);
+export function getWorkbench(
+  configuration: Configuration,
+  variant: string,
+  theme: string
+) {
+  const palette: Palette = getPalette(configuration, variant, theme);
   if (variant === "dark") {
     switch (configuration.darkWorkbench) {
       case "material":

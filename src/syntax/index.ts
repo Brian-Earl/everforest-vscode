@@ -9,8 +9,12 @@ import { getPalette } from "../palette";
 import { getDefaultSyntax } from "./default";
 import { getItalicSyntax } from "./italic";
 
-export function getSyntax(configuration: Configuration, variant: string) {
-  const palette = getPalette(configuration, variant);
+export function getSyntax(
+  configuration: Configuration,
+  variant: string,
+  theme: string
+) {
+  const palette = getPalette(configuration, variant, theme);
   let syntax: any;
   if (configuration.italicKeywords === true) {
     syntax = getItalicSyntax(palette, configuration.italicComments);

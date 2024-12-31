@@ -63,20 +63,44 @@ export default class Utils {
     // {{{
     return {
       dark: {
-        name: "Everforest Dark",
+        name: "Stellarized Dark",
         type: "dark",
         semanticHighlighting: true,
-        semanticTokenColors: getSemantic(configuration, "dark"),
-        colors: getWorkbench(configuration, "dark"),
-        tokenColors: getSyntax(configuration, "dark"),
+        semanticTokenColors: getSemantic(configuration, "dark", "stellarized"),
+        colors: getWorkbench(configuration, "dark", "stellarized"),
+        tokenColors: getSyntax(configuration, "dark", "stellarized"),
       },
       light: {
-        name: "Everforest Light",
+        name: "Stellarized Light",
         type: "light",
         semanticHighlighting: true,
-        semanticTokenColors: getSemantic(configuration, "light"),
-        colors: getWorkbench(configuration, "light"),
-        tokenColors: getSyntax(configuration, "light"),
+        semanticTokenColors: getSemantic(configuration, "light", "stellarized"),
+        colors: getWorkbench(configuration, "light", "stellarized"),
+        tokenColors: getSyntax(configuration, "light", "stellarized"),
+      },
+      cosmicDark: {
+        name: "Cosmic Latte Dark",
+        type: "dark",
+        semanticHighlighting: true,
+        semanticTokenColors: getSemantic(configuration, "dark", "cosmic"),
+        colors: getWorkbench(configuration, "dark", "cosmic"),
+        tokenColors: getSyntax(configuration, "dark", "cosmic"),
+      },
+      cosmicLight: {
+        name: "Cosmic Latte Light",
+        type: "light",
+        semanticHighlighting: true,
+        semanticTokenColors: getSemantic(configuration, "light", "cosmic"),
+        colors: getWorkbench(configuration, "light", "cosmic"),
+        tokenColors: getSyntax(configuration, "light", "cosmic"),
+      },
+      rusticated: {
+        name: "rusticated",
+        type: "light",
+        semanticHighlighting: true,
+        semanticTokenColors: getSemantic(configuration, "light", "rusticated"),
+        colors: getWorkbench(configuration, "light", "rusticated"),
+        tokenColors: getSyntax(configuration, "light", "rusticated"),
       },
     };
   } // }}}
@@ -109,10 +133,20 @@ export default class Utils {
         }
       });
   } // }}}
-  async generate(darkPath: string, lightPath: string, data: any) {
+  async generate(
+    darkPath: string,
+    lightPath: string,
+    cosmicDarkPath: string,
+    cosmicLightPath: string,
+    rusticatedPath: string,
+    data: any
+  ) {
     // {{{
     this.writeFile(darkPath, data.dark).then(this.promptToReload);
     this.writeFile(lightPath, data.light);
+    this.writeFile(cosmicLightPath, data.cosmicLight);
+    this.writeFile(cosmicDarkPath, data.cosmicDark);
+    this.writeFile(rusticatedPath, data.rusticated);
   } // }}}
 }
 

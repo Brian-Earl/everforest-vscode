@@ -7,8 +7,12 @@
 import { Configuration } from "./interface";
 import { getPalette } from "./palette";
 
-export function getSemantic(configuration: Configuration, variant: string) {
-  const palette = getPalette(configuration, variant);
+export function getSemantic(
+  configuration: Configuration,
+  variant: string,
+  theme: string
+) {
+  const palette = getPalette(configuration, variant, theme);
   return {
     // General {{{
     operatorOverload: `${palette.orange}`,

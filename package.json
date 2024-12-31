@@ -51,6 +51,21 @@
         "label": "Stellarized Light",
         "uiTheme": "vs",
         "path": "./themes/stellarized-light.json"
+      },
+      {
+        "label": "Cosmic Latte Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cosmic-latte-dark.json"
+      },
+      {
+        "label": "Cosmic Latte Light",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-latte-light.json"
+      },
+      {
+        "label": "Rusticated",
+        "uiTheme": "vs",
+        "path": "./themes/rusticated.json"
       }
     ],
     "configuration": {
