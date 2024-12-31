@@ -5,7 +5,7 @@ const RusticatedTheme: themeBasePalette = {
   foreground: {
     fg: Color("#444136"),
     red: Color("#834742"),
-    orange: Color("#835e42"),
+    orange: Color("#7d573b"),
     yellow: Color("#645826"),
     green: Color("#2c633f"),
     aqua: Color("#006470"),

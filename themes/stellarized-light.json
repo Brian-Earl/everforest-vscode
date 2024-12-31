@@ -3,8 +3,8 @@
   "type": "light",
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "operatorOverload": "#CF5222",
-    "memberOperatorOverload": "#CF5222",
+    "operatorOverload": "#B15612",
+    "memberOperatorOverload": "#B15612",
     "variable.defaultLibrary:javascript": "#A348AE",
     "property.defaultLibrary:javascript": "#A348AE",
     "variable.defaultLibrary:javascriptreact": "#A348AE",
@@ -52,7 +52,7 @@
     "button.secondaryForeground": "#4A5067",
     "button.secondaryHoverBackground": "#E7D9CA",
     "checkbox.background": "#FCEEE0",
-    "checkbox.foreground": "#CF5222",
+    "checkbox.foreground": "#B15612",
     "checkbox.border": "#E6D9CC",
     "dropdown.border": "#E6D9CC",
     "dropdown.background": "#FCEEE0",
@@ -142,7 +142,7 @@
     "editor.wordHighlightBackground": "#E7D9CA48",
     "editor.wordHighlightStrongBackground": "#E7D9CA90",
     "editor.hoverHighlightBackground": "#E7D9CA90",
-    "editor.findMatchBackground": "#D9613240",
+    "editor.findMatchBackground": "#C1601840",
     "editor.findMatchHighlightBackground": "#296E3D40",
     "editor.findRangeHighlightBackground": "#E7D9CA50",
     "editor.lineHighlightBorder": "#E6D9CC00",
@@ -168,7 +168,7 @@
     "editorBracketHighlight.foreground2": "#8B6800",
     "editorBracketHighlight.foreground3": "#007F25",
     "editorBracketHighlight.foreground4": "#006DCC",
-    "editorBracketHighlight.foreground5": "#CF5222",
+    "editorBracketHighlight.foreground5": "#B15612",
     "editorBracketHighlight.foreground6": "#A348AE",
     "editorBracketHighlight.unexpectedBracket.foreground": "#666C85",
     "editorOverviewRuler.border": "#FCEEE000",
@@ -298,7 +298,7 @@
     "statusBar.background": "#EFE0D1",
     "statusBar.foreground": "#5E647B",
     "statusBar.border": "#EFE0D1",
-    "statusBar.debuggingForeground": "#CF5222",
+    "statusBar.debuggingForeground": "#B15612",
     "statusBar.debuggingBackground": "#EFE0D1",
     "statusBar.noFolderBackground": "#EFE0D1",
     "statusBar.noFolderForeground": "#5E647B",
@@ -331,7 +331,7 @@
     "gitDecoration.untrackedResourceForeground": "#8B6800a0",
     "gitDecoration.ignoredResourceForeground": "#E6D9CC",
     "gitDecoration.conflictingResourceForeground": "#A348AEa0",
-    "gitDecoration.submoduleResourceForeground": "#CF5222a0",
+    "gitDecoration.submoduleResourceForeground": "#B15612a0",
     "gitDecoration.stageDeletedResourceForeground": "#007989a0",
     "gitDecoration.stageModifiedResourceForeground": "#007989a0",
     "notificationCenterHeader.foreground": "#4A5067",
@@ -349,7 +349,7 @@
     "extensionBadge.remoteForeground": "#FCEEE0",
     "extensionIcon.starForeground": "#007989",
     "extensionIcon.verifiedForeground": "#007F25",
-    "extensionIcon.preReleaseForeground": "#CF5222",
+    "extensionIcon.preReleaseForeground": "#B15612",
     "pickerGroup.foreground": "#4A5067",
     "quickInputTitle.background": "#F3E4D6",
     "keybindingLabel.background": "#FCEEE000",
@@ -366,7 +366,7 @@
     "settings.textInputForeground": "#006DCC",
     "settings.textInputBorder": "#E6D9CC",
     "settings.checkboxBackground": "#FCEEE0",
-    "settings.checkboxForeground": "#CF5222",
+    "settings.checkboxForeground": "#B15612",
     "settings.checkboxBorder": "#E6D9CC",
     "settings.dropdownBackground": "#FCEEE0",
     "settings.dropdownForeground": "#007989",
@@ -392,7 +392,7 @@
     "symbolIcon.textForeground": "#4A5067",
     "symbolIcon.unitForeground": "#4A5067",
     "symbolIcon.keywordForeground": "#C6394C",
-    "symbolIcon.operatorForeground": "#CF5222",
+    "symbolIcon.operatorForeground": "#B15612",
     "symbolIcon.classForeground": "#8B6800",
     "symbolIcon.eventForeground": "#8B6800",
     "symbolIcon.interfaceForeground": "#8B6800",
@@ -421,13 +421,13 @@
     "editor.snippetFinalTabstopHighlightBackground": "#296E3D40",
     "editor.snippetFinalTabstopHighlightBorder": "#FCEEE0",
     "charts.red": "#C6394C",
-    "charts.orange": "#CF5222",
+    "charts.orange": "#B15612",
     "charts.yellow": "#8B6800",
     "charts.green": "#007F25",
     "charts.blue": "#006DCC",
     "charts.purple": "#A348AE",
     "charts.foreground": "#4A5067",
-    "ports.iconRunningProcessForeground": "#CF5222",
+    "ports.iconRunningProcessForeground": "#B15612",
     "sash.hoverBorder": "#E7D9CA",
     "notebook.cellBorderColor": "#E6D9CC",
     "notebook.cellStatusBarItemHoverBackground": "#F3E4D6",
@@ -461,7 +461,7 @@
     "gitlens.mergedPullRequestIconColor": "#A348AE",
     "gitlens.unpushlishedChangesIconColor": "#006DCC",
     "gitlens.unpublishedCommitIconColor": "#8B6800",
-    "gitlens.unpulledChangesIconColor": "#CF5222",
+    "gitlens.unpulledChangesIconColor": "#B15612",
     "gitlens.decorations.addedForegroundColor": "#007F25",
     "gitlens.decorations.copiedForegroundColor": "#A348AE",
     "gitlens.decorations.deletedForegroundColor": "#C6394C",
@@ -470,7 +470,7 @@
     "gitlens.decorations.untrackedForegroundColor": "#8B6800",
     "gitlens.decorations.renamedForegroundColor": "#A348AE",
     "gitlens.decorations.branchAheadForegroundColor": "#007989",
-    "gitlens.decorations.branchBehindForegroundColor": "#CF5222",
+    "gitlens.decorations.branchBehindForegroundColor": "#B15612",
     "gitlens.decorations.branchDivergedForegroundColor": "#8B6800",
     "gitlens.decorations.branchUpToDateForegroundColor": "#4A5067",
     "gitlens.decorations.branchUnpublishedForegroundColor": "#006DCC",
@@ -500,14 +500,14 @@
       "name": "Storage",
       "scope": "storage, modifier, keyword.var, entity.name.tag, keyword.control.case, keyword.control.switch",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
       "name": "Operator",
       "scope": "keyword.operator",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -648,7 +648,7 @@
       "name": "Markdown heading2",
       "scope": "heading.2.markdown, markup.heading.setext.2.markdown",
       "settings": {
-        "foreground": "#CF5222",
+        "foreground": "#B15612",
         "fontStyle": "bold"
       }
     },
@@ -784,7 +784,7 @@
       "name": "reStructuredText heading",
       "scope": "punctuation.definition.heading.restructuredtext",
       "settings": {
-        "foreground": "#CF5222",
+        "foreground": "#B15612",
         "fontStyle": "bold"
       }
     },
@@ -849,7 +849,7 @@
       "name": "LaTex orange",
       "scope": "support.function.section.latex, keyword.control.table.cell.latex, keyword.control.table.newline.latex",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -877,7 +877,7 @@
       "name": "Html orange",
       "scope": "entity.name.tag.html, entity.name.tag.xml, entity.name.tag.localname.xml",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -940,7 +940,7 @@
       "name": "CSS orange",
       "scope": "keyword.other.unit",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -989,7 +989,7 @@
       "name": "SASS orange",
       "scope": "keyword.control.at-rule.keyframes.scss",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1052,7 +1052,7 @@
       "name": "JavaScript orange",
       "scope": "storage.type.js, storage.type.function.arrow.js",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1101,7 +1101,7 @@
       "name": "TypeScript orange",
       "scope": "storage.type.ts, storage.type.function.arrow.ts, storage.type.type.ts",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1164,14 +1164,14 @@
       "name": "TSX orange",
       "scope": "storage.type.tsx, storage.type.function.arrow.tsx, storage.type.type.tsx, support.class.component.tsx",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
       "name": "CoffeeScript orange",
       "scope": "storage.type.function.coffee",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1185,7 +1185,7 @@
       "name": "PureScript orange",
       "scope": "keyword.other.double-colon.purescript, keyword.other.arrow.purescript, keyword.other.big-arrow.purescript",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1220,7 +1220,7 @@
       "name": "Dart orange",
       "scope": "storage.type.primitive.dart",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1262,7 +1262,7 @@
       "name": "Pug orange",
       "scope": "storage.type.function.pug",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1304,7 +1304,7 @@
       "name": "C orange",
       "scope": "punctuation.separator.pointer-access.c",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1339,7 +1339,7 @@
       "name": "C++ orange",
       "scope": "punctuation.separator.pointer-access.cpp, punctuation.section.angle-brackets.begin.template.call.cpp, punctuation.section.angle-brackets.end.template.call.cpp",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1437,7 +1437,7 @@
       "name": "Java orange",
       "scope": "storage.type.function.arrow.java, keyword.control.ternary.java",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1465,7 +1465,7 @@
       "name": "Kotlin orange",
       "scope": "storage.type.kotlin",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1521,7 +1521,7 @@
       "name": "Scala orange",
       "scope": "keyword.declaration.stable.scala, keyword.other.arrow.scala",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1556,7 +1556,7 @@
       "name": "Groovy orange",
       "scope": "storage.type.def.groovy",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1619,7 +1619,7 @@
       "name": "Rust orange",
       "scope": "storage.type.rust",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1661,7 +1661,7 @@
       "name": "PHP orange",
       "scope": "storage.type.trait.php",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1745,7 +1745,7 @@
       "name": "Ruby orange",
       "scope": "keyword.control.pseudo-method.ruby, storage.type.variable.ruby",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1780,7 +1780,7 @@
       "name": "Haskell orange",
       "scope": "keyword.other.arrow.haskell, keyword.other.big-arrow.haskell, keyword.other.double-colon.haskell",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1822,7 +1822,7 @@
       "name": "Julia orange",
       "scope": "keyword.storage.modifier.julia",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1857,7 +1857,7 @@
       "name": "R orange",
       "scope": "keyword.other.r",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -1948,7 +1948,7 @@
       "name": "OCaml orange",
       "scope": "keyword.other.ocaml",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -2053,7 +2053,7 @@
       "name": "Fish orange",
       "scope": "support.function.unix.fish",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -2130,7 +2130,7 @@
       "name": "Makefile orange",
       "scope": "entity.name.function.target.makefile",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -2179,7 +2179,7 @@
       "name": "VimL orange",
       "scope": "storage.type.map.viml",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -2207,7 +2207,7 @@
       "name": "Dockerfile orange",
       "scope": "entity.name.function.package-manager.dockerfile",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -2256,7 +2256,7 @@
       "name": "Diff orange",
       "scope": "meta.diff.range.context, punctuation.definition.range.diff",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -2298,7 +2298,7 @@
       "name": "Git orange",
       "scope": "punctuation.separator.key-value.ini",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -2361,7 +2361,7 @@
       "name": "JSON orange",
       "scope": "support.type.property-name.json",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
@@ -2396,7 +2396,7 @@
       "name": "TOML orange",
       "scope": "keyword.key.toml",
       "settings": {
-        "foreground": "#CF5222"
+        "foreground": "#B15612"
       }
     },
     {
