@@ -4,18 +4,12 @@
  *  License:    MIT
  *--------------------------------------------------------------------------------------------*/
 
-import { Configuration, Palette } from "../interface";
+import { Palette } from "../interface";
 import { StellarizedDarkTheme } from "./stellarized/dark";
 import { StellarizedLightTheme } from "./stellarized/light";
 import {
-  generateDarkForeground,
-  generateDarkHardBackground,
-  generateDarkMediumBackground,
-  generateDarkSoftBackground,
-  generateLightForeground,
-  generateLightHardBackground,
-  generateLightMediumBackground,
-  generateLightSoftBackground,
+  generateForeground,
+  generateBackground,
   generatePalette,
 } from "../utils/paletteUtils";
 import { backgroundPalette } from "../types/backgroundPalette";
@@ -26,123 +20,36 @@ import { CosmicLatteLightTheme } from "./cosmicLatte/light";
 import { RusticatedTheme } from "./rusticated/light";
 
 export function getPalette(
-  configuration: Configuration,
   variant: string,
   theme: string
 ): Palette {
   let palette: themeBasePalette = StellarizedDarkTheme;
-  let paletteBackground: backgroundPalette = generateDarkMediumBackground(
-    palette.background
-  );
-  let paletteForeground: foregroundPalette = generateDarkForeground(
-    palette.foreground
-  );
+  let paletteBackground: backgroundPalette = generateBackground(palette, variant);
+  let paletteForeground: foregroundPalette = generateForeground(palette);
   if (theme === "stellarized") {
     if (variant === "dark") {
       palette = StellarizedDarkTheme;
-      paletteForeground = generateDarkForeground(palette.foreground);
-      switch (configuration.darkContrast) {
-        case "hard": {
-          paletteBackground = generateDarkHardBackground(palette.background);
-          break;
-        }
-        case "medium": {
-          paletteBackground = generateDarkMediumBackground(palette.background);
-          break;
-        }
-        case "soft": {
-          paletteBackground = generateDarkSoftBackground(palette.background);
-          break;
-        }
-        default: {
-          paletteBackground = generateDarkMediumBackground(palette.background);
-        }
-      }
+      paletteForeground = generateForeground(palette);
+      paletteBackground = generateBackground(palette, variant);
     } else {
       palette = StellarizedLightTheme;
-      paletteForeground = generateLightForeground(palette.foreground);
-      switch (configuration.lightContrast) {
-        case "hard": {
-          paletteBackground = generateLightHardBackground(palette.background);
-          break;
-        }
-        case "medium": {
-          paletteBackground = generateLightMediumBackground(palette.background);
-          break;
-        }
-        case "soft": {
-          paletteBackground = generateLightSoftBackground(palette.background);
-          break;
-        }
-        default: {
-          paletteBackground = generateLightMediumBackground(palette.background);
-        }
-      } // }}}
+      paletteForeground = generateForeground(palette);
+      paletteBackground = generateBackground(palette, variant);
     }
   } else if (theme === "cosmic") {
     if (variant === "dark") {
       palette = CosmicLatteDarkTheme;
-      paletteForeground = generateDarkForeground(palette.foreground);
-      switch (configuration.darkContrast) {
-        case "hard": {
-          paletteBackground = generateDarkHardBackground(palette.background);
-          break;
-        }
-        case "medium": {
-          paletteBackground = generateDarkMediumBackground(palette.background);
-          break;
-        }
-        case "soft": {
-          paletteBackground = generateDarkSoftBackground(palette.background);
-          break;
-        }
-        default: {
-          paletteBackground = generateDarkMediumBackground(palette.background);
-        }
-      }
+      paletteForeground = generateForeground(palette);
+      paletteBackground = generateBackground(palette, variant);
     } else {
       palette = CosmicLatteLightTheme;
-      paletteForeground = generateLightForeground(palette.foreground);
-      switch (configuration.lightContrast) {
-        case "hard": {
-          paletteBackground = generateLightHardBackground(palette.background);
-          break;
-        }
-        case "medium": {
-          paletteBackground = generateLightMediumBackground(palette.background);
-          break;
-        }
-        case "soft": {
-          paletteBackground = generateLightSoftBackground(palette.background);
-          break;
-        }
-        default: {
-          paletteBackground = generateLightMediumBackground(palette.background);
-        }
-      } // }}}
+      paletteForeground = generateForeground(palette);
+      paletteBackground = generateBackground(palette, variant);
     }
   } else if (theme === "rusticated") {
     palette = RusticatedTheme;
-    paletteForeground = generateLightForeground(palette.foreground);
-    switch (configuration.lightContrast) {
-      case "hard": {
-        paletteBackground = generateLightHardBackground(palette.background);
-        break;
-      }
-      case "medium": {
-        paletteBackground = generateLightMediumBackground(palette.background);
-        break;
-      }
-      case "soft": {
-        paletteBackground = generateLightSoftBackground(palette.background);
-        break;
-      }
-      default: {
-        paletteBackground = generateLightMediumBackground(palette.background);
-      }
-    }
+    paletteForeground = generateForeground(palette);
+    paletteBackground = generateBackground(palette, variant);
   }
   return generatePalette(paletteForeground, paletteBackground);
 }
-
-// vim: fdm=marker fmr={{{,}}}:

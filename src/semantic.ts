@@ -12,7 +12,7 @@ export function getSemantic(
   variant: string,
   theme: string
 ) {
-  const palette = getPalette(configuration, variant, theme);
+  const palette = getPalette(variant, theme);
   return {
     // General {{{
     operatorOverload: `${palette.orange}`,
@@ -57,4 +57,4 @@ export function getSemantic(
   };
 }
 
-// vim: fdm=marker fmr={{{,}}}:
+

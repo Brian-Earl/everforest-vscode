@@ -155,7 +155,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Identifier",
       scope: "variable, support.variable, meta.definition.variable",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -163,14 +163,14 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "variable.object.property, support.variable.property, variable.other.property, variable.other.object.property, variable.other.enummember, variable.other.member, meta.object-literal.key",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
       name: "Delimiter",
       scope: "punctuation, meta.brace, meta.delimiter, meta.bracket",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     // }}}
@@ -227,7 +227,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Markdown heading delimiter",
       scope: "punctuation.definition.heading.markdown",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
         fontStyle: "regular",
       },
     },
@@ -254,14 +254,14 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown, punctuation.definition.italic.markdown, punctuation.definition.quote.begin.markdown, punctuation.definition.metadata.markdown, punctuation.separator.key-value.markdown, punctuation.definition.constant.markdown",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
       name: "Markdown bold delimiter",
       scope: "punctuation.definition.bold.markdown",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
         fontStyle: "regular",
       },
     },
@@ -270,7 +270,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "meta.separator.markdown, punctuation.definition.constant.begin.markdown, punctuation.definition.constant.end.markdown",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
         fontStyle: "bold",
       },
     },
@@ -340,14 +340,14 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.definition.field.restructuredtext, punctuation.separator.key-value.restructuredtext, punctuation.definition.directive.restructuredtext, punctuation.definition.constant.restructuredtext, punctuation.definition.italic.restructuredtext, punctuation.definition.table.restructuredtext",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
       name: "reStructuredText delimiter bold",
       scope: "punctuation.definition.bold.restructuredtext",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
         fontStyle: "regular",
       },
     },
@@ -388,7 +388,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.definition.function.latex, punctuation.definition.function.tex, punctuation.definition.keyword.latex, constant.character.newline.tex, punctuation.definition.keyword.tex",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -427,7 +427,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Html grey",
       scope: "punctuation.separator.namespace.xml",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -492,7 +492,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.definition.entity.css, punctuation.separator.key-value.css, punctuation.terminator.rule.css, punctuation.separator.list.comma.css",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -554,7 +554,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.definition.entity.scss, punctuation.separator.key-value.scss, punctuation.terminator.rule.scss, punctuation.separator.list.comma.scss",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -594,7 +594,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Stylus white",
       scope: "meta.function.stylus",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -610,7 +610,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "JavaScript white",
       scope: "string.unquoted.js",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -618,7 +618,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.accessor.js, punctuation.separator.key-value.js, punctuation.separator.label.js, keyword.operator.accessor.js",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -641,7 +641,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "JSX white",
       scope: "JSXNested",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -658,7 +658,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "TypeScript white",
       scope: "entity.name.type.module.ts",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -666,7 +666,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "keyword.operator.type.annotation.ts, punctuation.accessor.ts, punctuation.separator.key-value.ts",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -714,7 +714,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "TSX white",
       scope: "entity.name.type.module.tsx",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -722,7 +722,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "keyword.operator.type.annotation.tsx, punctuation.accessor.tsx, punctuation.separator.key-value.tsx",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -779,7 +779,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "PureScript white",
       scope: "meta.type-signature.purescript",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -818,7 +818,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Dart grey",
       scope: "punctuation.dot.dart",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -894,7 +894,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "meta.function-call.c, storage.modifier.array.bracket.square.c, meta.function.definition.parameters.c",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -902,7 +902,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.separator.dot-access.c, constant.character.escape.line-continuation.c",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -934,7 +934,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "meta.function-call.cpp, storage.modifier.array.bracket.square.cpp, meta.function.definition.parameters.cpp, meta.body.function.definition.cpp",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -942,7 +942,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.separator.dot-access.cpp, constant.character.escape.line-continuation.cpp",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1013,7 +1013,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "F# white",
       scope: "keyword.symbol.fsharp, constant.language.unit.fsharp",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1051,7 +1051,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Java grey",
       scope: "punctuation.separator.java, punctuation.separator.period.java",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1172,14 +1172,14 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "keyword.operator.navigation.groovy, meta.method.body.java, meta.definition.method.groovy, meta.definition.method.signature.java",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
       name: "Scala grey",
       scope: "punctuation.separator.groovy",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1247,14 +1247,14 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Rust white",
       scope: "entity.name.type.mod.rust",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
       name: "Rust grey",
       scope: "keyword.operator.path.rust, keyword.operator.member-access.rust",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1285,7 +1285,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Swift white",
       scope: "meta.function-call.swift, support.function.any-method.swift",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1301,7 +1301,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "PHP white",
       scope: "keyword.operator.class.php",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1339,7 +1339,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Python white",
       scope: "meta.function-call.arguments.python",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1347,7 +1347,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.definition.decorator.python, punctuation.separator.period.python",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1387,14 +1387,14 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Ruby white",
       scope: "meta.function.method.with-arguments.ruby",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
       name: "Ruby grey",
       scope: "punctuation.separator.method.ruby",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1509,7 +1509,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Elm white",
       scope: "keyword.other.period.elm",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1556,7 +1556,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.separator.module-function.erlang, punctuation.section.directive.begin.erlang",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1620,7 +1620,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "OCaml white",
       scope: "entity.name.type.value-signature.ocaml",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1652,7 +1652,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Lisp white",
       scope: "meta.function.lisp",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1706,7 +1706,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Shell white",
       scope: "meta.scope.if-block.shell, meta.scope.group.shell",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1777,7 +1777,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "PowerShell grey",
       scope: "punctuation.definition.variable.powershell",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1809,7 +1809,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "GraphQL white",
       scope: "string.unquoted.alias.graphql",
       settings: {
-        foreground: palette.fg,
+        foreground: palette.tx,
       },
     },
     {
@@ -1878,7 +1878,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "VimL grey",
       scope: "punctuation.definition.map.viml",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -1955,7 +1955,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "Diff grey",
       scope: "punctuation.definition.separator.diff",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -2079,7 +2079,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       scope:
         "punctuation.support.type.property-name.begin.json, punctuation.support.type.property-name.end.json, punctuation.separator.dictionary.key-value.json, punctuation.definition.string.begin.json, punctuation.definition.string.end.json, punctuation.separator.dictionary.pair.json, punctuation.separator.array.json",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -2102,7 +2102,7 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
       name: "YAML grey",
       scope: "punctuation.separator.key-value.mapping.yaml",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     },
     {
@@ -2156,26 +2156,24 @@ export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
     // }}}
   ];
   if (italicComments) {
-    // {{{
     syntax.push({
       name: "Comment",
       scope: "comment, string.comment, punctuation.definition.comment",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
         fontStyle: "italic",
       },
-    }); // }}}
+    });
   } else {
-    // {{{
     syntax.push({
       name: "Comment",
       scope: "comment, string.comment, punctuation.definition.comment",
       settings: {
-        foreground: palette.grey1,
+        foreground: palette.tx3,
       },
     });
-  } // }}}
+  }
   return syntax;
 }
 
-// vim: fdm=marker fmr={{{,}}}:
+

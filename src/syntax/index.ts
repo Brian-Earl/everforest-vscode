@@ -7,21 +7,14 @@
 import { Configuration } from "../interface";
 import { getPalette } from "../palette";
 import { getDefaultSyntax } from "./default";
-import { getItalicSyntax } from "./italic";
 
 export function getSyntax(
   configuration: Configuration,
   variant: string,
   theme: string
 ) {
-  const palette = getPalette(configuration, variant, theme);
-  let syntax: any;
-  if (configuration.italicKeywords === true) {
-    syntax = getItalicSyntax(palette, configuration.italicComments);
-  } else {
-    syntax = getDefaultSyntax(palette, configuration.italicComments);
-  }
-  return syntax;
+  const palette = getPalette(variant, theme);
+  return getDefaultSyntax(palette, configuration.italicComments);
 }
 
-// vim: fdm=marker fmr={{{,}}}:
+

@@ -18,12 +18,12 @@ export function highContrastWorkbench(
   let diagnosticTextBackgroundOpacity: string;
   if (variant === "dark") {
     switch (
-      configuration.darkSelection // {{{
+      configuration.darkSelection
     ) {
       case "grey": {
-        selectionBg = `${palette.bg4}e0`;
-        editorSelectionBg = `${palette.bg4}c0`;
-        editorSelectionBgHl = `${palette.bg4}60`;
+        selectionBg = `${palette.ui2}e0`;
+        editorSelectionBg = `${palette.ui2}c0`;
+        editorSelectionBgHl = `${palette.ui2}60`;
         break;
       }
       case "red": {
@@ -69,16 +69,16 @@ export function highContrastWorkbench(
         break;
       }
       default: {
-        selectionBg = `${palette.bg4}e0`;
-        editorSelectionBg = `${palette.bg4}c0`;
-        editorSelectionBgHl = `${palette.bg4}60`;
+        selectionBg = `${palette.ui2}e0`;
+        editorSelectionBg = `${palette.ui2}c0`;
+        editorSelectionBgHl = `${palette.ui2}60`;
       }
     } // }}}
     switch (
-      configuration.darkCursor // {{{
+      configuration.darkCursor
     ) {
       case "white": {
-        cursorFg = `${palette.fg}`;
+        cursorFg = `${palette.tx}`;
         break;
       }
       case "red": {
@@ -110,285 +110,169 @@ export function highContrastWorkbench(
         break;
       }
       default: {
-        cursorFg = `${palette.fg}`;
+        cursorFg = `${palette.tx}`;
       }
-    } // }}}
+    }
   } else {
-    switch (
-      configuration.lightSelection // {{{
-    ) {
-      case "grey": {
-        selectionBg = `${palette.bg4}c0`;
-        editorSelectionBg = `${palette.bg4}a0`;
-        editorSelectionBgHl = `${palette.bg4}50`;
-        break;
-      }
-      case "red": {
-        selectionBg = `${palette.dimRed}60`;
-        editorSelectionBg = `${palette.dimRed}40`;
-        editorSelectionBgHl = `${palette.dimRed}20`;
-        break;
-      }
-      case "orange": {
-        selectionBg = `${palette.dimOrange}60`;
-        editorSelectionBg = `${palette.dimOrange}40`;
-        editorSelectionBgHl = `${palette.dimOrange}20`;
-        break;
-      }
-      case "yellow": {
-        selectionBg = `${palette.dimYellow}60`;
-        editorSelectionBg = `${palette.dimYellow}40`;
-        editorSelectionBgHl = `${palette.dimYellow}20`;
-        break;
-      }
-      case "green": {
-        selectionBg = `${palette.dimGreen}60`;
-        editorSelectionBg = `${palette.dimGreen}40`;
-        editorSelectionBgHl = `${palette.dimGreen}20`;
-        break;
-      }
-      case "aqua": {
-        selectionBg = `${palette.dimAqua}60`;
-        editorSelectionBg = `${palette.dimAqua}40`;
-        editorSelectionBgHl = `${palette.dimAqua}20`;
-        break;
-      }
-      case "blue": {
-        selectionBg = `${palette.dimBlue}60`;
-        editorSelectionBg = `${palette.dimBlue}40`;
-        editorSelectionBgHl = `${palette.dimBlue}20`;
-        break;
-      }
-      case "purple": {
-        selectionBg = `${palette.dimPurple}60`;
-        editorSelectionBg = `${palette.dimPurple}40`;
-        editorSelectionBgHl = `${palette.dimPurple}20`;
-        break;
-      }
-      default: {
-        selectionBg = `${palette.bg4}c0`;
-        editorSelectionBg = `${palette.bg4}a0`;
-        editorSelectionBgHl = `${palette.bg4}50`;
-      }
-    } // }}}
-    switch (
-      configuration.lightCursor // {{{
-    ) {
-      case "black": {
-        cursorFg = `${palette.fg}`;
-        break;
-      }
-      case "red": {
-        cursorFg = `${palette.red}`;
-        break;
-      }
-      case "orange": {
-        cursorFg = `${palette.orange}`;
-        break;
-      }
-      case "yellow": {
-        cursorFg = `${palette.yellow}`;
-        break;
-      }
-      case "green": {
-        cursorFg = `${palette.green}`;
-        break;
-      }
-      case "aqua": {
-        cursorFg = `${palette.aqua}`;
-        break;
-      }
-      case "blue": {
-        cursorFg = `${palette.blue}`;
-        break;
-      }
-      case "purple": {
-        cursorFg = `${palette.purple}`;
-        break;
-      }
-      default: {
-        cursorFg = `${palette.fg}`;
-      }
-    } // }}}
+    selectionBg = `${palette.ui2}c0`;
+    editorSelectionBg = `${palette.ui2}a0`;
+    editorSelectionBgHl = `${palette.ui2}50`;
+    cursorFg = `${palette.tx}`;
   }
-  switch (
-    configuration.diagnosticTextBackgroundOpacity // {{{
-  ) {
-    case "0%": {
-      diagnosticTextBackgroundOpacity = "00";
-      break;
-    }
-    case "12.5%": {
-      diagnosticTextBackgroundOpacity = "20";
-      break;
-    }
-    case "25%": {
-      diagnosticTextBackgroundOpacity = "40";
-      break;
-    }
-    case "37.5%": {
-      diagnosticTextBackgroundOpacity = "60";
-      break;
-    }
-    case "50%": {
-      diagnosticTextBackgroundOpacity = "80";
-      break;
-    }
-    default: {
-      diagnosticTextBackgroundOpacity = "00";
-    }
-  } // }}}
+
+  diagnosticTextBackgroundOpacity = "00";
+
   const tokens = {
-    foreground: `${palette.fg}`,
+    foreground: `${palette.tx}`,
     focusBorder: `${palette.bg}00`,
     "widget.shadow": `${palette.shadow}`,
     "selection.background": `${selectionBg}`,
-    descriptionForeground: `${palette.grey1}`,
+    descriptionForeground: `${palette.tx3}`,
     errorForeground: `${palette.red}`,
     "icon.foreground": `${palette.aqua}`,
     "textLink.foreground": `${palette.green}`,
     "textLink.activeForeground": `${palette.green}c0`,
-    "textCodeBlock.background": `${palette.bg1}`,
-    "textBlockQuote.background": `${palette.bg1}`,
-    "textBlockQuote.border": `${palette.bg4}`,
+    "textCodeBlock.background": `${palette.bg2}`,
+    "textBlockQuote.background": `${palette.bg2}`,
+    "textBlockQuote.border": `${palette.ui2}`,
     "textPreformat.foreground": `${palette.yellow}`,
     "toolbar.hoverBackground": `${palette.bg2}`,
     "button.background": `${palette.badge}`,
     "button.hoverBackground": `${palette.badge}d0`,
     "button.foreground": `${palette.bg}`,
-    "button.secondaryBackground": `${palette.bg3}`,
-    "button.secondaryForeground": `${palette.fg}`,
-    "button.secondaryHoverBackground": `${palette.bg4}`,
+    "button.secondaryBackground": `${palette.ui}`,
+    "button.secondaryForeground": `${palette.tx}`,
+    "button.secondaryHoverBackground": `${palette.ui2}`,
     "checkbox.background": `${palette.bg}`,
     "checkbox.foreground": `${palette.orange}`,
-    "checkbox.border": `${palette.bg5}`,
-    "dropdown.border": `${palette.bg5}`,
+    "checkbox.border": `${palette.ui3}`,
+    "dropdown.border": `${palette.ui3}`,
     "dropdown.background": `${palette.bg}`,
-    "dropdown.foreground": `${palette.grey2}`,
-    "input.border": `${palette.bg5}`,
+    "dropdown.foreground": `${palette.tx2}`,
+    "input.border": `${palette.ui3}`,
     "input.background": `${palette.bg}00`,
-    "input.foreground": `${palette.fg}`,
-    "input.placeholderForeground": `${palette.grey0}`,
+    "input.foreground": `${palette.tx}`,
+    "input.placeholderForeground": `${palette.tx3}`,
     "inputOption.activeBorder": `${palette.aqua}`,
     "inputValidation.errorBorder": `${palette.red}`,
     "inputValidation.errorBackground": `${palette.dimRed}`,
-    "inputValidation.errorForeground": `${palette.fg}`,
+    "inputValidation.errorForeground": `${palette.tx}`,
     "inputValidation.infoBorder": `${palette.blue}`,
     "inputValidation.infoBackground": `${palette.dimBlue}`,
-    "inputValidation.infoForeground": `${palette.fg}`,
+    "inputValidation.infoForeground": `${palette.tx}`,
     "inputValidation.warningBorder": `${palette.yellow}`,
     "inputValidation.warningBackground": `${palette.dimYellow}`,
-    "inputValidation.warningForeground": `${palette.fg}`,
+    "inputValidation.warningForeground": `${palette.tx}`,
     "scrollbar.shadow": `${palette.shadow}`,
-    "scrollbarSlider.activeBackground": `${palette.grey2}`,
-    "scrollbarSlider.hoverBackground": `${palette.bg5}`,
-    "scrollbarSlider.background": `${palette.bg5}80`,
+    "scrollbarSlider.activeBackground": `${palette.tx2}`,
+    "scrollbarSlider.hoverBackground": `${palette.ui3}`,
+    "scrollbarSlider.background": `${palette.ui3}80`,
     "badge.background": `${palette.badge}`,
     "badge.foreground": `${palette.bg}`,
     "progressBar.background": `${palette.badge}`,
-    "list.activeSelectionForeground": `${palette.fg}`,
-    "list.activeSelectionBackground": `${palette.bg3}80`,
-    "list.inactiveSelectionForeground": `${palette.grey2}`,
-    "list.inactiveSelectionBackground": `${palette.bg3}80`,
+    "list.activeSelectionForeground": `${palette.tx}`,
+    "list.activeSelectionBackground": `${palette.ui}80`,
+    "list.inactiveSelectionForeground": `${palette.tx2}`,
+    "list.inactiveSelectionBackground": `${palette.ui}80`,
     "list.dropBackground": `${palette.bg2}80`,
-    "list.focusForeground": `${palette.fg}`,
-    "list.focusBackground": `${palette.bg3}80`,
-    "list.inactiveFocusBackground": `${palette.bg3}80`,
+    "list.focusForeground": `${palette.tx}`,
+    "list.focusBackground": `${palette.ui}80`,
+    "list.inactiveFocusBackground": `${palette.ui}80`,
     "list.highlightForeground": `${palette.green}`,
-    "list.hoverForeground": `${palette.fg}`,
+    "list.hoverForeground": `${palette.tx}`,
     "list.hoverBackground": `${palette.bg}00`,
     "list.invalidItemForeground": `${palette.dimRed}`,
     "list.errorForeground": `${palette.red}`,
     "list.warningForeground": `${palette.yellow}`,
-    "tree.indentGuidesStroke": `${palette.grey0}`,
-    "activityBar.border": `${palette.bg0}`,
-    "activityBar.background": `${palette.bg0}`,
-    "activityBar.foreground": `${palette.fg}`,
-    "activityBar.inactiveForeground": `${palette.grey1}`,
+    "tree.indentGuidesStroke": `${palette.tx3}`,
+    "activityBar.border": `${palette.ui}`,
+    "activityBar.background": `${palette.ui}`,
+    "activityBar.foreground": `${palette.tx}`,
+    "activityBar.inactiveForeground": `${palette.tx3}`,
     "activityBar.dropBackground": `${palette.bg}`,
     "activityBar.activeBorder": `${palette.badge}d0`,
     "activityBar.activeFocusBorder": `${palette.badge}`,
     "activityBarBadge.background": `${palette.badge}`,
     "activityBarBadge.foreground": `${palette.bg}`,
-    "sideBar.foreground": `${palette.grey1}`,
-    "sideBar.background": `${palette.bg1}`,
+    "sideBar.foreground": `${palette.tx3}`,
+    "sideBar.background": `${palette.bg2}`,
     "sideBarSectionHeader.background": `${palette.bg}00`,
-    "sideBarTitle.foreground": `${palette.grey2}`,
-    "sideBarSectionHeader.foreground": `${palette.grey2}`,
+    "sideBarTitle.foreground": `${palette.tx2}`,
+    "sideBarSectionHeader.foreground": `${palette.tx2}`,
     "minimap.findMatchHighlight": `${palette.dimAqua}60`,
-    "minimap.selectionHighlight": `${palette.bg5}f0`,
+    "minimap.selectionHighlight": `${palette.ui3}f0`,
     "minimap.errorHighlight": `${palette.dimRed}80`,
     "minimap.warningHighlight": `${palette.dimYellow}80`,
     "minimapGutter.addedBackground": `${palette.dimGreen}a0`,
     "minimapGutter.modifiedBackground": `${palette.dimBlue}a0`,
     "minimapGutter.deletedBackground": `${palette.dimRed}a0`,
-    "editorGroup.border": `${palette.bg0}`,
+    "editorGroup.border": `${palette.ui}`,
     "editorGroupHeader.tabsBackground": `${palette.bg}`,
     "editorGroupHeader.noTabsBackground": `${palette.bg}`,
-    "editorGroup.dropBackground": `${palette.bg5}60`,
+    "editorGroup.dropBackground": `${palette.ui3}60`,
     "tab.border": `${palette.bg}`,
     "tab.activeBorder": `${palette.badge}d0`,
     "tab.inactiveBackground": `${palette.bg}`,
     "tab.hoverBackground": `${palette.bg}`,
-    "tab.hoverForeground": `${palette.fg}`,
+    "tab.hoverForeground": `${palette.tx}`,
     "tab.activeBackground": `${palette.bg}`,
-    "tab.activeForeground": `${palette.fg}`,
-    "tab.inactiveForeground": `${palette.grey0}`,
-    "tab.unfocusedActiveForeground": `${palette.grey2}`,
-    "tab.unfocusedActiveBorder": `${palette.grey1}`,
-    "tab.unfocusedInactiveForeground": `${palette.grey0}`,
-    "tab.unfocusedHoverForeground": `${palette.fg}`,
+    "tab.activeForeground": `${palette.tx}`,
+    "tab.inactiveForeground": `${palette.tx3}`,
+    "tab.unfocusedActiveForeground": `${palette.tx2}`,
+    "tab.unfocusedActiveBorder": `${palette.tx3}`,
+    "tab.unfocusedInactiveForeground": `${palette.tx3}`,
+    "tab.unfocusedHoverForeground": `${palette.tx}`,
     "tab.lastPinnedBorder": `${palette.badge}d0`,
     "editor.background": `${palette.bg}`,
-    "editor.foreground": `${palette.fg}`,
-    "editorLineNumber.foreground": `${palette.grey0}a0`,
-    "editorLineNumber.activeForeground": `${palette.grey2}e0`,
+    "editor.foreground": `${palette.tx}`,
+    "editorLineNumber.foreground": `${palette.tx3}a0`,
+    "editorLineNumber.activeForeground": `${palette.tx2}e0`,
     "editorCursor.foreground": `${cursorFg}`,
     "editor.selectionBackground": `${editorSelectionBg}`,
     "editor.selectionHighlightBackground": `${editorSelectionBgHl}`,
     "editor.inactiveSelectionBackground": `${editorSelectionBgHl}`,
     "editor.wordHighlightBackground":
-      variant === "dark" ? `${palette.bg4}58` : `${palette.bg4}48`,
+      variant === "dark" ? `${palette.ui2}58` : `${palette.ui2}48`,
     "editor.wordHighlightStrongBackground":
-      variant === "dark" ? `${palette.bg4}b0` : `${palette.bg4}90`,
+      variant === "dark" ? `${palette.ui2}b0` : `${palette.ui2}90`,
     "editor.hoverHighlightBackground":
-      variant === "dark" ? `${palette.bg4}b0` : `${palette.bg4}90`,
+      variant === "dark" ? `${palette.ui2}b0` : `${palette.ui2}90`,
     "editor.findMatchBackground": `${palette.dimOrange}40`,
     "editor.findMatchHighlightBackground": `${palette.dimGreen}40`,
     "editor.findRangeHighlightBackground": `${editorSelectionBgHl}`,
-    "editor.lineHighlightBorder": `${palette.bg5}00`,
+    "editor.lineHighlightBorder": `${palette.ui3}00`,
     "editor.lineHighlightBackground":
-      variant === "dark" ? `${palette.bg3}90` : `${palette.bg3}70`,
-    "editor.rangeHighlightBackground": `${palette.bg3}80`,
+      variant === "dark" ? `${palette.ui}90` : `${palette.ui}70`,
+    "editor.rangeHighlightBackground": `${palette.ui}80`,
     "editor.symbolHighlightBackground": `${palette.dimBlue}40`,
     "editorLink.activeForeground": `${palette.green}`,
-    "editorWhitespace.foreground": `${palette.bg4}`,
-    "editorIndentGuide.background": `${palette.grey2}20`,
-    "editorIndentGuide.activeBackground": `${palette.grey2}50`,
+    "editorWhitespace.foreground": `${palette.ui2}`,
+    "editorIndentGuide.background": `${palette.tx2}20`,
+    "editorIndentGuide.activeBackground": `${palette.tx2}50`,
     "editorInlayHint.background": `${palette.bg}00`,
-    "editorInlayHint.foreground": `${palette.grey0}a0`,
+    "editorInlayHint.foreground": `${palette.tx3}a0`,
     "editorInlayHint.typeBackground": `${palette.bg}00`,
-    "editorInlayHint.typeForeground": `${palette.grey0}a0`,
+    "editorInlayHint.typeForeground": `${palette.tx3}a0`,
     "editorInlayHint.parameterBackground": `${palette.bg}00`,
-    "editorInlayHint.parameterForeground": `${palette.grey0}a0`,
-    "editorRuler.foreground": `${palette.bg4}a0`,
-    "editorCodeLens.foreground": `${palette.grey0}a0`,
-    "editor.foldBackground": `${palette.bg5}80`,
+    "editorInlayHint.parameterForeground": `${palette.tx3}a0`,
+    "editorRuler.foreground": `${palette.ui2}a0`,
+    "editorCodeLens.foreground": `${palette.tx3}a0`,
+    "editor.foldBackground": `${palette.ui3}80`,
     "editorBracketMatch.border": `${palette.bg}00`,
-    "editorBracketMatch.background": `${palette.bg5}`,
+    "editorBracketMatch.background": `${palette.ui3}`,
     "editorBracketHighlight.foreground1": `${palette.red}`,
     "editorBracketHighlight.foreground2": `${palette.yellow}`,
     "editorBracketHighlight.foreground3": `${palette.green}`,
     "editorBracketHighlight.foreground4": `${palette.blue}`,
     "editorBracketHighlight.foreground5": `${palette.orange}`,
     "editorBracketHighlight.foreground6": `${palette.purple}`,
-    "editorBracketHighlight.unexpectedBracket.foreground": `${palette.grey1}`,
+    "editorBracketHighlight.unexpectedBracket.foreground": `${palette.tx3}`,
     "editorOverviewRuler.border": `${palette.bg}00`,
     "editorOverviewRuler.findMatchForeground": `${palette.dimAqua}`,
     "editorOverviewRuler.rangeHighlightForeground": `${palette.dimAqua}`,
     "editorOverviewRuler.selectionHighlightForeground": `${palette.dimAqua}`,
-    "editorOverviewRuler.wordHighlightForeground": `${palette.bg5}`,
-    "editorOverviewRuler.wordHighlightStrongForeground": `${palette.bg5}`,
+    "editorOverviewRuler.wordHighlightForeground": `${palette.ui3}`,
+    "editorOverviewRuler.wordHighlightStrongForeground": `${palette.ui3}`,
     "editorOverviewRuler.modifiedForeground": `${palette.dimBlue}a0`,
     "editorOverviewRuler.addedForeground": `${palette.dimGreen}a0`,
     "editorOverviewRuler.deletedForeground": `${palette.dimRed}a0`,
@@ -397,7 +281,7 @@ export function highContrastWorkbench(
     "editorOverviewRuler.infoForeground": `${palette.purple}`,
     "editorOverviewRuler.currentContentForeground": `${palette.dimBlue}`,
     "editorOverviewRuler.incomingContentForeground": `${palette.dimAqua}`,
-    "editorOverviewRuler.commonContentForeground": `${palette.grey1}`,
+    "editorOverviewRuler.commonContentForeground": `${palette.tx3}`,
     "problemsErrorIcon.foreground": `${palette.red}`,
     "problemsWarningIcon.foreground": `${palette.yellow}`,
     "problemsInfoIcon.foreground": `${palette.blue}`,
@@ -414,61 +298,61 @@ export function highContrastWorkbench(
     "editorGutter.modifiedBackground": `${palette.dimBlue}a0`,
     "editorGutter.addedBackground": `${palette.dimGreen}a0`,
     "editorGutter.deletedBackground": `${palette.dimRed}a0`,
-    "editorGutter.commentRangeForeground": `${palette.grey0}`,
+    "editorGutter.commentRangeForeground": `${palette.tx3}`,
     "diffEditor.insertedTextBackground": `${palette.dimAqua}30`,
     "diffEditor.removedTextBackground": `${palette.dimRed}30`,
-    "diffEditor.diagonalFill": `${palette.bg5}`,
-    "editorSuggestWidget.background": `${palette.bg3}`,
-    "editorSuggestWidget.foreground": `${palette.fg}`,
+    "diffEditor.diagonalFill": `${palette.ui3}`,
+    "editorSuggestWidget.background": `${palette.ui}`,
+    "editorSuggestWidget.foreground": `${palette.tx}`,
     "editorSuggestWidget.highlightForeground": `${palette.green}`,
-    "editorSuggestWidget.selectedBackground": `${palette.bg4}`,
-    "editorSuggestWidget.border": `${palette.bg3}`,
+    "editorSuggestWidget.selectedBackground": `${palette.ui2}`,
+    "editorSuggestWidget.border": `${palette.ui}`,
     "editorWidget.background": `${palette.bg}`,
-    "editorWidget.foreground": `${palette.fg}`,
-    "editorWidget.border": `${palette.bg5}`,
+    "editorWidget.foreground": `${palette.tx}`,
+    "editorWidget.border": `${palette.ui3}`,
     "editorHoverWidget.background": `${palette.bg2}`,
-    "editorHoverWidget.border": `${palette.bg4}`,
+    "editorHoverWidget.border": `${palette.ui2}`,
     "editorGhostText.background": `${palette.bg}00`,
-    "editorGhostText.foreground": `${palette.grey0}a0`,
+    "editorGhostText.foreground": `${palette.tx3}a0`,
     "editorMarkerNavigation.background": `${palette.bg2}`,
     "editorMarkerNavigationError.background": `${palette.dimRed}80`,
     "editorMarkerNavigationWarning.background": `${palette.dimYellow}80`,
     "editorMarkerNavigationInfo.background": `${palette.dimBlue}80`,
-    "peekView.border": `${palette.bg4}`,
+    "peekView.border": `${palette.ui2}`,
     "peekViewEditor.background": `${palette.bg2}`,
     "peekViewEditor.matchHighlightBackground": `${palette.dimYellow}50`,
     "peekViewEditorGutter.background": `${palette.bg2}`,
-    "peekViewResult.fileForeground": `${palette.fg}`,
-    "peekViewResult.lineForeground": `${palette.grey2}`,
+    "peekViewResult.fileForeground": `${palette.tx}`,
+    "peekViewResult.lineForeground": `${palette.tx2}`,
     "peekViewResult.matchHighlightBackground": `${palette.dimYellow}50`,
     "peekViewResult.selectionBackground": `${palette.dimAqua}50`,
-    "peekViewResult.selectionForeground": `${palette.fg}`,
-    "peekViewTitleDescription.foreground": `${palette.fg}`,
+    "peekViewResult.selectionForeground": `${palette.tx}`,
+    "peekViewTitleDescription.foreground": `${palette.tx}`,
     "peekViewTitleLabel.foreground": `${palette.green}`,
     "peekViewResult.background": `${palette.bg2}`,
-    "peekViewTitle.background": `${palette.bg4}`,
+    "peekViewTitle.background": `${palette.ui2}`,
     "pickerGroup.border": `${palette.badge}1a`,
-    "terminal.foreground": `${palette.fg}`,
+    "terminal.foreground": `${palette.tx}`,
     "terminalCursor.foreground": `${cursorFg}`,
     "terminal.ansiBlack":
-      variant === "dark" ? `${palette.bg2}` : `${palette.fg}`,
+      variant === "dark" ? `${palette.bg2}` : `${palette.tx}`,
     "terminal.ansiBlue": `${palette.blue}`,
     "terminal.ansiBrightBlack":
-      variant === "dark" ? `${palette.grey1}` : `${palette.fg}`,
+      variant === "dark" ? `${palette.tx3}` : `${palette.tx}`,
     "terminal.ansiBrightBlue": `${palette.blue}`,
     "terminal.ansiBrightCyan": `${palette.aqua}`,
     "terminal.ansiBrightGreen": `${palette.green}`,
     "terminal.ansiBrightMagenta": `${palette.purple}`,
     "terminal.ansiBrightRed": `${palette.red}`,
     "terminal.ansiBrightWhite":
-      variant === "dark" ? `${palette.fg}` : `${palette.bg2}`,
+      variant === "dark" ? `${palette.tx}` : `${palette.bg2}`,
     "terminal.ansiBrightYellow": `${palette.yellow}`,
     "terminal.ansiCyan": `${palette.aqua}`,
     "terminal.ansiGreen": `${palette.green}`,
     "terminal.ansiMagenta": `${palette.purple}`,
     "terminal.ansiRed": `${palette.red}`,
     "terminal.ansiWhite":
-      variant === "dark" ? `${palette.fg}` : `${palette.grey1}`,
+      variant === "dark" ? `${palette.tx}` : `${palette.tx3}`,
     "terminal.ansiYellow": `${palette.yellow}`,
     "debugToolBar.background": `${palette.bg}`,
     "debugTokenExpression.name": `${palette.blue}`,
@@ -479,7 +363,7 @@ export function highContrastWorkbench(
     "debugTokenExpression.error": `${palette.red}`,
     "debugIcon.breakpointForeground": `${palette.red}`,
     "debugIcon.breakpointDisabledForeground": `${palette.dimRed}`,
-    "debugIcon.breakpointUnverifiedForeground": `${palette.grey2}`,
+    "debugIcon.breakpointUnverifiedForeground": `${palette.tx2}`,
     "debugIcon.breakpointCurrentStackframeForeground": `${palette.blue}`,
     "debugIcon.breakpointStackframeForeground": `${palette.red}`,
     "debugIcon.startForeground": `${palette.aqua}`,
@@ -504,55 +388,55 @@ export function highContrastWorkbench(
     "merge.border": `${palette.bg}00`,
     "panel.background": `${palette.bg2}`,
     "panel.border": `${palette.bg2}`,
-    "panelInput.border": `${palette.bg5}`,
-    "panelTitle.activeForeground": `${palette.fg}`,
+    "panelInput.border": `${palette.ui3}`,
+    "panelTitle.activeForeground": `${palette.tx}`,
     "panelTitle.activeBorder": `${palette.badge}d0`,
-    "panelTitle.inactiveForeground": `${palette.grey1}`,
-    "panelSection.border": `${palette.bg0}`,
+    "panelTitle.inactiveForeground": `${palette.tx3}`,
+    "panelSection.border": `${palette.ui}`,
     "panelSectionHeader.background": `${palette.bg2}`,
     "imagePreview.border": `${palette.bg}`,
-    "statusBar.background": `${palette.bg0}`,
-    "statusBar.foreground": `${palette.grey2}`,
-    "statusBar.border": `${palette.bg0}`,
+    "statusBar.background": `${palette.ui}`,
+    "statusBar.foreground": `${palette.tx2}`,
+    "statusBar.border": `${palette.ui}`,
     "statusBar.debuggingForeground": `${palette.orange}`,
-    "statusBar.debuggingBackground": `${palette.bg0}`,
-    "statusBar.noFolderBackground": `${palette.bg0}`,
-    "statusBar.noFolderForeground": `${palette.grey2}`,
-    "statusBar.noFolderBorder": `${palette.bg0}`,
-    "statusBarItem.hoverBackground": `${palette.bg4}a0`,
-    "statusBarItem.activeBackground": `${palette.bg4}70`,
-    "statusBarItem.prominentForeground": `${palette.fg}`,
-    "statusBarItem.prominentBackground": `${palette.bg0}`,
-    "statusBarItem.prominentHoverBackground": `${palette.bg4}a0`,
-    "statusBarItem.remoteBackground": `${palette.bg0}`,
-    "statusBarItem.remoteForeground": `${palette.grey2}`,
-    "statusBarItem.errorBackground": `${palette.bg0}`,
+    "statusBar.debuggingBackground": `${palette.ui}`,
+    "statusBar.noFolderBackground": `${palette.ui}`,
+    "statusBar.noFolderForeground": `${palette.tx2}`,
+    "statusBar.noFolderBorder": `${palette.ui}`,
+    "statusBarItem.hoverBackground": `${palette.ui2}a0`,
+    "statusBarItem.activeBackground": `${palette.ui2}70`,
+    "statusBarItem.prominentForeground": `${palette.tx}`,
+    "statusBarItem.prominentBackground": `${palette.ui}`,
+    "statusBarItem.prominentHoverBackground": `${palette.ui2}a0`,
+    "statusBarItem.remoteBackground": `${palette.ui}`,
+    "statusBarItem.remoteForeground": `${palette.tx2}`,
+    "statusBarItem.errorBackground": `${palette.ui}`,
     "statusBarItem.errorForeground": `${palette.red}`,
-    "statusBarItem.warningBackground": `${palette.bg0}`,
+    "statusBarItem.warningBackground": `${palette.ui}`,
     "statusBarItem.warningForeground": `${palette.yellow}`,
-    "titleBar.activeBackground": `${palette.bg0}`,
-    "titleBar.activeForeground": `${palette.grey2}`,
-    "titleBar.inactiveBackground": `${palette.bg0}`,
-    "titleBar.inactiveForeground": `${palette.grey0}`,
-    "titleBar.border": `${palette.bg0}`,
+    "titleBar.activeBackground": `${palette.ui}`,
+    "titleBar.activeForeground": `${palette.tx2}`,
+    "titleBar.inactiveBackground": `${palette.ui}`,
+    "titleBar.inactiveForeground": `${palette.tx3}`,
+    "titleBar.border": `${palette.ui}`,
     "menubar.selectionBackground": `${palette.bg}`,
     "menubar.selectionBorder": `${palette.bg}`,
-    "menu.foreground": `${palette.grey2}`,
-    "menu.background": `${palette.bg0}`,
-    "menu.selectionForeground": `${palette.fg}`,
+    "menu.foreground": `${palette.tx2}`,
+    "menu.background": `${palette.ui}`,
+    "menu.selectionForeground": `${palette.tx}`,
     "menu.selectionBackground": `${palette.bg}`,
     "gitDecoration.addedResourceForeground": `${palette.green}a0`,
     "gitDecoration.modifiedResourceForeground": `${palette.blue}a0`,
     "gitDecoration.deletedResourceForeground": `${palette.red}a0`,
     "gitDecoration.untrackedResourceForeground": `${palette.yellow}a0`,
-    "gitDecoration.ignoredResourceForeground": `${palette.bg5}`,
+    "gitDecoration.ignoredResourceForeground": `${palette.ui3}`,
     "gitDecoration.conflictingResourceForeground": `${palette.purple}a0`,
     "gitDecoration.submoduleResourceForeground": `${palette.orange}a0`,
     "gitDecoration.stageDeletedResourceForeground": `${palette.aqua}a0`,
     "gitDecoration.stageModifiedResourceForeground": `${palette.aqua}a0`,
-    "notificationCenterHeader.foreground": `${palette.fg}`,
-    "notificationCenterHeader.background": `${palette.bg3}`,
-    "notifications.foreground": `${palette.fg}`,
+    "notificationCenterHeader.foreground": `${palette.tx}`,
+    "notificationCenterHeader.background": `${palette.ui}`,
+    "notifications.foreground": `${palette.tx}`,
     "notifications.background": `${palette.bg}`,
     "notificationLink.foreground": `${palette.green}`,
     "notificationsErrorIcon.foreground": `${palette.red}`,
@@ -566,28 +450,28 @@ export function highContrastWorkbench(
     "extensionIcon.starForeground": `${palette.aqua}`,
     "extensionIcon.verifiedForeground": `${palette.green}`,
     "extensionIcon.preReleaseForeground": `${palette.orange}`,
-    "pickerGroup.foreground": `${palette.fg}`,
+    "pickerGroup.foreground": `${palette.tx}`,
     "quickInputTitle.background": `${palette.bg2}`,
     "keybindingLabel.background": `${palette.bg}00`,
-    "keybindingLabel.foreground": `${palette.fg}`,
-    "keybindingLabel.border": `${palette.bg1}`,
-    "keybindingLabel.bottomBorder": `${palette.bg0}`,
-    "keybindingTable.headerBackground": `${palette.bg3}`,
+    "keybindingLabel.foreground": `${palette.tx}`,
+    "keybindingLabel.border": `${palette.bg2}`,
+    "keybindingLabel.bottomBorder": `${palette.ui}`,
+    "keybindingTable.headerBackground": `${palette.ui}`,
     "keybindingTable.rowsBackground": `${palette.bg2}`,
-    "settings.headerForeground": `${palette.grey2}`,
+    "settings.headerForeground": `${palette.tx2}`,
     "settings.numberInputBackground": `${palette.bg}`,
     "settings.numberInputForeground": `${palette.purple}`,
-    "settings.numberInputBorder": `${palette.bg5}`,
+    "settings.numberInputBorder": `${palette.ui3}`,
     "settings.textInputBackground": `${palette.bg}`,
     "settings.textInputForeground": `${palette.blue}`,
-    "settings.textInputBorder": `${palette.bg5}`,
+    "settings.textInputBorder": `${palette.ui3}`,
     "settings.checkboxBackground": `${palette.bg}`,
     "settings.checkboxForeground": `${palette.orange}`,
-    "settings.checkboxBorder": `${palette.bg5}`,
+    "settings.checkboxBorder": `${palette.ui3}`,
     "settings.dropdownBackground": `${palette.bg}`,
     "settings.dropdownForeground": `${palette.aqua}`,
-    "settings.dropdownBorder": `${palette.bg5}`,
-    "settings.modifiedItemIndicator": `${palette.grey0}`,
+    "settings.dropdownBorder": `${palette.ui3}`,
+    "settings.modifiedItemIndicator": `${palette.tx3}`,
     "settings.focusedRowBackground": `${palette.bg2}`,
     "settings.rowHoverBackground": `${palette.bg2}`,
     "editorLightBulb.foreground": `${palette.yellow}`,
@@ -596,17 +480,17 @@ export function highContrastWorkbench(
     "welcomePage.tileHoverBackground": `${palette.bg2}`,
     "welcomePage.buttonBackground": `${palette.bg2}`,
     "welcomePage.buttonHoverBackground": `${palette.bg2}a0`,
-    "walkThrough.embeddedEditorBackground": `${palette.bg1}`,
-    "breadcrumb.foreground": `${palette.grey1}`,
-    "breadcrumb.focusForeground": `${palette.fg}`,
-    "breadcrumb.activeSelectionForeground": `${palette.fg}`,
-    "symbolIcon.colorForeground": `${palette.fg}`,
-    "symbolIcon.snippetForeground": `${palette.fg}`,
-    "symbolIcon.fieldForeground": `${palette.fg}`,
-    "symbolIcon.fileForeground": `${palette.fg}`,
-    "symbolIcon.folderForeground": `${palette.fg}`,
-    "symbolIcon.textForeground": `${palette.fg}`,
-    "symbolIcon.unitForeground": `${palette.fg}`,
+    "walkThrough.embeddedEditorBackground": `${palette.bg2}`,
+    "breadcrumb.foreground": `${palette.tx3}`,
+    "breadcrumb.focusForeground": `${palette.tx}`,
+    "breadcrumb.activeSelectionForeground": `${palette.tx}`,
+    "symbolIcon.colorForeground": `${palette.tx}`,
+    "symbolIcon.snippetForeground": `${palette.tx}`,
+    "symbolIcon.fieldForeground": `${palette.tx}`,
+    "symbolIcon.fileForeground": `${palette.tx}`,
+    "symbolIcon.folderForeground": `${palette.tx}`,
+    "symbolIcon.textForeground": `${palette.tx}`,
+    "symbolIcon.unitForeground": `${palette.tx}`,
     "symbolIcon.keywordForeground": `${palette.red}`,
     "symbolIcon.operatorForeground": `${palette.orange}`,
     "symbolIcon.classForeground": `${palette.yellow}`,
@@ -633,7 +517,7 @@ export function highContrastWorkbench(
     "symbolIcon.numberForeground": `${palette.purple}`,
     "symbolIcon.objectForeground": `${palette.purple}`,
     "symbolIcon.packageForeground": `${palette.purple}`,
-    "editor.snippetTabstopHighlightBackground": `${palette.bg3}`,
+    "editor.snippetTabstopHighlightBackground": `${palette.ui}`,
     "editor.snippetFinalTabstopHighlightBackground": `${palette.dimGreen}40`,
     "editor.snippetFinalTabstopHighlightBorder": `${palette.bg}`,
     "charts.red": `${palette.red}`,
@@ -642,23 +526,23 @@ export function highContrastWorkbench(
     "charts.green": `${palette.green}`,
     "charts.blue": `${palette.blue}`,
     "charts.purple": `${palette.purple}`,
-    "charts.foreground": `${palette.fg}`,
+    "charts.foreground": `${palette.tx}`,
     "ports.iconRunningProcessForeground": `${palette.orange}`,
-    "sash.hoverBorder": `${palette.bg4}`,
-    "notebook.cellBorderColor": `${palette.bg5}`,
+    "sash.hoverBorder": `${palette.ui2}`,
+    "notebook.cellBorderColor": `${palette.ui3}`,
     "notebook.cellStatusBarItemHoverBackground": `${palette.bg2}`,
     "notebook.focusedCellBackground": `${palette.bg}`,
     "notebook.cellHoverBackground": `${palette.bg}`,
-    "notebook.outputContainerBackgroundColor": `${palette.bg1}`,
+    "notebook.outputContainerBackgroundColor": `${palette.bg2}`,
     "notebookStatusSuccessIcon.foreground": `${palette.green}`,
     "notebookStatusErrorIcon.foreground": `${palette.red}`,
     "notebookStatusRunningIcon.foreground": `${palette.blue}`,
-    "notebook.focusedCellBorder": `${palette.bg5}`,
-    "notebook.focusedEditorBorder": `${palette.bg5}`,
-    "notebook.selectedCellBorder": `${palette.bg5}`,
-    "notebook.focusedRowBorder": `${palette.bg5}`,
-    "notebook.inactiveFocusedCellBorder": `${palette.bg5}`,
-    "notebook.cellToolbarSeparator": `${palette.bg5}`,
+    "notebook.focusedCellBorder": `${palette.ui3}`,
+    "notebook.focusedEditorBorder": `${palette.ui3}`,
+    "notebook.selectedCellBorder": `${palette.ui3}`,
+    "notebook.focusedRowBorder": `${palette.ui3}`,
+    "notebook.inactiveFocusedCellBorder": `${palette.ui3}`,
+    "notebook.cellToolbarSeparator": `${palette.ui3}`,
     "testing.iconFailed": `${palette.red}`,
     "testing.iconErrored": `${palette.red}`,
     "testing.iconPassed": `${palette.aqua}`,
@@ -667,9 +551,9 @@ export function highContrastWorkbench(
     "testing.iconUnset": `${palette.yellow}`,
     "testing.iconSkipped": `${palette.purple}`,
     "gitlens.gutterBackgroundColor": `${palette.bg}`,
-    "gitlens.gutterForegroundColor": `${palette.fg}`,
+    "gitlens.gutterForegroundColor": `${palette.tx}`,
     "gitlens.gutterUncommittedForegroundColor": `${palette.blue}`,
-    "gitlens.trailingLineForegroundColor": `${palette.grey1}`,
+    "gitlens.trailingLineForegroundColor": `${palette.tx3}`,
     "gitlens.lineHighlightBackgroundColor": `${palette.bg2}`,
     "gitlens.lineHighlightOverviewRulerColor": `${palette.badge}`,
     "gitlens.closedPullRequestIconColor": `${palette.red}`,
@@ -681,29 +565,27 @@ export function highContrastWorkbench(
     "gitlens.decorations.addedForegroundColor": `${palette.green}`,
     "gitlens.decorations.copiedForegroundColor": `${palette.purple}`,
     "gitlens.decorations.deletedForegroundColor": `${palette.red}`,
-    "gitlens.decorations.ignoredForegroundColor": `${palette.grey2}`,
+    "gitlens.decorations.ignoredForegroundColor": `${palette.tx2}`,
     "gitlens.decorations.modifiedForegroundColor": `${palette.blue}`,
     "gitlens.decorations.untrackedForegroundColor": `${palette.yellow}`,
     "gitlens.decorations.renamedForegroundColor": `${palette.purple}`,
     "gitlens.decorations.branchAheadForegroundColor": `${palette.aqua}`,
     "gitlens.decorations.branchBehindForegroundColor": `${palette.orange}`,
     "gitlens.decorations.branchDivergedForegroundColor": `${palette.yellow}`,
-    "gitlens.decorations.branchUpToDateForegroundColor": `${palette.fg}`,
+    "gitlens.decorations.branchUpToDateForegroundColor": `${palette.tx}`,
     "gitlens.decorations.branchUnpublishedForegroundColor": `${palette.blue}`,
     "gitlens.decorations.branchMissingUpstreamForegroundColor": `${palette.red}`,
     "issues.open": `${palette.aqua}`,
     "issues.closed": `${palette.red}`,
-    "rust_analyzer.inlayHints.foreground": `${palette.grey0}a0`,
+    "rust_analyzer.inlayHints.foreground": `${palette.tx3}a0`,
     "rust_analyzer.inlayHints.background": `${palette.bg}00`,
     "rust_analyzer.syntaxTreeBorder": `${palette.red}`,
   };
   if (configuration.highContrast) {
     Object.assign(tokens, {
-      contrastBorder: `${palette.bg5}`,
-      contrastActiveBorder: `${palette.grey0}`,
+      contrastBorder: `${palette.ui3}`,
+      contrastActiveBorder: `${palette.tx3}`,
     });
   }
   return tokens;
 }
-
-// vim: fdm=marker fmr={{{,}}}:

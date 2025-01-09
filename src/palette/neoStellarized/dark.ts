@@ -1,7 +1,9 @@
 import { themeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
-const StellarizedDarkTheme: themeBasePalette = {
+// Inspired by Stellarized and Flexoki
+
+const NeoStellarizedDarkTheme: themeBasePalette = {
   fg: Color("#bead9d"),
   grey: Color("#9d8875"),
   red: Color("#ca7375"),
@@ -15,4 +17,4 @@ const StellarizedDarkTheme: themeBasePalette = {
   bg: Color("#222532")
 };
 
-export { StellarizedDarkTheme };
+export { NeoStellarizedDarkTheme };

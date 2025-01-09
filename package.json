@@ -1,240 +1,110 @@
 {
-  "name": "stellarized",
-  "displayName": "Stellarized",
-  "description": "Comfortable & Pleasant Color Scheme for Visual Studio Code",
-  "version": "0.3.0",
-  "publisher": "sainnhe",
-  "author": "sainnhe (https://github.com/sainnhe)",
-  "homepage": "https://github.com/sainnhe/stellarized-vscode",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sainnhe/stellarized-vscode.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sainnhe/stellarized-vscode/issues"
-  },
-  "license": "MIT",
-  "keywords": [
-    "green",
-    "theme"
-  ],
-  "galleryBanner": {
-    "color": "#222532",
-    "theme": "dark"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "extensionKind": [
-    "ui",
-    "workspace"
-  ],
-  "activationEvents": [
-    "onStartupFinished"
-  ],
-  "capabilities": {
-    "untrustedWorkspaces": {
-      "supported": true
-    },
-    "virtualWorkspaces": true
-  },
-  "main": "dist/index-client.js",
-  "browser": "dist/index-web.js",
-  "contributes": {
-    "themes": [
-      {
-        "label": "Stellarized Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/stellarized-dark.json"
-      },
-      {
-        "label": "Stellarized Light",
-        "uiTheme": "vs",
-        "path": "./themes/stellarized-light.json"
-      },
-      {
-        "label": "Cosmic Latte Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/cosmic-latte-dark.json"
-      },
-      {
-        "label": "Cosmic Latte Light",
-        "uiTheme": "vs",
-        "path": "./themes/cosmic-latte-light.json"
-      },
-      {
-        "label": "Rusticated",
-        "uiTheme": "vs",
-        "path": "./themes/rusticated.json"
-      }
-    ],
-    "configuration": {
-      "title": "Stellarized",
-      "properties": {
-        "stellarized.darkContrast": {
-          "type": "string",
-          "default": "medium",
-          "description": "Background contrast for the dark variant.",
-          "enum": [
-            "soft",
-            "medium",
-            "hard"
-          ]
-        },
-        "stellarized.lightContrast": {
-          "type": "string",
-          "default": "medium",
-          "description": "Background contrast for the light variant.",
-          "enum": [
-            "soft",
-            "medium",
-            "hard"
-          ]
-        },
-        "stellarized.darkWorkbench": {
-          "type": "string",
-          "default": "high-contrast",
-          "description": "Workbench style for the dark variant.",
-          "enum": [
-            "material",
-            "flat",
-            "high-contrast"
-          ]
-        },
-        "stellarized.lightWorkbench": {
-          "type": "string",
-          "default": "high-contrast",
-          "description": "Workbench style for the light variant.",
-          "enum": [
-            "material",
-            "flat",
-            "high-contrast"
-          ]
-        },
-        "stellarized.darkCursor": {
-          "type": "string",
-          "default": "white",
-          "description": "The cursor color in the dark variant.",
-          "enum": [
-            "white",
-            "red",
-            "orange",
-            "yellow",
-            "green",
-            "aqua",
-            "blue",
-            "purple"
-          ]
-        },
-        "stellarized.lightCursor": {
-          "type": "string",
-          "default": "black",
-          "description": "The cursor color in the light variant.",
-          "enum": [
-            "black",
-            "red",
-            "orange",
-            "yellow",
-            "green",
-            "aqua",
-            "blue",
-            "purple"
-          ]
-        },
-        "stellarized.darkSelection": {
-          "type": "string",
-          "default": "grey",
-          "description": "The background color of selected text in the dark variant.",
-          "enum": [
-            "grey",
-            "red",
-            "orange",
-            "yellow",
-            "green",
-            "aqua",
-            "blue",
-            "purple"
-          ]
-        },
-        "stellarized.lightSelection": {
-          "type": "string",
-          "default": "grey",
-          "description": "The background color of selected text in the light variant.",
-          "enum": [
-            "grey",
-            "red",
-            "orange",
-            "yellow",
-            "green",
-            "aqua",
-            "blue",
-            "purple"
-          ]
-        },
-        "stellarized.italicKeywords": {
-          "type": "boolean",
-          "default": false,
-          "description": "Italicize keywords or not."
-        },
-        "stellarized.italicComments": {
-          "type": "boolean",
-          "default": true,
-          "description": "Italicize comments or not."
-        },
-        "stellarized.diagnosticTextBackgroundOpacity": {
-          "type": "string",
-          "default": "0%",
-          "markdownDescription": "The opacity of the background color of [diagnostic text](https://code.visualstudio.com/updates/v1_52#_error-background-colors).",
-          "enum": [
-            "0%",
-            "12.5%",
-            "25%",
-            "37.5%",
-            "50%"
-          ]
-        },
-        "stellarized.highContrast": {
-          "type": "boolean",
-          "default": false,
-          "description": "Whether to add an additional border around items across the UI to increase the contrast."
-        }
-      }
-    }
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "clean": "rimraf dist *.vsix",
-    "compile:ts": "tsc",
-    "compile:themes": "node dist/hook/generateThemes.js",
-    "compile": "npm run clean && npm run compile:ts && npm run compile:themes",
-    "package": "vsce package && git checkout -- themes",
-    "lint": "eslint . --ext .ts",
-    "browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "*.ts": "eslint --fix",
-    "*.{js,json,md}": "prettier --write"
-  },
-  "engines": {
-    "vscode": "^1.55.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.11.14",
-    "@types/vscode": "1.55.0",
-    "@typescript-eslint/eslint-plugin": "5.46.1",
-    "@typescript-eslint/parser": "5.46.1",
-    "@vscode/test-web": "0.0.33",
-    "@vscode/vsce": "^2.15.0",
-    "eslint": "8.29.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "husky": "8.0.2",
-    "lint-staged": "13.1.0",
-    "prettier": "2.8.1",
-    "rimraf": "3.0.2",
-    "typescript": "4.9.4",
-    "@types/color": "^4.2.0",
-    "color": "^4.2.3"
-  }
+	"name": "stellarized",
+	"displayName": "Stellarized",
+	"description": "Comfortable & Pleasant Color Scheme for Visual Studio Code",
+	"version": "0.3.0",
+	"publisher": "sainnhe",
+	"author": "sainnhe (https://github.com/sainnhe)",
+	"homepage": "https://github.com/sainnhe/stellarized-vscode",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sainnhe/stellarized-vscode.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sainnhe/stellarized-vscode/issues"
+	},
+	"license": "MIT",
+	"keywords": [
+		"green",
+		"theme"
+	],
+	"galleryBanner": {
+		"color": "#222532",
+		"theme": "dark"
+	},
+	"categories": [
+		"Themes"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		},
+		"virtualWorkspaces": true
+	},
+	"main": "dist/index-client.js",
+	"browser": "dist/index-web.js",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Stellarized Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/stellarized-dark.json"
+			},
+			{
+				"label": "Stellarized Light",
+				"uiTheme": "vs",
+				"path": "./themes/stellarized-light.json"
+			},
+			{
+				"label": "Cosmic Latte Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/cosmic-latte-dark.json"
+			},
+			{
+				"label": "Cosmic Latte Light",
+				"uiTheme": "vs",
+				"path": "./themes/cosmic-latte-light.json"
+			},
+			{
+				"label": "Rusticated",
+				"uiTheme": "vs",
+				"path": "./themes/rusticated.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"clean": "rimraf dist *.vsix",
+		"compile:ts": "tsc",
+		"compile:themes": "node dist/hook/generateThemes.js",
+		"compile": "npm run clean && npm run compile:ts && npm run compile:themes",
+		"package": "vsce package && git checkout -- themes",
+		"lint": "eslint . --ext .ts",
+		"browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"*.ts": "eslint --fix",
+		"*.{js,json,md}": "prettier --write"
+	},
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"devDependencies": {
+		"@types/node": "18.11.14",
+		"@types/vscode": "1.55.0",
+		"@typescript-eslint/eslint-plugin": "5.46.1",
+		"@typescript-eslint/parser": "5.46.1",
+		"@vscode/test-web": "0.0.33",
+		"@vscode/vsce": "^2.15.0",
+		"eslint": "8.29.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"lint-staged": "13.1.0",
+		"prettier": "2.8.1",
+		"rimraf": "3.0.2",
+		"typescript": "4.9.4",
+		"@types/color": "^4.2.0",
+		"color": "^4.2.3"
+	},
+	"__metadata": {
+		"size": 128555503
+	}
 }

@@ -13,13 +13,12 @@ import { getSemantic } from "../semantic";
 
 class Utils {
   private async writeFile(path: string, data: unknown) {
-    // {{{
     return new Promise((resolve, reject) => {
       fs.writeFile(path, JSON.stringify(data, null, 2), (err) =>
         err ? reject(err) : resolve("Success")
       );
     });
-  } // }}}
+  }
   async generate(
     darkPath: string,
     lightPath: string,
@@ -28,15 +27,13 @@ class Utils {
     rusticatedPath: string,
     data: any
   ) {
-    // {{{
     this.writeFile(darkPath, data.dark);
     this.writeFile(lightPath, data.light);
     this.writeFile(cosmicDarkPath, data.cosmicDark);
     this.writeFile(cosmicLightPath, data.cosmicLight);
     this.writeFile(rusticatedPath, data.rusticated);
-  } // }}}
+  }
   getThemeData(configuration: Configuration) {
-    // {{{
     return {
       dark: {
         name: "Stellarized Dark",
@@ -92,7 +89,6 @@ const configuration: Configuration = {
   lightSelection: "grey",
   darkCursor: "white",
   lightCursor: "black",
-  italicKeywords: false,
   italicComments: true,
   diagnosticTextBackgroundOpacity: "0%",
   highContrast: false,
@@ -107,4 +103,4 @@ utils.generate(
   utils.getThemeData(configuration)
 );
 
-// vim: fdm=marker fmr={{{,}}}:
+

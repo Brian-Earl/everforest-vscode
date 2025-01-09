@@ -1,9 +1,17 @@
-import { backgroundBasePalette } from "./backgroundBasePalette";
-import { foregroundBasePalette } from "./foregroundBasePalette";
+import Color = require("color");
 
 type themeBasePalette = {
-  foreground: foregroundBasePalette;
-  background: backgroundBasePalette;
+  fg: Color;
+  grey: Color;
+  red: Color;
+  orange: Color;
+  yellow: Color;
+  green: Color;
+  aqua: Color;
+  blue: Color;
+  purple: Color;
+  magenta: Color;
+  bg: Color;
 };
 
 export { themeBasePalette };

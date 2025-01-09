@@ -18,4 +18,4 @@ export function activate() {
 
 export function deactivate() {}
 
-// vim: fdm=marker fmr={{{,}}}:
+

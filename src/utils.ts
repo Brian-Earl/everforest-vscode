@@ -14,16 +14,14 @@ import { getSemantic } from "./semantic";
 
 export default class Utils {
   detectConfigChanges(
-    // {{{
     event: ConfigurationChangeEvent,
     onConfigChange: () => void
   ): void {
     if (event.affectsConfiguration("stellarized")) {
       onConfigChange();
     }
-  } // }}}
+  }
   getConfiguration(): Configuration {
-    // {{{
     const workspaceConfiguration = workspace.getConfiguration("stellarized");
     return {
       darkContrast: workspaceConfiguration.get<string>("darkContrast"),
@@ -34,18 +32,15 @@ export default class Utils {
       lightSelection: workspaceConfiguration.get<string>("lightSelection"),
       darkCursor: workspaceConfiguration.get<string>("darkCursor"),
       lightCursor: workspaceConfiguration.get<string>("lightCursor"),
-      italicKeywords: workspaceConfiguration.get<boolean>("italicKeywords"),
       italicComments: workspaceConfiguration.get<boolean>("italicComments"),
       diagnosticTextBackgroundOpacity: workspaceConfiguration.get<string>(
         "diagnosticTextBackgroundOpacity"
       ),
       highContrast: workspaceConfiguration.get<boolean>("highContrast"),
     };
-  } // }}}
+  }
   isDefaultConfiguration(configuration: Configuration): boolean {
-    // {{{
     return (
-      configuration.italicKeywords === false &&
       configuration.italicComments === true &&
       configuration.lightWorkbench === "material" &&
       configuration.darkWorkbench === "material" &&
@@ -58,9 +53,8 @@ export default class Utils {
       configuration.diagnosticTextBackgroundOpacity === "0%" &&
       configuration.highContrast === false
     );
-  } // }}}
+  }
   getThemeData(configuration: Configuration) {
-    // {{{
     return {
       dark: {
         name: "Stellarized Dark",
@@ -103,9 +97,8 @@ export default class Utils {
         tokenColors: getSyntax(configuration, "light", "rusticated"),
       },
     };
-  } // }}}
+  }
   isNewlyInstalled(): boolean {
-    // {{{
     const flagPath = join(__dirname, "..", ".flag");
     if (!fs.existsSync(flagPath)) {
       this.writeFile(flagPath, "");
@@ -113,9 +106,8 @@ export default class Utils {
     } else {
       return false;
     }
-  } // }}}
+  }
   private async writeFile(path: string, data: unknown) {
-    // {{{
     return new Promise((resolve, reject) => {
       fs.writeFile(path, JSON.stringify(data, null, 2), (err) =>
         err ? reject(err) : resolve("Success")
@@ -123,7 +115,6 @@ export default class Utils {
     });
   } // }}}
   private promptToReload() {
-    // {{{
     const action = "Reload";
     window
       .showInformationMessage("Reload required.", action)
@@ -132,7 +123,7 @@ export default class Utils {
           commands.executeCommand("workbench.action.reloadWindow");
         }
       });
-  } // }}}
+  }
   async generate(
     darkPath: string,
     lightPath: string,
@@ -141,7 +132,6 @@ export default class Utils {
     rusticatedPath: string,
     data: any
   ) {
-    // {{{
     this.writeFile(darkPath, data.dark).then(this.promptToReload);
     this.writeFile(lightPath, data.light);
     this.writeFile(cosmicLightPath, data.cosmicLight);
@@ -150,4 +140,4 @@ export default class Utils {
   } // }}}
 }
 
-// vim: fdm=marker fmr={{{,}}}:
+
