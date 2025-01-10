@@ -76,6 +76,26 @@
 				"label": "Neo Stellarized Light",
 				"uiTheme": "vs",
 				"path": "./themes/neo-stellarized-light.json"
+			},
+			{
+				"label": "Sanctuary Ink Vault",
+				"uiTheme": "vs",
+				"path": "./themes/sanctuary-ink-vault.json"
+			},
+			{
+				"label": "Sanctuary Morning Sun",
+				"uiTheme": "vs",
+				"path": "./themes/sanctuary-morning-sun.json"
+			},
+			{
+				"label": "Sanctuary Tea Garden",
+				"uiTheme": "vs",
+				"path": "./themes/sanctuary-tea-garden.json"
+			},
+			{
+				"label": "Night in the Sanctuary",
+				"uiTheme": "vs-dark",
+				"path": "./themes/sanctuary-night.json"
 			}
 		]
 	},
