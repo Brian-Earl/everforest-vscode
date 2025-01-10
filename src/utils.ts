@@ -130,14 +130,18 @@ export default class Utils {
     cosmicDarkPath: string,
     cosmicLightPath: string,
     rusticatedPath: string,
+    neoDarkPath: string,
+    neoLightPath: string,
     data: any
   ) {
     this.writeFile(darkPath, data.dark).then(this.promptToReload);
     this.writeFile(lightPath, data.light);
-    this.writeFile(cosmicLightPath, data.cosmicLight);
     this.writeFile(cosmicDarkPath, data.cosmicDark);
+    this.writeFile(cosmicLightPath, data.cosmicLight);
     this.writeFile(rusticatedPath, data.rusticated);
-  } // }}}
+    this.writeFile(neoDarkPath, data.neoDark);
+    this.writeFile(neoLightPath, data.neoLight);
+  }
 }
 
 

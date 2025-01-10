@@ -4,17 +4,15 @@ import { themeBasePalette } from "../types/themeBasePalette";
 import { Palette } from "../interface";
 
 function generateBackground(
-  base: themeBasePalette,
-  variant: string
+  base: themeBasePalette
 ): backgroundPalette {
-  let shadowAlpha = (variant == "light") ? 20 : 70
   const palette: backgroundPalette = {
     bg:  base.bg.hex(),
     bg2: base.bg.mix(base.fg, 0.05).hex(),
     ui:  base.bg.mix(base.fg, 0.1).hex(),
     ui2: base.bg.mix(base.fg, 0.15).hex(),
     ui3: base.bg.mix(base.fg, 0.2).hex(),
-    shadow: base.bg.hex() + shadowAlpha,
+    shadow: base.bg.mix(base.fg, 0.1).hex() + 70,
   };
   return palette;
 }

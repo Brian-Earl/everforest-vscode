@@ -19,6 +19,8 @@ export function activate() {
         join(__dirname, "..", "themes", "stellarized-light.json"),
         join(__dirname, "..", "themes", "cosmic-latte-dark.json"),
         join(__dirname, "..", "themes", "cosmic-latte-light.json"),
+        join(__dirname, "..", "themes", "neo-stellarized-dark.json"),
+        join(__dirname, "..", "themes", "neo-stellarized-light.json"),
         join(__dirname, "..", "themes", "rusticated.json"),
         utils.getThemeData(utils.getConfiguration())
       );
@@ -35,6 +37,8 @@ export function activate() {
       join(__dirname, "..", "themes", "stellarized-light.json"),
       join(__dirname, "..", "themes", "cosmic-latte-dark.json"),
       join(__dirname, "..", "themes", "cosmic-latte-light.json"),
+      join(__dirname, "..", "themes", "neo-stellarized-dark.json"),
+      join(__dirname, "..", "themes", "neo-stellarized-light.json"),
       join(__dirname, "..", "themes", "rusticated.json"),
       utils.getThemeData(utils.getConfiguration())
     );

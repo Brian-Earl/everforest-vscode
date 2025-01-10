@@ -25,6 +25,8 @@ class Utils {
     cosmicDarkPath: string,
     cosmicLightPath: string,
     rusticatedPath: string,
+    neoDarkPath: string,
+    neoLightPath: string,
     data: any
   ) {
     this.writeFile(darkPath, data.dark);
@@ -32,6 +34,8 @@ class Utils {
     this.writeFile(cosmicDarkPath, data.cosmicDark);
     this.writeFile(cosmicLightPath, data.cosmicLight);
     this.writeFile(rusticatedPath, data.rusticated);
+    this.writeFile(neoDarkPath, data.neoDark);
+    this.writeFile(neoLightPath, data.neoLight);
   }
   getThemeData(configuration: Configuration) {
     return {
@@ -75,8 +79,24 @@ class Utils {
         colors: getWorkbench(configuration, "light", "rusticated"),
         tokenColors: getSyntax(configuration, "light", "rusticated"),
       },
+      neoDark: {
+        name: "Neo Stellarized Dark",
+        type: "dark",
+        semanticHighlighting: true,
+        semanticTokenColors: getSemantic(configuration, "dark", "neo"),
+        colors: getWorkbench(configuration, "dark", "neo"),
+        tokenColors: getSyntax(configuration, "dark", "neo"),
+      },
+      neoLight: {
+        name: "Neo Stellarized Light",
+        type: "light",
+        semanticHighlighting: true,
+        semanticTokenColors: getSemantic(configuration, "light", "neo"),
+        colors: getWorkbench(configuration, "light", "neo"),
+        tokenColors: getSyntax(configuration, "light", "neo"),
+      },
     };
-  } // }}}
+  }
 }
 
 const utils = new Utils();
@@ -100,6 +120,8 @@ utils.generate(
   join(__dirname, "..", "..", "themes", "cosmic-latte-dark.json"),
   join(__dirname, "..", "..", "themes", "cosmic-latte-light.json"),
   join(__dirname, "..", "..", "themes", "rusticated.json"),
+  join(__dirname, "..", "..", "themes", "neo-stellarized-dark.json"),
+  join(__dirname, "..", "..", "themes", "neo-stellarized-light.json"),
   utils.getThemeData(configuration)
 );
 

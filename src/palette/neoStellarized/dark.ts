@@ -7,13 +7,13 @@ const NeoStellarizedDarkTheme: themeBasePalette = {
   fg: Color("#bead9d"),
   grey: Color("#9d8875"),
   red: Color("#ca7375"),
-  orange: Color("#b87e5f"),
+  orange: Color("#bb8161"),
   yellow: Color("#a58949"),
-  green: Color("#5c9a61"),
-  aqua: Color("#009ba2"),
-  blue: Color("#578fcc"),
-  purple: Color("#b178b5"),
-  magenta: Color("#be7695"),
+  green: Color("#859546"),
+  aqua: Color("#149d92"),
+  blue: Color("#5c8ecd"),
+  purple: Color("#9183cd"),
+  magenta: Color("#bd7697"),
   bg: Color("#222532")
 };
 
