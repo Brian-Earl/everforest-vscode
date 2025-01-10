@@ -5,16 +5,14 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { Configuration } from "../interface";
-import { getPalette } from "../palette";
+import { theme } from "../types/theme";
 import { getDefaultSyntax } from "./default";
 
 export function getSyntax(
   configuration: Configuration,
-  variant: string,
-  theme: string
+  theme: theme
 ) {
-  const palette = getPalette(variant, theme);
-  return getDefaultSyntax(palette, configuration.italicComments);
+  return getDefaultSyntax(theme, configuration.italicComments);
 }
 
 

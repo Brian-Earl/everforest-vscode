@@ -5,17 +5,20 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { Palette, Configuration } from "../interface";
+import { getPalette } from "../palette";
+import { theme } from "../types/theme";
 
 export function highContrastWorkbench(
-  palette: Palette,
-  configuration: Configuration,
-  variant: string
+  theme: theme,
+  configuration: Configuration
 ) {
   let selectionBg: string;
   let editorSelectionBg: string;
   let editorSelectionBgHl: string;
   let cursorFg: string;
   let diagnosticTextBackgroundOpacity: string;
+  let palette: Palette = getPalette(theme)
+  let variant: string = theme.variant;
   if (variant === "dark") {
     switch (
       configuration.darkSelection

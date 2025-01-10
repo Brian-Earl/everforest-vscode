@@ -15,13 +15,7 @@ export function activate() {
   workspace.onDidChangeConfiguration((event) => {
     utils.detectConfigChanges(event, () => {
       utils.generate(
-        join(__dirname, "..", "themes", "stellarized-dark.json"),
-        join(__dirname, "..", "themes", "stellarized-light.json"),
-        join(__dirname, "..", "themes", "cosmic-latte-dark.json"),
-        join(__dirname, "..", "themes", "cosmic-latte-light.json"),
-        join(__dirname, "..", "themes", "neo-stellarized-dark.json"),
-        join(__dirname, "..", "themes", "neo-stellarized-light.json"),
-        join(__dirname, "..", "themes", "rusticated.json"),
+        join(__dirname, "..", "themes"),
         utils.getThemeData(utils.getConfiguration())
       );
     });
@@ -33,13 +27,7 @@ export function activate() {
     !utils.isDefaultConfiguration(utils.getConfiguration())
   ) {
     utils.generate(
-      join(__dirname, "..", "themes", "stellarized-dark.json"),
-      join(__dirname, "..", "themes", "stellarized-light.json"),
-      join(__dirname, "..", "themes", "cosmic-latte-dark.json"),
-      join(__dirname, "..", "themes", "cosmic-latte-light.json"),
-      join(__dirname, "..", "themes", "neo-stellarized-dark.json"),
-      join(__dirname, "..", "themes", "neo-stellarized-light.json"),
-      join(__dirname, "..", "themes", "rusticated.json"),
+      join(__dirname, "..", "themes"),
       utils.getThemeData(utils.getConfiguration())
     );
   }

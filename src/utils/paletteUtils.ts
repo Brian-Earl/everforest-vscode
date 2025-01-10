@@ -9,10 +9,10 @@ function generateBackground(
   const palette: backgroundPalette = {
     bg:  base.bg.hex(),
     bg2: base.bg.mix(base.fg, 0.05).hex(),
-    ui:  base.bg.mix(base.fg, 0.1).hex(),
-    ui2: base.bg.mix(base.fg, 0.15).hex(),
-    ui3: base.bg.mix(base.fg, 0.2).hex(),
-    shadow: base.bg.mix(base.fg, 0.1).hex() + 70,
+    ui:  base.bg.mix(base.fg, 0.2).hex(),  // 0.1
+    ui2: base.bg.mix(base.fg, 0.25).hex(), // 0.15
+    ui3: base.bg.mix(base.fg, 0.3).hex(),  // 0.2
+    shadow: base.bg.mix(base.fg, 0.2).hex() + 70, // 0.1
   };
   return palette;
 }

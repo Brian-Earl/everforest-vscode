@@ -5,14 +5,12 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { Configuration, Palette } from "../interface";
-import { getPalette } from "../palette";
+import { theme } from "../types/theme";
 import { highContrastWorkbench } from "./highContrast";
 
 export function getWorkbench(
   configuration: Configuration,
-  variant: string,
-  theme: string
+  theme: theme
 ) {
-  const palette: Palette = getPalette(variant, theme);
-  return highContrastWorkbench(palette, configuration, variant);
+  return highContrastWorkbench(theme, configuration);
 }

@@ -5,8 +5,11 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { Palette } from "../interface";
+import { getPalette } from "../palette";
+import { theme } from "../types/theme";
 
-export function getDefaultSyntax(palette: Palette, italicComments: boolean) {
+export function getDefaultSyntax(theme: theme, italicComments: boolean) {
+  const palette: Palette = getPalette(theme);
   const syntax = [
     // Syntax{{{
     {
