@@ -88,6 +88,16 @@
 				"path": "./themes/sanctuary-morning-sun.json"
 			},
 			{
+				"label": "Sanctuary Painting",
+				"uiTheme": "vs",
+				"path": "./themes/sanctuary-morning-painting.json"
+			},
+			{
+				"label": "Sanctuary Painting (Darker)",
+				"uiTheme": "vs",
+				"path": "./themes/sanctuary-morning-painting-darker.json"
+			},
+			{
 				"label": "Sanctuary Tea Garden",
 				"uiTheme": "vs",
 				"path": "./themes/sanctuary-tea-garden.json"
@@ -96,6 +106,11 @@
 				"label": "Night in the Sanctuary",
 				"uiTheme": "vs-dark",
 				"path": "./themes/sanctuary-night.json"
+			},
+			{
+				"label": "Stargazing in the Sanctuary",
+				"uiTheme": "vs-dark",
+				"path": "./themes/sanctuary-stargazing.json"
 			}
 		]
 	},

@@ -5,8 +5,10 @@ import { NeoStellarizedDarkTheme } from "./neoStellarized/dark";
 import { NeoStellarizedLightTheme } from "./neoStellarized/light";
 import { RusticatedTheme } from "./rusticated/light";
 import { SanctuaryInkVaultTheme } from "./sanctuary/inkVault";
+import { SanctuaryPaintingTheme } from "./sanctuary/painting";
 import { SanctuaryMorningSunTheme } from "./sanctuary/morningSun";
 import { SanctuaryNightTheme } from "./sanctuary/night";
+import { SanctuaryStargazingTheme } from "./sanctuary/stargazing";
 import { SanctuaryTeaGardenTheme } from "./sanctuary/teaGarden";
 import { StellarizedDarkTheme } from "./stellarized/dark";
 import { StellarizedLightTheme } from "./stellarized/light";
@@ -67,6 +69,18 @@ export const themes: Array<theme> = [
         palette: SanctuaryMorningSunTheme
     },
     {
+        name: "Sanctuary Painting",
+        variant: "light",
+        output: "sanctuary-morning-painting.json",
+        palette: SanctuaryPaintingTheme
+    },
+    {
+        name: "Sanctuary Painting (Darker)",
+        variant: "light",
+        output: "sanctuary-morning-painting-darker.json",
+        palette: SanctuaryPaintingTheme
+    },
+    {
         name: "Sanctuary Tea Garden",
         variant: "light",
         output: "sanctuary-tea-garden.json",
@@ -77,5 +91,11 @@ export const themes: Array<theme> = [
         variant: "dark",
         output: "sanctuary-night.json",
         palette: SanctuaryNightTheme
+    },
+    {
+        name: "Stargazing in the Sanctuary",
+        variant: "dark",
+        output: "sanctuary-stargazing.json",
+        palette: SanctuaryStargazingTheme
     },
 ]
