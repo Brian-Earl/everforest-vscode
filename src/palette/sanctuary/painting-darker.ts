@@ -11,7 +11,7 @@ const SanctuaryPaintingDarkerTheme: themeBasePalette = {
   aqua: Color("#15635a"),
   blue: Color("#47568B"),
   purple: Color("#5c5376"), 
-  magenta: Color("#6d4d67"),
+  magenta: Color("#641f5b"),
   bg: Color("#e3d1c5")
 };
 

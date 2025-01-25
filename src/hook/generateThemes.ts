@@ -6,7 +6,6 @@
 
 import * as fs from "fs";
 import { join } from "path";
-import { Configuration } from "../interface";
 import { getWorkbench } from "../workbench";
 import { getSyntax } from "../syntax";
 import { getSemantic } from "../semantic";
@@ -29,7 +28,7 @@ class Utils {
     }
   }
   
-  getThemeData(configuration: Configuration) {
+  getThemeData() {
     let themeData: Array<any> = []
     for (let i = 0; i < themes.length; i++) {
       let theme = themes[i]
@@ -39,8 +38,8 @@ class Utils {
         output: theme.output,
         semanticHighlighting: true,
         semanticTokenColors: getSemantic(theme),
-        colors: getWorkbench(configuration, theme),
-        tokenColors: getSyntax(configuration, theme),
+        colors: getWorkbench(theme),
+        tokenColors: getSyntax(theme),
       })
     }
     return themeData
@@ -48,23 +47,10 @@ class Utils {
 }
 
 const utils = new Utils();
-const configuration: Configuration = {
-  darkContrast: "medium",
-  lightContrast: "medium",
-  darkWorkbench: "high-contrast",
-  lightWorkbench: "high-contrast",
-  darkSelection: "grey",
-  lightSelection: "grey",
-  darkCursor: "white",
-  lightCursor: "black",
-  italicComments: true,
-  diagnosticTextBackgroundOpacity: "0%",
-  highContrast: false,
-};
 
 utils.generate(
   join(__dirname, "..", "..", "themes"),
-  utils.getThemeData(configuration)
+  utils.getThemeData()
 );
 
 

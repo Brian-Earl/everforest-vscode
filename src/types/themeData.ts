@@ -1,4 +1,3 @@
-
 type themeData = {
   name: string;
   type: string;

@@ -4,26 +4,6 @@
  *  License:    MIT
  *--------------------------------------------------------------*/
 
-// To add a new configuration option:
-// 1. Edit package.json
-// 2. Add the configuration option in this interface
-// 3. utils.getConfiguration()
-// 4. utils.isDefaultConfiguration()
-// 5. generateThemes.ts
-export interface Configuration {
-  darkContrast?: string;
-  lightContrast?: string;
-  darkWorkbench?: string;
-  lightWorkbench?: string;
-  darkSelection?: string;
-  lightSelection?: string;
-  darkCursor?: string;
-  lightCursor?: string;
-  italicComments?: boolean;
-  diagnosticTextBackgroundOpacity?: string;
-  highContrast?: boolean;
-}
-
 export interface Palette {
   bg: string;
   bg2: string;

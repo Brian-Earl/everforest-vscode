@@ -111,6 +111,11 @@
 				"label": "Stargazing in the Sanctuary",
 				"uiTheme": "vs-dark",
 				"path": "./themes/sanctuary-stargazing.json"
+			},
+			{
+				"label": "Old Book",
+				"uiTheme": "vs",
+				"path": "./themes/old-book.json"
 			}
 		]
 	},

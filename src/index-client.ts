@@ -16,19 +16,18 @@ export function activate() {
     utils.detectConfigChanges(event, () => {
       utils.generate(
         join(__dirname, "..", "themes"),
-        utils.getThemeData(utils.getConfiguration())
+        utils.getThemeData()
       );
     });
   });
 
   // Regenerate theme files if it's newly installed but the user settings are not the default.
   if (
-    utils.isNewlyInstalled() &&
-    !utils.isDefaultConfiguration(utils.getConfiguration())
+    utils.isNewlyInstalled()
   ) {
     utils.generate(
       join(__dirname, "..", "themes"),
-      utils.getThemeData(utils.getConfiguration())
+      utils.getThemeData()
     );
   }
 }

@@ -4,7 +4,7 @@
  *  License:    MIT
  *--------------------------------------------------------------------------------------------*/
 
-import { Palette } from "../interface";
+import { Palette } from "../types/palette";
 import {
   generateForeground,
   generateBackground,

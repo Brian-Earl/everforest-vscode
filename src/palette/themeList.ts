@@ -12,6 +12,8 @@ import { SanctuaryStargazingTheme } from "./sanctuary/stargazing";
 import { SanctuaryTeaGardenTheme } from "./sanctuary/teaGarden";
 import { StellarizedDarkTheme } from "./stellarized/dark";
 import { StellarizedLightTheme } from "./stellarized/light";
+import { SanctuaryPaintingDarkerTheme } from "./sanctuary/painting-darker";
+import { OldBookTheme } from "./oldBook/light";
 
 export const themes: Array<theme> = [
     {
@@ -78,7 +80,7 @@ export const themes: Array<theme> = [
         name: "Sanctuary Painting (Darker)",
         variant: "light",
         output: "sanctuary-morning-painting-darker.json",
-        palette: SanctuaryPaintingTheme
+        palette: SanctuaryPaintingDarkerTheme
     },
     {
         name: "Sanctuary Tea Garden",
@@ -98,4 +100,10 @@ export const themes: Array<theme> = [
         output: "sanctuary-stargazing.json",
         palette: SanctuaryStargazingTheme
     },
+    {
+        name: "Old Book",
+        variant: "light",
+        output: "old-book.json",
+        palette: OldBookTheme
+    }
 ]

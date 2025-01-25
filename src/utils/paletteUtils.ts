@@ -1,7 +1,7 @@
 import { backgroundPalette } from "../types/backgroundPalette";
 import { foregroundPalette } from "../types/foregroundPalette";
 import { themeBasePalette } from "../types/themeBasePalette";
-import { Palette } from "../interface";
+import { Palette } from "../types/palette";
 
 function generateBackground(
   base: themeBasePalette

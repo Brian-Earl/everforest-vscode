@@ -2,7 +2,7 @@ import { themeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
 const SanctuaryMorningSunTheme: themeBasePalette = {
-  fg: Color("#2b3f6a"),
+  fg: Color("#292418"), // #573923
   grey: Color("#896046"), // #bb9074
   red: Color("#96445A"),
   orange: Color("#914915"),
