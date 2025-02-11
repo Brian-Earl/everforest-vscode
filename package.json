@@ -68,16 +68,6 @@
 				"path": "./themes/rusticated.json"
 			},
 			{
-				"label": "Neo Stellarized Dark",
-				"uiTheme": "vs-dark",
-				"path": "./themes/neo-stellarized-dark.json"
-			},
-			{
-				"label": "Neo Stellarized Light",
-				"uiTheme": "vs",
-				"path": "./themes/neo-stellarized-light.json"
-			},
-			{
 				"label": "Sanctuary Ink Vault",
 				"uiTheme": "vs",
 				"path": "./themes/sanctuary-ink-vault.json"
@@ -88,14 +78,9 @@
 				"path": "./themes/sanctuary-morning-sun.json"
 			},
 			{
-				"label": "Sanctuary Painting",
+				"label": "Sanctuary Beach Painting",
 				"uiTheme": "vs",
-				"path": "./themes/sanctuary-morning-painting.json"
-			},
-			{
-				"label": "Sanctuary Painting (Darker)",
-				"uiTheme": "vs",
-				"path": "./themes/sanctuary-morning-painting-darker.json"
+				"path": "./themes/sanctuary-beach-painting.json"
 			},
 			{
 				"label": "Sanctuary Tea Garden",

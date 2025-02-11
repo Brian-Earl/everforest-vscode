@@ -1,6 +1,8 @@
 import { themeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
+// Implementation of https://github.com/haystackandroid/rusticated
+
 const RusticatedTheme: themeBasePalette = {
   fg: Color("#444136"),
   grey: Color("#5f5a4c"),

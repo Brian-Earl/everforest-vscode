@@ -1,6 +1,8 @@
 import { themeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
+// Implementation of https://github.com/haystackandroid/cosmic_latte
+
 const CosmicLatteDarkTheme: themeBasePalette = {
   fg: Color("#abb0c0"),
   grey: Color("#898f9e"),

@@ -1,6 +1,8 @@
 import { themeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
+// Implementation of https://github.com/haystackandroid/stellarized
+
 const StellarizedDarkTheme: themeBasePalette = {
   fg: Color("#bead9d"),
   grey: Color("#9d8875"),

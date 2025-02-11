@@ -32,7 +32,7 @@ export function getWorkbench(theme: theme) {
 
   const tokens = {
     foreground: `${palette.tx}`,
-    focusBorder: `${palette.bg}00`,
+    focusBorder: `${palette.ui}00`,
     "widget.shadow": `${palette.shadow}`,
     "selection.background": `${selectionBg}`,
     descriptionForeground: `${palette.tx3}`,
@@ -330,9 +330,9 @@ export function getWorkbench(theme: theme) {
     "titleBar.inactiveForeground": `${palette.tx3}`,
     "titleBar.border": `${palette.ui}`,
     "menubar.selectionBackground": `${palette.bg}`,
-    "menubar.selectionBorder": `${palette.bg}`,
+    "menubar.selectionBorder": `${palette.ui}`,
     "menu.foreground": `${palette.tx2}`,
-    "menu.background": `${palette.ui}`,
+    "menu.background": `${palette.bg2}`,
     "menu.selectionForeground": `${palette.tx}`,
     "menu.selectionBackground": `${palette.bg}`,
     "gitDecoration.addedResourceForeground": `${palette.green}`,

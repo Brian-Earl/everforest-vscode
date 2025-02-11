@@ -1,6 +1,8 @@
 import { themeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
+// Implementation of https://github.com/PoisonIsBestType/OldBook/
+
 const OldBookTheme: themeBasePalette = {
   fg: Color("#585148"),
   grey: Color("#66615C"),
