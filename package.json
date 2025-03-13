@@ -101,6 +101,11 @@
 				"label": "Old Book",
 				"uiTheme": "vs",
 				"path": "./themes/old-book.json"
+			},
+			{
+				"label": "Grimoire",
+				"uiTheme": "vs",
+				"path": "./themes/grimoire.json"
 			}
 		]
 	},

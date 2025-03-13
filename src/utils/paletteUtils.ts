@@ -4,26 +4,44 @@ import { themeBasePalette } from "../types/themeBasePalette";
 import { Palette } from "../types/palette";
 
 function generateBackground(
-  base: themeBasePalette
+  base: themeBasePalette,
+  variant: string
 ): backgroundPalette {
-  const palette: backgroundPalette = {
+  if (variant === "dark") {
+    return {
+      bg:  base.bg.hex(),
+      bg0: base.bg.darken(0.15).hex(),
+      bg1: base.bg.darken(0.08).hex(),
+      bg2: base.bg.lighten(0.08).hex(),
+      bg3: base.bg.lighten(0.15).hex(),
+      bg4: base.bg.lighten(0.22).hex(),
+      bg5: base.bg.lighten(0.3).hex(),
+      grey0: base.grey.darken(0.08).hex(),
+      grey1: base.grey.hex(),
+      grey2: base.grey.lighten(0.12).hex(),
+      shadow: "#00000070",
+    };
+  } 
+  return {
+    bg0: base.bg.darken(0.05).hex(),
+    bg1: base.bg.darken(0.02).hex(),
     bg:  base.bg.hex(),
-    bg2: base.bg.mix(base.fg, 0.05).hex(),
-    ui:  base.bg.mix(base.fg, 0.2).hex(),  // 0.1
-    ui2: base.bg.mix(base.fg, 0.25).hex(), // 0.15
-    ui3: base.bg.mix(base.fg, 0.3).hex(),  // 0.2
-    shadow: base.bg.mix(base.fg, 0.2).hex() + 70, // 0.1
+    bg2: base.bg.darken(0.02).hex(),
+    bg3: base.bg.darken(0.05).hex(),
+    bg4: base.bg.darken(0.08).hex(),
+    bg5: base.bg.darken(0.12).hex(),
+    grey0: base.grey.lighten(0.08).hex(),
+    grey1: base.grey.hex(),
+    grey2: base.grey.darken(0.08).hex(),
+    shadow: "#3c474d20",
   };
-  return palette;
 }
 
 function generateForeground(
   base: themeBasePalette
 ): foregroundPalette {
   const palette: foregroundPalette = {
-    tx: base.fg.hex(),
-    tx2: base.fg.mix(base.grey, 0.5).hex(),
-    tx3: base.grey.hex(),
+    fg: base.fg.hex(),
     red: base.red.hex(),
     orange: base.orange.hex(),
     yellow: base.yellow.hex(),
@@ -49,14 +67,17 @@ function generatePalette(
 ): Palette {
   const palette: Palette = {
     bg: background.bg,
+    bg0: background.bg0,
+    bg1: background.bg1,
     bg2: background.bg2,
-    ui: background.ui,
-    ui2: background.ui2,
-    ui3: background.ui3,
+    bg3: background.bg3,
+    bg4: background.bg4,
+    bg5: background.bg5,
+    grey0: background.grey0,
+    grey1: background.grey1,
+    grey2: background.grey2,
     shadow: background.shadow,
-    tx: foreground.tx,
-    tx2: foreground.tx2,
-    tx3: foreground.tx3,
+    fg: foreground.fg,
     red: foreground.red,
     orange: foreground.orange,
     yellow: foreground.yellow,

@@ -19,7 +19,8 @@ export function getPalette(
   theme: theme
 ): Palette {
   let palette: themeBasePalette = theme.palette;
-  let paletteBackground: backgroundPalette = generateBackground(palette);
+  let variant: string = theme.variant
+  let paletteBackground: backgroundPalette = generateBackground(palette, variant);
   let paletteForeground: foregroundPalette = generateForeground(palette);
   return generatePalette(paletteForeground, paletteBackground);
 }

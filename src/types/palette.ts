@@ -5,14 +5,17 @@
  *--------------------------------------------------------------*/
 
 export interface Palette {
+  bg0: string;
+  bg1: string;
   bg: string;
   bg2: string;
-  ui: string;
-  ui2: string;
-  ui3: string
-  tx: string;
-  tx2: string;
-  tx3: string;
+  bg3: string;
+  bg4: string;
+  bg5: string;
+  grey0: string;
+  grey1: string;
+  grey2: string;
+  fg: string;
   red: string;
   orange: string;
   yellow: string;
@@ -30,5 +33,3 @@ export interface Palette {
   shadow: string;
   badge: string;
 }
-
-

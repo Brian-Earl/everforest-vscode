@@ -1,7 +1,5 @@
 type foregroundPalette = {
-  tx: string;
-  tx2: string;
-  tx3: string;
+  fg: string;
   red: string;
   orange: string;
   yellow: string;

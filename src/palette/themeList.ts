@@ -11,6 +11,7 @@ import { SanctuaryTeaGardenTheme } from "./sanctuary/teaGarden";
 import { StellarizedDarkTheme } from "./stellarized/dark";
 import { StellarizedLightTheme } from "./stellarized/light";
 import { OldBookTheme } from "./oldBook/light";
+import { GrimoireTheme } from "./grimoire/light";
 
 export const themes: Array<theme> = [
     {
@@ -84,5 +85,11 @@ export const themes: Array<theme> = [
         variant: "light",
         output: "old-book.json",
         palette: OldBookTheme
+    },
+    {
+        name: "Grimoire",
+        variant: "light",
+        output: "grimoire.json",
+        palette: GrimoireTheme
     }
 ]
