@@ -7,33 +7,42 @@ function generateBackground(
   base: themeBasePalette,
   variant: string
 ): backgroundPalette {
+  // These can probably be combined and have the if statement removed
   if (variant === "dark") {
     return {
-      bg:  base.bg.hex(),
-      bg0: base.bg.darken(0.15).hex(),
-      bg1: base.bg.darken(0.08).hex(),
-      bg2: base.bg.lighten(0.08).hex(),
-      bg3: base.bg.lighten(0.15).hex(),
-      bg4: base.bg.lighten(0.22).hex(),
-      bg5: base.bg.lighten(0.3).hex(),
-      grey0: base.grey.darken(0.08).hex(),
+      // bg0: base.bg.mix(base.fg, 0.12).hex(),
+      // bg1: base.bg.mix(base.fg, 0.08).hex(),
+      bg0: base.bg.darken(0.18).hex(), // 0.12
+      bg1: base.bg.darken(0.12).hex(), // 0.08
+      bg: base.bg.hex(), 
+      bg2: base.bg.mix(base.fg, 0.06).hex(),
+      bg3: base.bg.mix(base.fg, 0.12).hex(),
+      bg4: base.bg.mix(base.fg, 0.18).hex(),
+      bg5: base.bg.mix(base.fg, 0.24).hex(),
+      
+      grey0: base.grey.darken(0.15).hex(), // 0.08
       grey1: base.grey.hex(),
-      grey2: base.grey.lighten(0.12).hex(),
-      shadow: "#00000070",
+      grey2: base.grey.lighten(0.15).hex(), // 0.12
+
+      shadow: base.fg.alpha(0.125).hex() + "20",
     };
   } 
   return {
-    bg0: base.bg.darken(0.05).hex(),
-    bg1: base.bg.darken(0.02).hex(),
-    bg:  base.bg.hex(),
-    bg2: base.bg.darken(0.02).hex(),
-    bg3: base.bg.darken(0.05).hex(),
-    bg4: base.bg.darken(0.08).hex(),
-    bg5: base.bg.darken(0.12).hex(),
-    grey0: base.grey.lighten(0.08).hex(),
+    // bg0: base.bg.darken(0.05).hex(),
+    // bg1: base.bg.darken(0.02).hex(),
+    bg0: base.bg.mix(base.fg, 0.12).hex(),
+    bg1: base.bg.mix(base.fg, 0.06).hex(),
+    bg: base.bg.hex(),
+    bg2: base.bg.mix(base.fg, 0.06).hex(),
+    bg3: base.bg.mix(base.fg, 0.12).hex(),
+    bg4: base.bg.mix(base.fg, 0.18).hex(),
+    bg5: base.bg.mix(base.fg, 0.24).hex(),
+
+    grey0: base.grey.mix(base.bg, 0.15).hex(), // 0.2
     grey1: base.grey.hex(),
-    grey2: base.grey.darken(0.08).hex(),
-    shadow: "#3c474d20",
+    grey2: base.grey.mix(base.fg, 0.15).hex(), 
+
+    shadow: base.fg.alpha(0.125).hex() + "20",
   };
 }
 
