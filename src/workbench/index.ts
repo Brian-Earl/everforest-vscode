@@ -6,9 +6,9 @@
 
 import { getPalette } from "../palette";
 import { Palette } from "../types/palette";
-import { theme } from "../types/theme";
+import { Theme } from "../types/theme";
 
-export function getWorkbench(theme: theme) {
+export function getWorkbench(theme: Theme) {
   let selectionBg: string;
   let editorSelectionBg: string;
   let editorSelectionBgHl: string;

@@ -6,9 +6,9 @@
 
 import { getPalette } from "../palette";
 import { Palette } from "../types/palette";
-import { theme } from "../types/theme";
+import { Theme } from "../types/theme";
 
-export function getSyntax(theme: theme) {
+export function getSyntax(theme: Theme) {
   const palette: Palette = getPalette(theme);
   const syntax = [
     // Syntax{{{

@@ -1,9 +1,10 @@
-import { themeBasePalette } from "../../types/themeBasePalette";
+import { Badge } from "../../types/badge";
+import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
 // Implementation of https://github.com/sainnhe/archived-colors/blob/master/colors/grimoire.vim
 
-const GrimoireTheme: themeBasePalette = {
+const GrimoireTheme: ThemeBasePalette = {
   fg: Color("#29282d"),
   grey: Color("#674529"),
   red: Color("#963d3f"),
@@ -14,7 +15,8 @@ const GrimoireTheme: themeBasePalette = {
   blue: Color("#49576d"),
   purple: Color("#5f476f"),
   magenta: Color("#6f4767"),
-  bg: Color("#c2a273")
+  bg: Color("#c2a273"),
+  badge: Badge.Red
 };
 
 export { GrimoireTheme };

@@ -1,19 +1,21 @@
-import { backgroundPalette } from "../types/backgroundPalette";
-import { foregroundPalette } from "../types/foregroundPalette";
-import { themeBasePalette } from "../types/themeBasePalette";
+import { BackgroundPalette } from "../types/backgroundPalette";
+import { ForegroundPalette } from "../types/foregroundPalette";
+import { ThemeBasePalette } from "../types/themeBasePalette";
 import { Palette } from "../types/palette";
+import { Badge } from "../types/badge";
+import Color = require("color");
 
 function generateBackground(
-  base: themeBasePalette,
+  base: ThemeBasePalette,
   variant: string
-): backgroundPalette {
+): BackgroundPalette {
   // These can probably be combined and have the if statement removed
   if (variant === "dark") {
     return {
       // bg0: base.bg.mix(base.fg, 0.12).hex(),
       // bg1: base.bg.mix(base.fg, 0.08).hex(),
-      bg0: base.bg.darken(0.18).hex(), // 0.12
-      bg1: base.bg.darken(0.12).hex(), // 0.08
+      bg0: base.bg.darken(0.26).hex(),
+      bg1: base.bg.darken(0.13).hex(),
       bg: base.bg.hex(), 
       bg2: base.bg.mix(base.fg, 0.06).hex(),
       bg3: base.bg.mix(base.fg, 0.12).hex(),
@@ -47,9 +49,9 @@ function generateBackground(
 }
 
 function generateForeground(
-  base: themeBasePalette
-): foregroundPalette {
-  const palette: foregroundPalette = {
+  base: ThemeBasePalette
+): ForegroundPalette {
+  const palette: ForegroundPalette = {
     fg: base.fg.hex(),
     red: base.red.hex(),
     orange: base.orange.hex(),
@@ -65,14 +67,43 @@ function generateForeground(
     dimAqua: base.aqua.mix(base.fg, 0.1).hex(),
     dimBlue: base.blue.mix(base.fg, 0.1).hex(),
     dimPurple: base.purple.mix(base.fg, 0.1).hex(),
-    badge: base.green.hex(),
+    badge: badgeColor(base).hex(),
   };
   return palette;
 }
 
+function badgeColor(base: ThemeBasePalette): Color {
+  switch(base.badge) {
+    case Badge.Red:
+      return base.red;
+    case Badge.Orange:
+      return base.orange;
+    case Badge.Yellow:
+      return base.yellow;
+    case Badge.Green:
+      return base.green;
+    case Badge.Aqua:
+      return base.aqua;
+    case Badge.Blue:
+      return base.blue;
+    case Badge.Purple:
+      return base.purple;
+    case Badge.Magenta:
+      return base.magenta;
+    case Badge.White:
+      return base.fg;
+    case Badge.Grey:
+      return base.grey;
+    case Badge.Black:
+      return base.bg;
+    default:
+      return base.grey;
+  }
+}
+
 function generatePalette(
-  foreground: foregroundPalette,
-  background: backgroundPalette
+  foreground: ForegroundPalette,
+  background: BackgroundPalette
 ): Palette {
   const palette: Palette = {
     bg: background.bg,

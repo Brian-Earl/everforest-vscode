@@ -1,4 +1,4 @@
-type backgroundPalette = {
+type BackgroundPalette = {
   bg0: string;
   bg1: string;
   bg: string;
@@ -12,4 +12,4 @@ type backgroundPalette = {
   shadow: string;
 };
 
-export { backgroundPalette };
+export { BackgroundPalette }

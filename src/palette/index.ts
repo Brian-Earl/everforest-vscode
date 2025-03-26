@@ -10,17 +10,17 @@ import {
   generateBackground,
   generatePalette,
 } from "../utils/paletteUtils";
-import { backgroundPalette } from "../types/backgroundPalette";
-import { foregroundPalette } from "../types/foregroundPalette";
-import { themeBasePalette } from "../types/themeBasePalette";
-import { theme } from "../types/theme";
+import { BackgroundPalette } from "../types/backgroundPalette";
+import { ForegroundPalette } from "../types/foregroundPalette";
+import { ThemeBasePalette } from "../types/themeBasePalette";
+import { Theme } from "../types/theme";
 
 export function getPalette(
-  theme: theme
+  theme: Theme
 ): Palette {
-  let palette: themeBasePalette = theme.palette;
+  let palette: ThemeBasePalette = theme.palette;
   let variant: string = theme.variant
-  let paletteBackground: backgroundPalette = generateBackground(palette, variant);
-  let paletteForeground: foregroundPalette = generateForeground(palette);
+  let paletteBackground: BackgroundPalette = generateBackground(palette, variant);
+  let paletteForeground: ForegroundPalette = generateForeground(palette);
   return generatePalette(paletteForeground, paletteBackground);
 }

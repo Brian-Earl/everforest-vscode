@@ -19,7 +19,7 @@
 		"theme"
 	],
 	"galleryBanner": {
-		"color": "#222532",
+		"color": "#bead9d",
 		"theme": "dark"
 	},
 	"categories": [
@@ -61,6 +61,16 @@
 				"label": "Cosmic Latte Light",
 				"uiTheme": "vs",
 				"path": "./themes/cosmic-latte-light.json"
+			},
+			{
+				"label": "Everforest Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/everforest-dark.json"
+			},
+			{
+				"label": "Everforest Light",
+				"uiTheme": "vs",
+				"path": "./themes/everforest-light.json"
 			},
 			{
 				"label": "Rusticated",

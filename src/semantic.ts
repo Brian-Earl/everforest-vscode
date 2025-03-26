@@ -5,10 +5,10 @@
  *--------------------------------------------------------------*/
 
 import { getPalette } from "./palette";
-import { theme } from "./types/theme";
+import { Theme } from "./types/theme";
 
 export function getSemantic(
-  theme: theme
+  theme: Theme
 ) {
   const palette = getPalette(theme);
   return {

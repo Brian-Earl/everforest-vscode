@@ -1,7 +1,8 @@
-import { themeBasePalette } from "../../types/themeBasePalette";
+import { Badge } from "../../types/badge";
+import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
-const SanctuaryTeaGardenTheme: themeBasePalette = {
+const SanctuaryTeaGardenTheme: ThemeBasePalette = {
   fg: Color("#2b3f6a"),
   grey: Color("#688b57"),
   red: Color("#96445A"),
@@ -12,7 +13,8 @@ const SanctuaryTeaGardenTheme: themeBasePalette = {
   blue: Color("#455cba"),
   purple: Color("#7045ba"),
   magenta: Color("#904184"),
-  bg: Color("#ccdaba")
+  bg: Color("#ccdaba"),
+  badge: Badge.Green
 };
 
 export { SanctuaryTeaGardenTheme };

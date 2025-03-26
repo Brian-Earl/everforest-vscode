@@ -11,7 +11,7 @@ import { getWorkbench } from "./workbench";
 import { getSyntax } from "./syntax";
 import { getSemantic } from "./semantic";
 import { themes } from "./palette/themeList";
-import { themeData } from "./types/themeData";
+import { ThemeData } from "./types/themeData";
 
 export default class Utils {
   detectConfigChanges(
@@ -23,7 +23,7 @@ export default class Utils {
     }
   }
   getThemeData() {
-    let themeData: Array<themeData> = []
+    let themeData: Array<ThemeData> = []
     for (let i = 0; i < themes.length; i++) {
       let theme = themes[i]
       themeData.push({
@@ -66,7 +66,7 @@ export default class Utils {
   }
   async generate(
     dir: string,
-    themes: Array<themeData>
+    themes: Array<ThemeData>
   ) {
     for (let i = 0; i < themes.length; i++) {
       this.writeFile(join(dir, themes[i].output), themes[i])
@@ -74,5 +74,3 @@ export default class Utils {
     }
   }
 }
-
-

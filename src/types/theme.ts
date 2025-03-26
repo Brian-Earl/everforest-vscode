@@ -1,10 +1,10 @@
-import { themeBasePalette } from "./themeBasePalette";
+import { ThemeBasePalette } from "./themeBasePalette";
 
-type theme = {
+type Theme = {
     name: string,
     variant: string,
     output: string,
-    palette: themeBasePalette,
+    palette: ThemeBasePalette,
 };
 
-export { theme };
+export { Theme };

@@ -1,4 +1,4 @@
-type foregroundPalette = {
+type ForegroundPalette = {
   fg: string;
   red: string;
   orange: string;
@@ -17,4 +17,4 @@ type foregroundPalette = {
   badge: string;
 };
 
-export { foregroundPalette };
+export { ForegroundPalette };

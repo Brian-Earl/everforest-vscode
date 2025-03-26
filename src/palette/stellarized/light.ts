@@ -1,9 +1,10 @@
-import { themeBasePalette } from "../../types/themeBasePalette";
+import { Badge } from "../../types/badge";
+import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
 // Implementation of https://github.com/haystackandroid/stellarized
 
-const StellarizedLightTheme: themeBasePalette = {
+const StellarizedLightTheme: ThemeBasePalette = {
   fg: Color("#4a5067"),
   grey: Color("#666c85"),
   red: Color("#c6394c"),
@@ -14,7 +15,8 @@ const StellarizedLightTheme: themeBasePalette = {
   blue: Color("#006dcc"),
   purple: Color("#a348ae"),
   magenta: Color("#b5437e"),
-  bg: Color("#fceee0")
+  bg: Color("#fceee0"),
+  badge: Badge.Yellow
 };
 
 export { StellarizedLightTheme };

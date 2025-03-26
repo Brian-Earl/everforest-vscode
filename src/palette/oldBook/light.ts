@@ -1,9 +1,10 @@
-import { themeBasePalette } from "../../types/themeBasePalette";
+import { Badge } from "../../types/badge";
+import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
 // Implementation of https://github.com/PoisonIsBestType/OldBook/
 
-const OldBookTheme: themeBasePalette = {
+const OldBookTheme: ThemeBasePalette = {
   fg: Color("#585148"),
   grey: Color("#66615C"),
   red: Color("#5E0F04"),
@@ -14,7 +15,8 @@ const OldBookTheme: themeBasePalette = {
   blue: Color("#366994"),
   purple: Color("#513E56"),
   magenta: Color("#85308A"),
-  bg: Color("#E9E2C9")
+  bg: Color("#E9E2C9"),
+  badge: Badge.Red
 };
 
 export { OldBookTheme };

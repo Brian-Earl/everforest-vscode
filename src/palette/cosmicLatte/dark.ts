@@ -1,9 +1,10 @@
-import { themeBasePalette } from "../../types/themeBasePalette";
+import { Badge } from "../../types/badge";
+import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
 // Implementation of https://github.com/haystackandroid/cosmic_latte
 
-const CosmicLatteDarkTheme: themeBasePalette = {
+const CosmicLatteDarkTheme: ThemeBasePalette = {
   fg: Color("#abb0c0"),
   grey: Color("#898f9e"),
   red: Color("#c17b8d"),
@@ -14,7 +15,8 @@ const CosmicLatteDarkTheme: themeBasePalette = {
   blue: Color("#5496bd"),
   purple: Color("#9b85bb"),
   magenta: Color("#be7695"),
-  bg: Color("#202a31")
+  bg: Color("#202a31"),
+  badge: Badge.Blue
 };
 
 export { CosmicLatteDarkTheme };

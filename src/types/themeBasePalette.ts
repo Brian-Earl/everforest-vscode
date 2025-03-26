@@ -1,6 +1,7 @@
 import Color = require("color");
+import { Badge } from "./badge";
 
-type themeBasePalette = {
+type ThemeBasePalette = {
   fg: Color;
   grey: Color;
   red: Color;
@@ -12,6 +13,7 @@ type themeBasePalette = {
   purple: Color;
   magenta: Color;
   bg: Color;
+  badge: Badge;
 };
 
-export { themeBasePalette };
+export { ThemeBasePalette };

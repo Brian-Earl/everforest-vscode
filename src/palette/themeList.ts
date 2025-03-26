@@ -1,4 +1,4 @@
-import { theme } from "../types/theme";
+import { Theme } from "../types/theme";
 import { CosmicLatteDarkTheme } from "./cosmicLatte/dark";
 import { CosmicLatteLightTheme } from "./cosmicLatte/light";
 import { RusticatedTheme } from "./rusticated/light";
@@ -12,8 +12,10 @@ import { StellarizedDarkTheme } from "./stellarized/dark";
 import { StellarizedLightTheme } from "./stellarized/light";
 import { OldBookTheme } from "./oldBook/light";
 import { GrimoireTheme } from "./grimoire/light";
+import { EverforestDarkTheme } from "./everforest/dark";
+import { EverforestLightTheme } from "./everforest/light";
 
-export const themes: Array<theme> = [
+export const themes: Array<Theme> = [
     {
         name: "Stellarized Dark",
         variant: "dark",
@@ -37,6 +39,18 @@ export const themes: Array<theme> = [
         variant: "light",
         output: "cosmic-latte-light.json",
         palette: CosmicLatteLightTheme
+    },
+    {
+        name: "Everforest Dark",
+        variant: "dark",
+        output: "everforest-dark.json",
+        palette: EverforestDarkTheme
+    },
+    {
+        name: "Everforest Light",
+        variant: "light",
+        output: "everforest-light.json",
+        palette: EverforestLightTheme
     },
     {
         name: "Rusticated",
