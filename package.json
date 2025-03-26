@@ -14,13 +14,16 @@
 		"url": "https://github.com/sainnhe/stellarized-vscode/issues"
 	},
 	"license": "MIT",
+	"icon": "icon.png",
 	"keywords": [
-		"green",
-		"theme"
+		"theme",
+		"color-theme",
+		"light",
+		"dark"
 	],
 	"galleryBanner": {
-		"color": "#bead9d",
-		"theme": "dark"
+		"color": "#e3d1c5",
+		"theme": "light"
 	},
 	"categories": [
 		"Themes"
@@ -153,8 +156,5 @@
 		"typescript": "4.9.4",
 		"@types/color": "^4.2.0",
 		"color": "^4.2.3"
-	},
-	"__metadata": {
-		"size": 128555503
 	}
 }
