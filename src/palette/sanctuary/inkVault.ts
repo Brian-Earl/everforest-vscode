@@ -14,7 +14,7 @@ const SanctuaryInkVaultTheme: ThemeBasePalette = {
   purple: Color("#7045ba"),
   magenta: Color("#904184"),
   bg: Color("#e7e5e2"),
-  badge: Badge.Green
+  badge: Badge.Blue
 };
 
 export { SanctuaryInkVaultTheme };

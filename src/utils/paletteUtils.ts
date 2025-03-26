@@ -5,15 +5,11 @@ import { Palette } from "../types/palette";
 import { Badge } from "../types/badge";
 import Color = require("color");
 
-function generateBackground(
-  base: ThemeBasePalette,
-  variant: string
-): BackgroundPalette {
+function generateBackground(base: ThemeBasePalette, variant: string): BackgroundPalette {
   // These can probably be combined and have the if statement removed
+  // Maybe give dark theme the same mixing as the light theme
   if (variant === "dark") {
     return {
-      // bg0: base.bg.mix(base.fg, 0.12).hex(),
-      // bg1: base.bg.mix(base.fg, 0.08).hex(),
       bg0: base.bg.darken(0.26).hex(),
       bg1: base.bg.darken(0.13).hex(),
       bg: base.bg.hex(), 
@@ -21,7 +17,7 @@ function generateBackground(
       bg3: base.bg.mix(base.fg, 0.12).hex(),
       bg4: base.bg.mix(base.fg, 0.18).hex(),
       bg5: base.bg.mix(base.fg, 0.24).hex(),
-      
+
       grey0: base.grey.darken(0.15).hex(), // 0.08
       grey1: base.grey.hex(),
       grey2: base.grey.lighten(0.15).hex(), // 0.12
@@ -30,15 +26,13 @@ function generateBackground(
     };
   } 
   return {
-    // bg0: base.bg.darken(0.05).hex(),
-    // bg1: base.bg.darken(0.02).hex(),
-    bg0: base.bg.mix(base.fg, 0.12).hex(),
-    bg1: base.bg.mix(base.fg, 0.06).hex(),
+    bg0: base.bg.mix(base.fg, 0.08).hex(), // 0.12
+    bg1: base.bg.mix(base.fg, 0.04).hex(), // 0.06
     bg: base.bg.hex(),
-    bg2: base.bg.mix(base.fg, 0.06).hex(),
-    bg3: base.bg.mix(base.fg, 0.12).hex(),
-    bg4: base.bg.mix(base.fg, 0.18).hex(),
-    bg5: base.bg.mix(base.fg, 0.24).hex(),
+    bg2: base.bg.mix(base.fg, 0.04).hex(), // 0.06
+    bg3: base.bg.mix(base.fg, 0.08).hex(), // 0.12
+    bg4: base.bg.mix(base.fg, 0.14).hex(), // 0.18
+    bg5: base.bg.mix(base.fg, 0.20).hex(), // 0.24
 
     grey0: base.grey.mix(base.bg, 0.15).hex(), // 0.2
     grey1: base.grey.hex(),
@@ -48,9 +42,7 @@ function generateBackground(
   };
 }
 
-function generateForeground(
-  base: ThemeBasePalette
-): ForegroundPalette {
+function generateForeground(base: ThemeBasePalette): ForegroundPalette {
   const palette: ForegroundPalette = {
     fg: base.fg.hex(),
     red: base.red.hex(),
@@ -101,10 +93,7 @@ function badgeColor(base: ThemeBasePalette): Color {
   }
 }
 
-function generatePalette(
-  foreground: ForegroundPalette,
-  background: BackgroundPalette
-): Palette {
+function generatePalette(foreground: ForegroundPalette, background: BackgroundPalette): Palette {
   const palette: Palette = {
     bg: background.bg,
     bg0: background.bg0,

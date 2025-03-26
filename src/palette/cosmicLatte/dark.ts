@@ -16,7 +16,7 @@ const CosmicLatteDarkTheme: ThemeBasePalette = {
   purple: Color("#9b85bb"),
   magenta: Color("#be7695"),
   bg: Color("#202a31"),
-  badge: Badge.Blue
+  badge: Badge.Aqua
 };
 
 export { CosmicLatteDarkTheme };

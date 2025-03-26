@@ -17,7 +17,7 @@ const SanctuaryBeachPaintingTheme: ThemeBasePalette = {
   purple: Color("#5e4458"), // #4D3B4F // +
   magenta: Color("#874051"), // #6A374A // +
   bg: Color("#decdbe"), // +
-  badge: Badge.Green
+  badge: Badge.Yellow
 };
 
 export { SanctuaryBeachPaintingTheme };
