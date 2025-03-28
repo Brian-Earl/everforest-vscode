@@ -1,8 +1,8 @@
 {
 	"name": "stellarized",
 	"displayName": "Stellarized",
-	"description": "Comfortable & Pleasant Color Scheme for Visual Studio Code",
-	"version": "0.3.0",
+	"description": "✦ Painting Visual Studio Code With Stars & Galaxies ✦",
+	"version": "0.1.0",
 	"publisher": "sainnhe",
 	"author": "sainnhe (https://github.com/sainnhe)",
 	"homepage": "https://github.com/sainnhe/stellarized-vscode",
@@ -32,17 +32,13 @@
 		"ui",
 		"workspace"
 	],
-	"activationEvents": [
-		"onStartupFinished"
-	],
 	"capabilities": {
 		"untrustedWorkspaces": {
 			"supported": true
 		},
 		"virtualWorkspaces": true
 	},
-	"main": "dist/index-client.js",
-	"browser": "dist/index-web.js",
+	"main": "dist/index.js",
 	"contributes": {
 		"themes": [
 			{
@@ -129,9 +125,7 @@
 		"compile:themes": "node dist/hook/generateThemes.js",
 		"compile": "npm run clean && npm run compile:ts && npm run compile:themes",
 		"package": "vsce package && git checkout -- themes",
-		"lint": "eslint . --ext .ts",
-		"browser": "vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
-		"prepare": "husky install"
+		"lint": "eslint . --ext .ts"
 	},
 	"lint-staged": {
 		"*.ts": "eslint --fix",

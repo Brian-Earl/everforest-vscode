@@ -15,7 +15,7 @@ This is a collection light & dark themes both original & adaptations of existing
 
 ### Icon
 
-[30 Doradus Tarantula Nebula](https://esahubble.org/images/heic1206a/) by NASA/ESA.
+[30 Doradus Tarantula Nebula](https://esahubble.org/images/heic1206a/) by NASA/ESA
 
 ## Inspirations
 
