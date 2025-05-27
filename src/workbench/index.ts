@@ -93,7 +93,7 @@ export function getWorkbench(theme: Theme) {
     "list.errorForeground": `${palette.red}`,
     "list.warningForeground": `${palette.yellow}`,
     "tree.indentGuidesStroke": `${palette.grey0}`,
-    "activityBar.border": `${palette.bg0}`,
+    "activityBar.border": `${palette.bg5}`, // bg0
     "activityBar.background": `${palette.bg0}`,
     "activityBar.foreground": `${palette.fg}`,
     "activityBar.inactiveForeground": `${palette.grey1}`,
@@ -115,19 +115,20 @@ export function getWorkbench(theme: Theme) {
     "minimapGutter.modifiedBackground": `${palette.dimBlue}a0`,
     "minimapGutter.deletedBackground": `${palette.dimRed}a0`,
     "editorGroup.border": `${palette.bg0}`,
-    "editorGroupHeader.tabsBackground": `${palette.bg}`,
-    "editorGroupHeader.noTabsBackground": `${palette.bg}`,
+    "editorGroupHeader.tabsBackground": `${palette.bg0}`, // bg
+    "editorGroupHeader.noTabsBackground": `${palette.bg0}`, // bg
     "editorGroup.dropBackground": `${palette.bg5}60`,
-    "tab.border": `${palette.bg}`,
-    "tab.activeBorder": `${palette.badge}d0`,
-    "tab.inactiveBackground": `${palette.bg}`,
+    "tab.border": `${palette.bg5}`, // bg
+    //"tab.activeBorder": `${palette.badge}d0`,
+    "tab.activeBorderTop": `${palette.badge}`,
+    "tab.inactiveBackground": `${palette.bg0}`, // bg
     "tab.hoverBackground": `${palette.bg}`,
     "tab.hoverForeground": `${palette.fg}`,
     "tab.activeBackground": `${palette.bg}`,
     "tab.activeForeground": `${palette.fg}`,
     "tab.inactiveForeground": `${palette.grey0}`,
     "tab.unfocusedActiveForeground": `${palette.grey2}`,
-    "tab.unfocusedActiveBorder": `${palette.grey1}`,
+    // "tab.unfocusedActiveBorder": `${palette.grey1}`,
     "tab.unfocusedInactiveForeground": `${palette.grey0}`,
     "tab.unfocusedHoverForeground": `${palette.fg}`,
     "tab.lastPinnedBorder": `${palette.badge}d0`,
@@ -241,6 +242,7 @@ export function getWorkbench(theme: Theme) {
     "peekViewTitle.background": `${palette.bg4}`,
     "pickerGroup.border": `${palette.badge}1a`,
     "terminal.foreground": `${palette.fg}`,
+    "terminal.border": `${palette.bg5}`,
     "terminalCursor.foreground": `${cursorFg}`,
     "terminal.ansiBlack":
       variant === "dark" ? `${palette.bg2}` : `${palette.fg}`,
@@ -295,7 +297,7 @@ export function getWorkbench(theme: Theme) {
     "merge.currentContentBackground": `${palette.dimBlue}40`,
     "merge.border": `${palette.bg}00`,
     "panel.background": `${palette.bg2}`,
-    "panel.border": `${palette.bg2}`,
+    "panel.border": `${palette.bg5}`, // bg2
     "panelInput.border": `${palette.bg5}`,
     "panelTitle.activeForeground": `${palette.fg}`,
     "panelTitle.activeBorder": `${palette.badge}d0`,
@@ -305,7 +307,7 @@ export function getWorkbench(theme: Theme) {
     "imagePreview.border": `${palette.bg}`,
     "statusBar.background": `${palette.bg0}`,
     "statusBar.foreground": `${palette.grey2}`,
-    "statusBar.border": `${palette.bg0}`,
+    "statusBar.border": `${palette.bg5}`, // bg0
     "statusBar.debuggingForeground": `${palette.orange}`,
     "statusBar.debuggingBackground": `${palette.bg0}`,
     "statusBar.noFolderBackground": `${palette.bg0}`,
@@ -316,8 +318,8 @@ export function getWorkbench(theme: Theme) {
     "statusBarItem.prominentForeground": `${palette.fg}`,
     "statusBarItem.prominentBackground": `${palette.bg0}`,
     "statusBarItem.prominentHoverBackground": `${palette.bg4}a0`,
-    "statusBarItem.remoteBackground": `${palette.bg0}`,
-    "statusBarItem.remoteForeground": `${palette.grey2}`,
+    "statusBarItem.remoteBackground": `${palette.badge}`, // bg0
+    "statusBarItem.remoteForeground": `${palette.bg0}`, // grey2
     "statusBarItem.errorBackground": `${palette.bg0}`,
     "statusBarItem.errorForeground": `${palette.red}`,
     "statusBarItem.warningBackground": `${palette.bg0}`,
@@ -326,7 +328,7 @@ export function getWorkbench(theme: Theme) {
     "titleBar.activeForeground": `${palette.grey2}`,
     "titleBar.inactiveBackground": `${palette.bg0}`,
     "titleBar.inactiveForeground": `${palette.grey0}`,
-    "titleBar.border": `${palette.bg0}`,
+    "titleBar.border": `${palette.bg5}`, //bg0
     "menubar.selectionBackground": `${palette.bg}`,
     "menubar.selectionBorder": `${palette.bg}`,
     "menu.foreground": `${palette.grey2}`,
@@ -337,7 +339,7 @@ export function getWorkbench(theme: Theme) {
     "gitDecoration.modifiedResourceForeground": `${palette.blue}a0`,
     "gitDecoration.deletedResourceForeground": `${palette.red}a0`,
     "gitDecoration.untrackedResourceForeground": `${palette.yellow}a0`,
-    "gitDecoration.ignoredResourceForeground": `${palette.bg5}`,
+    "gitDecoration.ignoredResourceForeground": `${palette.grey1}a0`, // bg5
     "gitDecoration.conflictingResourceForeground": `${palette.purple}a0`,
     "gitDecoration.submoduleResourceForeground": `${palette.orange}a0`,
     "gitDecoration.stageDeletedResourceForeground": `${palette.aqua}a0`,
@@ -489,7 +491,7 @@ export function getWorkbench(theme: Theme) {
     "rust_analyzer.inlayHints.background": `${palette.bg}00`,
     "rust_analyzer.syntaxTreeBorder": `${palette.red}`,
     "contrastBorder": `${palette.bg5}`,
-    "contrastActiveBorder": `${palette.grey0}`,
+    // "contrastActiveBorder": `${palette.grey0}`,
   };
   return tokens;
 }
