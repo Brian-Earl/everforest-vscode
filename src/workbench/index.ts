@@ -102,7 +102,7 @@ export function getWorkbench(theme: Theme) {
     "activityBar.activeFocusBorder": `${palette.badge}`,
     "activityBarBadge.background": `${palette.badge}`,
     "activityBarBadge.foreground": `${palette.bg}`,
-    "sideBar.foreground": `${palette.grey1}`,
+    "sideBar.foreground": `${palette.fg}`, // grey1
     "sideBar.background": `${palette.bg1}`,
     "sideBarSectionHeader.background": `${palette.bg}00`,
     "sideBarTitle.foreground": `${palette.grey2}`,
@@ -114,7 +114,7 @@ export function getWorkbench(theme: Theme) {
     "minimapGutter.addedBackground": `${palette.dimGreen}a0`,
     "minimapGutter.modifiedBackground": `${palette.dimBlue}a0`,
     "minimapGutter.deletedBackground": `${palette.dimRed}a0`,
-    "editorGroup.border": `${palette.bg0}`,
+    "editorGroup.border": `${palette.bg5}`, // bg0
     "editorGroupHeader.tabsBackground": `${palette.bg0}`, // bg
     "editorGroupHeader.noTabsBackground": `${palette.bg0}`, // bg
     "editorGroup.dropBackground": `${palette.bg5}60`,
@@ -335,15 +335,15 @@ export function getWorkbench(theme: Theme) {
     "menu.background": `${palette.bg0}`,
     "menu.selectionForeground": `${palette.fg}`,
     "menu.selectionBackground": `${palette.bg}`,
-    "gitDecoration.addedResourceForeground": `${palette.green}a0`,
-    "gitDecoration.modifiedResourceForeground": `${palette.blue}a0`,
-    "gitDecoration.deletedResourceForeground": `${palette.red}a0`,
-    "gitDecoration.untrackedResourceForeground": `${palette.yellow}a0`,
-    "gitDecoration.ignoredResourceForeground": `${palette.grey1}a0`, // bg5
-    "gitDecoration.conflictingResourceForeground": `${palette.purple}a0`,
-    "gitDecoration.submoduleResourceForeground": `${palette.orange}a0`,
-    "gitDecoration.stageDeletedResourceForeground": `${palette.aqua}a0`,
-    "gitDecoration.stageModifiedResourceForeground": `${palette.aqua}a0`,
+    "gitDecoration.addedResourceForeground": `${palette.green}`, //a0
+    "gitDecoration.modifiedResourceForeground": `${palette.blue}`, //a0
+    "gitDecoration.deletedResourceForeground": `${palette.red}`, //a0
+    "gitDecoration.untrackedResourceForeground": `${palette.yellow}`, //a0
+    "gitDecoration.ignoredResourceForeground": `${palette.grey0}`, // bg5 //a0
+    "gitDecoration.conflictingResourceForeground": `${palette.purple}`, //a0
+    "gitDecoration.submoduleResourceForeground": `${palette.orange}`, //a0
+    "gitDecoration.stageDeletedResourceForeground": `${palette.aqua}`, //a0
+    "gitDecoration.stageModifiedResourceForeground": `${palette.aqua}`, //a0
     "notificationCenterHeader.foreground": `${palette.fg}`,
     "notificationCenterHeader.background": `${palette.bg3}`,
     "notifications.foreground": `${palette.fg}`,

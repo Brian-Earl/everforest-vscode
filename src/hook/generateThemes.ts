@@ -52,5 +52,3 @@ utils.generate(
   join(__dirname, "..", "..", "themes"),
   utils.getThemeData()
 );
-
-

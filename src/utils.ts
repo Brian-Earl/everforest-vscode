@@ -6,7 +6,6 @@
 
 import * as fs from "fs";
 import { join } from "path";
-import { window, commands } from "vscode";
 import { getWorkbench } from "./workbench";
 import { getSyntax } from "./syntax";
 import { getSemantic } from "./semantic";

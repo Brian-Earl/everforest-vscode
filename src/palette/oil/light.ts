@@ -2,21 +2,20 @@ import { Badge } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
-// Implementation of https://github.com/haystackandroid/rusticated
+// https://lunaria.design/
+// https://github.com/haystackandroid/rusticated
 
-const RusticatedTheme: ThemeBasePalette = {
+export const OilLightTheme: ThemeBasePalette = {
   fg: Color("#444136"),
   grey: Color("#5f5a4c"),
   red: Color("#834742"),
-  orange: Color("#79502f"), // Created for Theme
+  orange: Color("#79502f"),
   yellow: Color("#645826"),
   green: Color("#2c633f"),
   aqua: Color("#006470"),
   blue: Color("#3c5a89"),
-  purple: Color("#605188"), // Created for Theme
+  purple: Color("#605188"),
   magenta: Color("#784872"),
-  bg: Color("#d3d2ce"),
-  badge: Badge.Yellow
+  bg: Color("#ebe4e1"),
+  badge: Badge.Grey
 };
-
-export { RusticatedTheme };

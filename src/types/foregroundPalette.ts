@@ -1,4 +1,4 @@
-type ForegroundPalette = {
+export type ForegroundPalette = {
   fg: string;
   red: string;
   orange: string;
@@ -16,5 +16,3 @@ type ForegroundPalette = {
   dimPurple: string;
   badge: string;
 };
-
-export { ForegroundPalette };

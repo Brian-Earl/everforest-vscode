@@ -72,6 +72,31 @@
 				"path": "./themes/everforest-light.json"
 			},
 			{
+				"label": "Evergarden Spring",
+				"uiTheme": "vs-dark",
+				"path": "./themes/evergarden-spring.json"
+			},
+			{
+				"label": "Evergarden Summer",
+				"uiTheme": "vs",
+				"path": "./themes/evergarden-summer.json"
+			},
+			{
+				"label": "Evergarden Fall",
+				"uiTheme": "vs-dark",
+				"path": "./themes/evergarden-fall.json"
+			},
+			{
+				"label": "Evergarden Winter",
+				"uiTheme": "vs-dark",
+				"path": "./themes/evergarden-winter.json"
+			},
+			{
+				"label": "Evergarden Lunar",
+				"uiTheme": "vs-dark",
+				"path": "./themes/evergarden-lunar.json"
+			},
+			{
 				"label": "Rusticated",
 				"uiTheme": "vs",
 				"path": "./themes/rusticated.json"
@@ -115,6 +140,41 @@
 				"label": "Grimoire",
 				"uiTheme": "vs",
 				"path": "./themes/grimoire.json"
+			},
+			{
+				"label": "Lunaria Soft Light",
+				"uiTheme": "vs",
+				"path": "./themes/lunaria-soft-light.json"
+			},
+			{
+				"label": "Lunaria Vivid Light",
+				"uiTheme": "vs",
+				"path": "./themes/lunaria-vivid-light.json"
+			},
+			{
+				"label": "Oil Light",
+				"uiTheme": "vs",
+				"path": "./themes/oil-light.json"
+			},
+			{
+				"label": "Kanagawa Paper Canvas",
+				"uiTheme": "vs",
+				"path": "./themes/kanagawa-paper-canvas.json"
+			},
+			{
+				"label": "Fog",
+				"uiTheme": "vs",
+				"path": "./themes/fog.json"
+			},
+			{
+				"label": "Summerized",
+				"uiTheme": "vs",
+				"path": "./themes/summerized.json"
+			},
+			{
+				"label": "Autumnized",
+				"uiTheme": "vs",
+				"path": "./themes/autumnized.json"
 			}
 		]
 	},
@@ -135,20 +195,20 @@
 		"vscode": "^1.55.0"
 	},
 	"devDependencies": {
-		"@types/node": "18.11.14",
+		"@types/color": "^4.2.0",
+		"@types/node": "^18.19.130",
 		"@types/vscode": "1.55.0",
 		"@typescript-eslint/eslint-plugin": "5.46.1",
 		"@typescript-eslint/parser": "5.46.1",
 		"@vscode/test-web": "0.0.33",
 		"@vscode/vsce": "^2.15.0",
+		"color": "^4.2.3",
 		"eslint": "8.29.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-prettier": "4.2.1",
 		"lint-staged": "13.1.0",
 		"prettier": "2.8.1",
 		"rimraf": "3.0.2",
-		"typescript": "4.9.4",
-		"@types/color": "^4.2.0",
-		"color": "^4.2.3"
+		"typescript": "4.9.4"
 	}
 }

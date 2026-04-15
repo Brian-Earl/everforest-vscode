@@ -1,4 +1,4 @@
-type ThemeData = {
+export type ThemeData = {
   name: string;
   type: string;
   output: string;
@@ -7,5 +7,3 @@ type ThemeData = {
   colors: any;
   tokenColors: any;
 };
-
-export { ThemeData };

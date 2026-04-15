@@ -14,6 +14,18 @@ import { OldBookTheme } from "./oldBook/light";
 import { GrimoireTheme } from "./grimoire/light";
 import { EverforestDarkTheme } from "./everforest/dark";
 import { EverforestLightTheme } from "./everforest/light";
+import { LunariaSoftLightTheme } from "./lunaria/soft";
+import { LunariaVividLightTheme } from "./lunaria/vivid";
+import { OilLightTheme } from "./oil/light";
+import { KanagawaPaperCanvasTheme } from "./kanagawa-paper/canvas";
+import { EvergardenSummerTheme } from "./evergarden/summer";
+import { EvergardenSpringTheme } from "./evergarden/spring";
+import { EvergardenFallTheme } from "./evergarden/fall";
+import { EvergardenWinterTheme } from "./evergarden/winter";
+import { EvergardenLunarTheme } from "./evergarden/lunar";
+import { FogTheme } from "./fog/light";
+import { AutumnizedTheme } from "./seasonized/autumnized";
+import { SummerizedTheme } from "./seasonized/summerized";
 
 export const themes: Array<Theme> = [
     {
@@ -51,6 +63,36 @@ export const themes: Array<Theme> = [
         variant: "light",
         output: "everforest-light.json",
         palette: EverforestLightTheme
+    },
+    {
+        name: "Evergarden Spring",
+        variant: "dark",
+        output: "evergarden-spring.json",
+        palette: EvergardenSpringTheme
+    },
+    {
+        name: "Evergarden Summer",
+        variant: "light",
+        output: "evergarden-summer.json",
+        palette: EvergardenSummerTheme
+    },
+    {
+        name: "Evergarden Fall",
+        variant: "dark",
+        output: "evergarden-fall.json",
+        palette: EvergardenFallTheme
+    },
+        {
+        name: "Evergarden Winter",
+        variant: "dark",
+        output: "evergarden-winter.json",
+        palette: EvergardenWinterTheme
+    },
+    {
+        name: "Evergarden Lunar",
+        variant: "dark",
+        output: "evergarden-lunar.json",
+        palette: EvergardenLunarTheme
     },
     {
         name: "Rusticated",
@@ -105,5 +147,47 @@ export const themes: Array<Theme> = [
         variant: "light",
         output: "grimoire.json",
         palette: GrimoireTheme
+    },
+    {
+        name: "Lunaria Soft Light",
+        variant: "light",
+        output: "lunaria-soft-light.json",
+        palette: LunariaSoftLightTheme
+    },
+    {
+        name: "Lunaria Vivid Light",
+        variant: "light",
+        output: "lunaria-vivid-light.json",
+        palette: LunariaVividLightTheme
+    },
+    {
+        name: "Oil Light",
+        variant: "light",
+        output: "oil-light.json",
+        palette: OilLightTheme
+    },
+    {
+        name: "Kanagawa Paper Canvas",
+        variant: "light",
+        output: "kanagawa-paper-canvas.json",
+        palette: KanagawaPaperCanvasTheme
+    },
+    {
+        name: "Fog",
+        variant: "light",
+        output: "fog.json",
+        palette: FogTheme
+    },
+    {
+        name: "Summerized",
+        variant: "light",
+        output: "summerized.json",
+        palette: SummerizedTheme
+    },
+    {
+        name: "Autumnized",
+        variant: "light",
+        output: "autumnized.json",
+        palette: AutumnizedTheme
     }
 ]

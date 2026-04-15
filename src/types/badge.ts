@@ -1,4 +1,4 @@
-enum Badge {
+export enum Badge {
     Red,
     Orange,
     Yellow,
@@ -10,6 +10,4 @@ enum Badge {
     White,
     Grey,
     Black
-}
-
-export { Badge }
+};
