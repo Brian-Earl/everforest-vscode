@@ -1,6 +1,7 @@
 {
   "name": "Everforest Light",
-  "type": "light",
+  "type": 0,
+  "syntax": 0,
   "output": "everforest-light.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

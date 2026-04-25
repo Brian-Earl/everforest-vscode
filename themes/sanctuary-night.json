@@ -1,6 +1,7 @@
 {
   "name": "Night in the Sanctuary",
-  "type": "dark",
+  "type": 1,
+  "syntax": 0,
   "output": "sanctuary-night.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

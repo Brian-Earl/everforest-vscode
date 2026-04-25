@@ -1,6 +1,7 @@
 {
   "name": "Evergarden Summer",
-  "type": "light",
+  "type": 0,
+  "syntax": 0,
   "output": "evergarden-summer.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

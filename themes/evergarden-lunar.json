@@ -1,6 +1,7 @@
 {
   "name": "Evergarden Lunar",
-  "type": "dark",
+  "type": 1,
+  "syntax": 0,
   "output": "evergarden-lunar.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

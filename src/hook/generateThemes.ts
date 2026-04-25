@@ -7,7 +7,7 @@
 import * as fs from "fs";
 import { join } from "path";
 import { getWorkbench } from "../workbench";
-import { getSyntax } from "../syntax";
+import { getSyntax } from "../syntax/index";
 import { getSemantic } from "../semantic";
 import { themes } from "../palette/themeList";
 
@@ -35,6 +35,7 @@ class Utils {
       themeData.push({
         name: theme.name,
         type: theme.variant,
+        syntax: theme.syntax,
         output: theme.output,
         semanticHighlighting: true,
         semanticTokenColors: getSemantic(theme),

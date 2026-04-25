@@ -112,16 +112,6 @@
 				"path": "./themes/sanctuary-morning-sun.json"
 			},
 			{
-				"label": "Sanctuary Beach Painting",
-				"uiTheme": "vs",
-				"path": "./themes/sanctuary-beach-painting.json"
-			},
-			{
-				"label": "Sanctuary Tea Garden",
-				"uiTheme": "vs",
-				"path": "./themes/sanctuary-tea-garden.json"
-			},
-			{
 				"label": "Night in the Sanctuary",
 				"uiTheme": "vs-dark",
 				"path": "./themes/sanctuary-night.json"
@@ -130,16 +120,6 @@
 				"label": "Stargazing in the Sanctuary",
 				"uiTheme": "vs-dark",
 				"path": "./themes/sanctuary-stargazing.json"
-			},
-			{
-				"label": "Old Book",
-				"uiTheme": "vs",
-				"path": "./themes/old-book.json"
-			},
-			{
-				"label": "Grimoire",
-				"uiTheme": "vs",
-				"path": "./themes/grimoire.json"
 			},
 			{
 				"label": "Lunaria Soft Light",
@@ -152,29 +132,24 @@
 				"path": "./themes/lunaria-vivid-light.json"
 			},
 			{
-				"label": "Oil Light",
+				"label": "Rusticated (Simple)",
 				"uiTheme": "vs",
-				"path": "./themes/oil-light.json"
+				"path": "./themes/rusticated-simple.json"
 			},
 			{
-				"label": "Kanagawa Paper Canvas",
-				"uiTheme": "vs",
-				"path": "./themes/kanagawa-paper-canvas.json"
+				"label": "Stellarized Dark (Simple)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/stellarized-dark-simple.json"
 			},
 			{
-				"label": "Fog",
+				"label": "Stellarized Light (Simple)",
 				"uiTheme": "vs",
-				"path": "./themes/fog.json"
+				"path": "./themes/stellarized-light-simple.json"
 			},
 			{
-				"label": "Summerized",
-				"uiTheme": "vs",
-				"path": "./themes/summerized.json"
-			},
-			{
-				"label": "Autumnized",
-				"uiTheme": "vs",
-				"path": "./themes/autumnized.json"
+				"label": "Everforest Dark (Simple)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/everforest-dark-simple.json"
 			}
 		]
 	},

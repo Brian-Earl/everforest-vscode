@@ -8,13 +8,13 @@ const StellarizedLightTheme: ThemeBasePalette = {
   fg: Color("#4a5067"),
   grey: Color("#666c85"),
   red: Color("#c6394c"),
-  orange: Color("#b15612"),
+  orange: Color("#b15612"), // Made for theme
   yellow: Color("#8b6800"),
   green: Color("#007f25"),
   aqua: Color("#007989"),
   blue: Color("#006dcc"),
   purple: Color("#a348ae"),
-  magenta: Color("#b5437e"),
+  magenta: Color("#b5437e"), // Made for theme
   bg: Color("#fceee0"),
   badge: Badge.Yellow
 };

@@ -8,13 +8,13 @@ const CosmicLatteDarkTheme: ThemeBasePalette = {
   fg: Color("#abb0c0"),
   grey: Color("#898f9e"),
   red: Color("#c17b8d"),
-  orange: Color("#b27961"),
+  orange: Color("#b27961"), // Made for theme
   yellow: Color("#b28761"),
   green: Color("#7d9761"),
   aqua: Color("#459d90"),
   blue: Color("#5496bd"),
   purple: Color("#9b85bb"),
-  magenta: Color("#be7695"),
+  magenta: Color("#be7695"), // Made for theme
   bg: Color("#202a31"),
   badge: Badge.Aqua
 };

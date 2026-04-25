@@ -1,6 +1,7 @@
 {
   "name": "Sanctuary Morning Sun",
-  "type": "light",
+  "type": 0,
+  "syntax": 0,
   "output": "sanctuary-morning-sun.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

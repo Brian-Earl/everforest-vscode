@@ -7,6 +7,7 @@
 import { getPalette } from "../palette";
 import { Palette } from "../types/palette";
 import { Theme } from "../types/theme";
+import { ThemeVariant } from "../types/themeVariant";
 
 export function getWorkbench(theme: Theme) {
   let selectionBg: string;
@@ -15,8 +16,8 @@ export function getWorkbench(theme: Theme) {
   let cursorFg: string;
   let diagnosticTextBackgroundOpacity: string;
   let palette: Palette = getPalette(theme)
-  let variant: string = theme.variant;
-  if (variant === "dark") { 
+  let variant: ThemeVariant = theme.variant;
+  if (variant === ThemeVariant.DARK) { 
     selectionBg = `${palette.bg4}e0`;
     editorSelectionBg = `${palette.bg4}c0`;
     editorSelectionBgHl = `${palette.bg4}60`;
@@ -141,17 +142,17 @@ export function getWorkbench(theme: Theme) {
     "editor.selectionHighlightBackground": `${editorSelectionBgHl}`,
     "editor.inactiveSelectionBackground": `${editorSelectionBgHl}`,
     "editor.wordHighlightBackground":
-      variant === "dark" ? `${palette.bg4}58` : `${palette.bg4}48`,
+      variant === ThemeVariant.DARK ? `${palette.bg4}58` : `${palette.bg4}48`,
     "editor.wordHighlightStrongBackground":
-      variant === "dark" ? `${palette.bg4}b0` : `${palette.bg4}90`,
+      variant === ThemeVariant.DARK ? `${palette.bg4}b0` : `${palette.bg4}90`,
     "editor.hoverHighlightBackground":
-      variant === "dark" ? `${palette.bg4}b0` : `${palette.bg4}90`,
+      variant === ThemeVariant.DARK ? `${palette.bg4}b0` : `${palette.bg4}90`,
     "editor.findMatchBackground": `${palette.dimOrange}40`,
     "editor.findMatchHighlightBackground": `${palette.dimGreen}40`,
     "editor.findRangeHighlightBackground": `${editorSelectionBgHl}`,
     "editor.lineHighlightBorder": `${palette.bg5}00`,
     "editor.lineHighlightBackground":
-      variant === "dark" ? `${palette.bg3}90` : `${palette.bg3}70`,
+      variant === ThemeVariant.DARK ? `${palette.bg3}90` : `${palette.bg3}70`,
     "editor.rangeHighlightBackground": `${palette.bg3}80`,
     "editor.symbolHighlightBackground": `${palette.dimBlue}40`,
     "editorLink.activeForeground": `${palette.green}`,
@@ -245,24 +246,24 @@ export function getWorkbench(theme: Theme) {
     "terminal.border": `${palette.bg5}`,
     "terminalCursor.foreground": `${cursorFg}`,
     "terminal.ansiBlack":
-      variant === "dark" ? `${palette.bg2}` : `${palette.fg}`,
+      variant === ThemeVariant.DARK ? `${palette.bg2}` : `${palette.fg}`,
     "terminal.ansiBlue": `${palette.blue}`,
     "terminal.ansiBrightBlack":
-      variant === "dark" ? `${palette.grey1}` : `${palette.fg}`,
+      variant === ThemeVariant.DARK ? `${palette.grey1}` : `${palette.fg}`,
     "terminal.ansiBrightBlue": `${palette.blue}`,
     "terminal.ansiBrightCyan": `${palette.aqua}`,
     "terminal.ansiBrightGreen": `${palette.green}`,
     "terminal.ansiBrightMagenta": `${palette.purple}`,
     "terminal.ansiBrightRed": `${palette.red}`,
     "terminal.ansiBrightWhite":
-      variant === "dark" ? `${palette.fg}` : `${palette.bg2}`,
+      variant === ThemeVariant.DARK ? `${palette.fg}` : `${palette.bg2}`,
     "terminal.ansiBrightYellow": `${palette.yellow}`,
     "terminal.ansiCyan": `${palette.aqua}`,
     "terminal.ansiGreen": `${palette.green}`,
     "terminal.ansiMagenta": `${palette.purple}`,
     "terminal.ansiRed": `${palette.red}`,
     "terminal.ansiWhite":
-      variant === "dark" ? `${palette.fg}` : `${palette.grey1}`,
+      variant === ThemeVariant.DARK ? `${palette.fg}` : `${palette.grey1}`,
     "terminal.ansiYellow": `${palette.yellow}`,
     "debugToolBar.background": `${palette.bg}`,
     "debugTokenExpression.name": `${palette.blue}`,

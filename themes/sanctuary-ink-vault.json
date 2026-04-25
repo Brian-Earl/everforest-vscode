@@ -1,6 +1,7 @@
 {
   "name": "Sanctuary Ink Vault",
-  "type": "light",
+  "type": 0,
+  "syntax": 0,
   "output": "sanctuary-ink-vault.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

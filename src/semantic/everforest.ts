@@ -4,13 +4,9 @@
  *  License:    MIT
  *--------------------------------------------------------------*/
 
-import { getPalette } from "./palette";
-import { Theme } from "./types/theme";
+import { Palette } from "../types/palette";
 
-export function getSemantic(
-  theme: Theme
-) {
-  const palette = getPalette(theme);
+export function getSemantic(palette: Palette) {
   return {
     // General 
     operatorOverload: `${palette.orange}`,

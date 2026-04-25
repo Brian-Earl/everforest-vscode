@@ -1,6 +1,7 @@
 {
   "name": "Evergarden Winter",
-  "type": "dark",
+  "type": 1,
+  "syntax": 0,
   "output": "evergarden-winter.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

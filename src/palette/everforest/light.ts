@@ -3,6 +3,7 @@ import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
 // Implementation of https://github.com/sainnhe/everforest
+// Light Hard
 
 const EverforestLightTheme: ThemeBasePalette = {
   fg: Color("#5c6a72"),

@@ -1,6 +1,7 @@
 {
   "name": "Everforest Dark",
-  "type": "dark",
+  "type": 1,
+  "syntax": 0,
   "output": "everforest-dark.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

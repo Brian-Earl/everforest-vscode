@@ -1,6 +1,7 @@
 {
   "name": "Evergarden Spring",
-  "type": "dark",
+  "type": 1,
+  "syntax": 0,
   "output": "evergarden-spring.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {

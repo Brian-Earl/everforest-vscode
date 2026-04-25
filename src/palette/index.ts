@@ -14,12 +14,13 @@ import { BackgroundPalette } from "../types/backgroundPalette";
 import { ForegroundPalette } from "../types/foregroundPalette";
 import { ThemeBasePalette } from "../types/themeBasePalette";
 import { Theme } from "../types/theme";
+import { ThemeVariant } from "../types/themeVariant";
 
 export function getPalette(
   theme: Theme
 ): Palette {
   let palette: ThemeBasePalette = theme.palette;
-  let variant: string = theme.variant
+  let variant: ThemeVariant = theme.variant
   let paletteBackground: BackgroundPalette = generateBackground(palette, variant);
   let paletteForeground: ForegroundPalette = generateForeground(palette);
   return generatePalette(paletteForeground, paletteBackground);

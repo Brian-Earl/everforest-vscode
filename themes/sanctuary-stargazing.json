@@ -1,6 +1,7 @@
 {
   "name": "Stargazing in the Sanctuary",
-  "type": "dark",
+  "type": 1,
+  "syntax": 0,
   "output": "sanctuary-stargazing.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {
