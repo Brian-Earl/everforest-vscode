@@ -10,7 +10,6 @@ import { SanctuaryNightTheme } from "./sanctuary/night";
 import { SanctuaryStargazingTheme } from "./sanctuary/stargazing";
 import { StellarizedDarkTheme } from "./stellarized/dark";
 import { StellarizedLightTheme } from "./stellarized/light";
-import { OldBookTheme } from "./oldBook/light";
 import { EverforestDarkTheme } from "./everforest/dark";
 import { EverforestLightTheme } from "./everforest/light";
 import { LunariaSoftLightTheme } from "./lunaria/soft";
@@ -20,6 +19,8 @@ import { EvergardenSpringTheme } from "./evergarden/spring";
 import { EvergardenFallTheme } from "./evergarden/fall";
 import { EvergardenWinterTheme } from "./evergarden/winter";
 import { EvergardenLunarTheme } from "./evergarden/lunar";
+import { OliveCRTLightTheme } from "./oliveCRT/light";
+import { OliveCRTDarkTheme } from "./oliveCRT/dark";
 
 export const themes: Array<Theme> = [
     {
@@ -135,13 +136,6 @@ export const themes: Array<Theme> = [
         palette: SanctuaryStargazingTheme
     },
     {
-        name: "Old Book",
-        variant: ThemeVariant.LIGHT,
-        syntax: ThemeSyntax.STELLARIZED,
-        output: "old-book.json",
-        palette: OldBookTheme
-    },
-    {
         name: "Lunaria Soft Light",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.STELLARIZED,
@@ -183,4 +177,18 @@ export const themes: Array<Theme> = [
         output: "everforest-dark-simple.json",
         palette: EverforestDarkTheme
     },
+    {
+        name: "Olive CRT Dark",
+        variant: ThemeVariant.DARK,
+        syntax: ThemeSyntax.EVERFOREST,
+        output: "olive-crt-dark.json",
+        palette: OliveCRTDarkTheme
+    },
+    {
+        name: "Olive CRT Light",
+        variant: ThemeVariant.LIGHT,
+        syntax: ThemeSyntax.EVERFOREST,
+        output: "olive-crt-light.json",
+        palette: OliveCRTLightTheme
+    }
 ]

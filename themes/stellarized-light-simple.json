@@ -1,7 +1,7 @@
 {
   "name": "Stellarized Light (Simple)",
   "type": 0,
-  "syntax": 2,
+  "syntax": 3,
   "output": "stellarized-light-simple.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {},
@@ -459,24 +459,24 @@
   },
   "tokenColors": [
     {
-      "name": "Function",
-      "scope": "meta.definition.function, meta.definition.method",
-      "settings": {
-        "foreground": "#C6394C"
-      }
-    },
-    {
-      "name": "Constant, String",
-      "scope": "constant, constant.keyword, support.constant, constant.language.boolean, constant.numeric, constant.character, \n              string",
+      "name": "Keywords",
+      "scope": "keyword",
       "settings": {
         "foreground": "#007F25"
       }
     },
     {
-      "name": "Variable, Parameters",
-      "scope": "meta.definition.variable, variable.other.assignment, variable.other.constant, meta.parameters",
+      "name": "Constant, String",
+      "scope": "constant, support.constant, string",
       "settings": {
         "foreground": "#006DCC"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": "entity.name.type",
+      "settings": {
+        "foreground": "#C6394C"
       }
     },
     {

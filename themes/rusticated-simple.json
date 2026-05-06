@@ -1,7 +1,7 @@
 {
   "name": "Rusticated (Simple)",
   "type": 0,
-  "syntax": 2,
+  "syntax": 3,
   "output": "rusticated-simple.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {},
@@ -27,7 +27,7 @@
     "button.secondaryForeground": "#444136",
     "button.secondaryHoverBackground": "#BFBEB9",
     "checkbox.background": "#D3D2CE",
-    "checkbox.foreground": "#79502F",
+    "checkbox.foreground": "#7D491B",
     "checkbox.border": "#B6B5B0",
     "dropdown.border": "#B6B5B0",
     "dropdown.background": "#D3D2CE",
@@ -116,7 +116,7 @@
     "editor.wordHighlightBackground": "#BFBEB948",
     "editor.wordHighlightStrongBackground": "#BFBEB990",
     "editor.hoverHighlightBackground": "#BFBEB990",
-    "editor.findMatchBackground": "#744F3040",
+    "editor.findMatchBackground": "#77481E40",
     "editor.findMatchHighlightBackground": "#2E603E40",
     "editor.findRangeHighlightBackground": "#BFBEB950",
     "editor.lineHighlightBorder": "#B6B5B000",
@@ -142,7 +142,7 @@
     "editorBracketHighlight.foreground2": "#645826",
     "editorBracketHighlight.foreground3": "#2C633F",
     "editorBracketHighlight.foreground4": "#3C5A89",
-    "editorBracketHighlight.foreground5": "#79502F",
+    "editorBracketHighlight.foreground5": "#7D491B",
     "editorBracketHighlight.foreground6": "#605188",
     "editorBracketHighlight.unexpectedBracket.foreground": "#5F5A4C",
     "editorOverviewRuler.border": "#D3D2CE00",
@@ -273,7 +273,7 @@
     "statusBar.background": "#C8C6C2",
     "statusBar.foreground": "#5B5649",
     "statusBar.border": "#B6B5B0",
-    "statusBar.debuggingForeground": "#79502F",
+    "statusBar.debuggingForeground": "#7D491B",
     "statusBar.debuggingBackground": "#C8C6C2",
     "statusBar.noFolderBackground": "#C8C6C2",
     "statusBar.noFolderForeground": "#5B5649",
@@ -306,7 +306,7 @@
     "gitDecoration.untrackedResourceForeground": "#645826",
     "gitDecoration.ignoredResourceForeground": "#706C60",
     "gitDecoration.conflictingResourceForeground": "#605188",
-    "gitDecoration.submoduleResourceForeground": "#79502F",
+    "gitDecoration.submoduleResourceForeground": "#7D491B",
     "gitDecoration.stageDeletedResourceForeground": "#006470",
     "gitDecoration.stageModifiedResourceForeground": "#006470",
     "notificationCenterHeader.foreground": "#444136",
@@ -324,7 +324,7 @@
     "extensionBadge.remoteForeground": "#D3D2CE",
     "extensionIcon.starForeground": "#006470",
     "extensionIcon.verifiedForeground": "#2C633F",
-    "extensionIcon.preReleaseForeground": "#79502F",
+    "extensionIcon.preReleaseForeground": "#7D491B",
     "pickerGroup.foreground": "#444136",
     "quickInputTitle.background": "#CDCCC8",
     "keybindingLabel.background": "#D3D2CE00",
@@ -341,7 +341,7 @@
     "settings.textInputForeground": "#3C5A89",
     "settings.textInputBorder": "#B6B5B0",
     "settings.checkboxBackground": "#D3D2CE",
-    "settings.checkboxForeground": "#79502F",
+    "settings.checkboxForeground": "#7D491B",
     "settings.checkboxBorder": "#B6B5B0",
     "settings.dropdownBackground": "#D3D2CE",
     "settings.dropdownForeground": "#006470",
@@ -367,7 +367,7 @@
     "symbolIcon.textForeground": "#444136",
     "symbolIcon.unitForeground": "#444136",
     "symbolIcon.keywordForeground": "#834742",
-    "symbolIcon.operatorForeground": "#79502F",
+    "symbolIcon.operatorForeground": "#7D491B",
     "symbolIcon.classForeground": "#645826",
     "symbolIcon.eventForeground": "#645826",
     "symbolIcon.interfaceForeground": "#645826",
@@ -396,13 +396,13 @@
     "editor.snippetFinalTabstopHighlightBackground": "#2E603E40",
     "editor.snippetFinalTabstopHighlightBorder": "#D3D2CE",
     "charts.red": "#834742",
-    "charts.orange": "#79502F",
+    "charts.orange": "#7D491B",
     "charts.yellow": "#645826",
     "charts.green": "#2C633F",
     "charts.blue": "#3C5A89",
     "charts.purple": "#605188",
     "charts.foreground": "#444136",
-    "ports.iconRunningProcessForeground": "#79502F",
+    "ports.iconRunningProcessForeground": "#7D491B",
     "sash.hoverBorder": "#BFBEB9",
     "notebook.cellBorderColor": "#B6B5B0",
     "notebook.cellStatusBarItemHoverBackground": "#CDCCC8",
@@ -436,7 +436,7 @@
     "gitlens.mergedPullRequestIconColor": "#605188",
     "gitlens.unpushlishedChangesIconColor": "#3C5A89",
     "gitlens.unpublishedCommitIconColor": "#645826",
-    "gitlens.unpulledChangesIconColor": "#79502F",
+    "gitlens.unpulledChangesIconColor": "#7D491B",
     "gitlens.decorations.addedForegroundColor": "#2C633F",
     "gitlens.decorations.copiedForegroundColor": "#605188",
     "gitlens.decorations.deletedForegroundColor": "#834742",
@@ -445,7 +445,7 @@
     "gitlens.decorations.untrackedForegroundColor": "#645826",
     "gitlens.decorations.renamedForegroundColor": "#605188",
     "gitlens.decorations.branchAheadForegroundColor": "#006470",
-    "gitlens.decorations.branchBehindForegroundColor": "#79502F",
+    "gitlens.decorations.branchBehindForegroundColor": "#7D491B",
     "gitlens.decorations.branchDivergedForegroundColor": "#645826",
     "gitlens.decorations.branchUpToDateForegroundColor": "#444136",
     "gitlens.decorations.branchUnpublishedForegroundColor": "#3C5A89",
@@ -459,24 +459,24 @@
   },
   "tokenColors": [
     {
-      "name": "Function",
-      "scope": "meta.definition.function, meta.definition.method",
-      "settings": {
-        "foreground": "#834742"
-      }
-    },
-    {
-      "name": "Constant, String",
-      "scope": "constant, constant.keyword, support.constant, constant.language.boolean, constant.numeric, constant.character, \n              string",
+      "name": "Keywords",
+      "scope": "keyword",
       "settings": {
         "foreground": "#2C633F"
       }
     },
     {
-      "name": "Variable, Parameters",
-      "scope": "meta.definition.variable, variable.other.assignment, variable.other.constant, meta.parameters",
+      "name": "Constant, String",
+      "scope": "constant, support.constant, string",
       "settings": {
         "foreground": "#3C5A89"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": "entity.name.type",
+      "settings": {
+        "foreground": "#834742"
       }
     },
     {

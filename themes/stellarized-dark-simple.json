@@ -1,7 +1,7 @@
 {
   "name": "Stellarized Dark (Simple)",
   "type": 1,
-  "syntax": 2,
+  "syntax": 3,
   "output": "stellarized-dark-simple.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {},
@@ -459,24 +459,24 @@
   },
   "tokenColors": [
     {
-      "name": "Function",
-      "scope": "meta.definition.function, meta.definition.method",
-      "settings": {
-        "foreground": "#CA7375"
-      }
-    },
-    {
-      "name": "Constant, String",
-      "scope": "constant, constant.keyword, support.constant, constant.language.boolean, constant.numeric, constant.character, \n              string",
+      "name": "Keywords",
+      "scope": "keyword",
       "settings": {
         "foreground": "#5C9A61"
       }
     },
     {
-      "name": "Variable, Parameters",
-      "scope": "meta.definition.variable, variable.other.assignment, variable.other.constant, meta.parameters",
+      "name": "Constant, String",
+      "scope": "constant, support.constant, string",
       "settings": {
         "foreground": "#578FCC"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": "entity.name.type",
+      "settings": {
+        "foreground": "#CA7375"
       }
     },
     {
