@@ -160,21 +160,6 @@
 				"label": "Everforest Dark (Simple)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/everforest-dark-simple.json"
-			},
-			{
-				"label": "Ember",
-				"uiTheme": "vs-dark",
-				"path": "./themes/ember.json"
-			},
-			{
-				"label": "Ember Soft",
-				"uiTheme": "vs-dark",
-				"path": "./themes/ember-soft.json"
-			},
-			{
-				"label": "Ember Light",
-				"uiTheme": "vs",
-				"path": "./themes/ember-light.json"
 			}
 		]
 	},
