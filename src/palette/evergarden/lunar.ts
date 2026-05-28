@@ -4,7 +4,7 @@ import Color = require("color");
 
 // Implementation of https://github.com/everviolet/nvim
 
-const EvergardenLunarTheme: ThemeBasePalette = {
+export const EvergardenLunarTheme: ThemeBasePalette = {
   fg: Color("#F7F1E6"),
   grey: Color("#B4C0DB"),
   red: Color("#F57F82"),
@@ -18,5 +18,3 @@ const EvergardenLunarTheme: ThemeBasePalette = {
   bg: Color("#1C1D29"),
   badge: Badge.Blue
 };
-
-export { EvergardenLunarTheme };

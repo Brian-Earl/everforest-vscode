@@ -4,7 +4,7 @@ import Color = require("color");
 
 // Implementation of https://github.com/reobin/olive-crt.nvim
 
-const OliveCRTLightTheme: ThemeBasePalette = {
+export const OliveCRTLightTheme: ThemeBasePalette = {
   fg: Color("#282c26"),
   grey: Color("#60685b"),
   red: Color("#88413c"),
@@ -18,5 +18,3 @@ const OliveCRTLightTheme: ThemeBasePalette = {
   bg: Color("#d7d9d3"),
   badge: Badge.Green
 };
-
-export { OliveCRTLightTheme };

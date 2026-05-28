@@ -2,7 +2,7 @@ import { Badge } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
-const SanctuaryNightTheme: ThemeBasePalette = {
+export const SanctuaryNightTheme: ThemeBasePalette = {
   fg: Color("#EBEAE9"),
   grey: Color("#878D94"),
   red: Color("#ff9e9e"),
@@ -16,5 +16,3 @@ const SanctuaryNightTheme: ThemeBasePalette = {
   bg: Color("#3C4855"),
   badge: Badge.Yellow
 };
-
-export { SanctuaryNightTheme };

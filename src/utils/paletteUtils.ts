@@ -19,25 +19,25 @@ function generateBackground(base: ThemeBasePalette, variant: ThemeVariant): Back
       bg4: base.bg.mix(base.fg, 0.18).hex(),
       bg5: base.bg.mix(base.fg, 0.24).hex(),
 
-      grey0: base.grey.darken(0.15).hex(), // 0.08
+      grey0: base.grey.darken(0.15).hex(),
       grey1: base.grey.hex(),
-      grey2: base.grey.lighten(0.15).hex(), // 0.12
+      grey2: base.grey.lighten(0.15).hex(),
 
       shadow: base.fg.alpha(0.125).hex() + "20",
     };
   } 
   return {
-    bg0: base.bg.mix(base.fg, 0.08).hex(), // 0.12
-    bg1: base.bg.mix(base.fg, 0.04).hex(), // 0.06
+    bg0: base.bg.mix(base.fg, 0.08).hex(),
+    bg1: base.bg.mix(base.fg, 0.04).hex(),
     bg: base.bg.hex(),
-    bg2: base.bg.mix(base.fg, 0.04).hex(), // 0.06
-    bg3: base.bg.mix(base.fg, 0.08).hex(), // 0.12
-    bg4: base.bg.mix(base.fg, 0.14).hex(), // 0.18
-    bg5: base.bg.mix(base.fg, 0.20).hex(), // 0.24
+    bg2: base.bg.mix(base.fg, 0.04).hex(),
+    bg3: base.bg.mix(base.fg, 0.08).hex(),
+    bg4: base.bg.mix(base.fg, 0.10).hex(),
+    bg5: base.bg.mix(base.fg, 0.14).hex(),
 
-    grey0: base.grey.mix(base.bg, 0.15).hex(), // 0.2
+    grey0: base.grey.mix(base.bg, 0.15).hex(),
     grey1: base.grey.hex(),
-    grey2: base.grey.mix(base.fg, 0.15).hex(), 
+    grey2: base.grey.mix(base.fg, 0.20).hex(), 
 
     shadow: base.fg.alpha(0.125).hex() + "20",
   };

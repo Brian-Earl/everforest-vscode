@@ -33,7 +33,7 @@
     "selfKeyword:rust": "#A69FD5"
   },
   "colors": {
-    "foreground": "#DCE2EE",
+    "foreground": "#F7F1E6",
     "focusBorder": "#1C1D2900",
     "widget.shadow": "#F7F1E620",
     "selection.background": "#43434Be0",

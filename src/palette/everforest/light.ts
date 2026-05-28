@@ -5,7 +5,7 @@ import Color = require("color");
 // Implementation of https://github.com/sainnhe/everforest
 // Light Hard
 
-const EverforestLightTheme: ThemeBasePalette = {
+export const EverforestLightTheme: ThemeBasePalette = {
   fg: Color("#5c6a72"),
   grey: Color("#939f91"),
   red: Color("#f85552"),
@@ -20,4 +20,17 @@ const EverforestLightTheme: ThemeBasePalette = {
   badge: Badge.Green
 };
 
-export { EverforestLightTheme };
+// Refernece:
+// export default {
+//   bg0: "#f2efdf",
+//   bg1: "#f8f5e4",
+//   bg: "#fffbef",
+//   bg2: "#f8f5e4",
+//   bg3: "#f2efdf",
+//   bg4: "#edeada",
+//   bg5: "#e8e5d5",
+//   grey0: "#a4ad9e",
+//   grey1: "#939f91",
+//   grey2: "#879686",
+//   shadow: "#3c474d20",
+// };

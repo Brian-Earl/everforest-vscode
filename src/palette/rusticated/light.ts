@@ -4,7 +4,7 @@ import Color = require("color");
 
 // Implementation of https://github.com/haystackandroid/rusticated
 
-const RusticatedTheme: ThemeBasePalette = {
+export const RusticatedTheme: ThemeBasePalette = {
   fg: Color("#444136"),
   grey: Color("#5f5a4c"),
   red: Color("#834742"),
@@ -18,5 +18,3 @@ const RusticatedTheme: ThemeBasePalette = {
   bg: Color("#d3d2ce"),
   badge: Badge.Yellow
 };
-
-export { RusticatedTheme };

@@ -4,7 +4,7 @@ import Color = require("color");
 
 // TODO: Play with more
 
-const SanctuaryStargazingTheme: ThemeBasePalette = {
+export const SanctuaryStargazingTheme: ThemeBasePalette = {
   fg: Color("#e3d1c5"),
   grey: Color("#b09a8d"),
   red: Color("#c78b8b"),
@@ -18,5 +18,3 @@ const SanctuaryStargazingTheme: ThemeBasePalette = {
   bg: Color("#222532"),
   badge: Badge.Yellow
 };
-
-export { SanctuaryStargazingTheme };

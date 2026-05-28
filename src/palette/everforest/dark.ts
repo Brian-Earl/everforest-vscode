@@ -5,7 +5,7 @@ import Color = require("color");
 // Implementation of https://github.com/sainnhe/everforest
 // Dark Medium
 
-const EverforestDarkTheme: ThemeBasePalette = {
+export const EverforestDarkTheme: ThemeBasePalette = {
   fg: Color("#d3c6aa"),
   grey: Color("#859289"),
   red: Color("#e67e80"),
@@ -20,4 +20,17 @@ const EverforestDarkTheme: ThemeBasePalette = {
   badge: Badge.Green
 };
 
-export { EverforestDarkTheme };
+// Reference:
+// export default {
+//   bg0: "#21272b",
+//   bg1: "#272e33",
+//   bg: "#2d353b",
+//   bg2: "#343f44",
+//   bg3: "#3d484d",
+//   bg4: "#475258",
+//   bg5: "#4f585e",
+//   grey0: "#7f897d",
+//   grey1: "#859289",
+//   grey2: "#9aa79d",
+//   shadow: "#00000070",
+// };
