@@ -21,6 +21,8 @@ import { EvergardenWinterTheme } from "./evergarden/winter";
 import { EvergardenLunarTheme } from "./evergarden/lunar";
 import { OliveCRTLightTheme } from "./oliveCRT/light";
 import { OliveCRTDarkTheme } from "./oliveCRT/dark";
+import { ScholarDarkTheme } from "./scholar/dark";
+import { ScholarLightTheme } from "./scholar/light";
 
 export const themes: Array<Theme> = [
     {
@@ -190,5 +192,19 @@ export const themes: Array<Theme> = [
         syntax: ThemeSyntax.EVERFOREST,
         output: "olive-crt-light.json",
         palette: OliveCRTLightTheme
+    },
+    {
+        name: "Scholar Dark",
+        variant: ThemeVariant.DARK,
+        syntax: ThemeSyntax.EVERFOREST,
+        output: "scholar-dark.json",
+        palette: ScholarDarkTheme
+    },
+    {
+        name: "Scholar Light",
+        variant: ThemeVariant.LIGHT,
+        syntax: ThemeSyntax.EVERFOREST,
+        output: "scholar-light.json",
+        palette: ScholarLightTheme
     }
 ]

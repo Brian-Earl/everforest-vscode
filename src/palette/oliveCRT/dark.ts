@@ -8,9 +8,9 @@ export const OliveCRTDarkTheme: ThemeBasePalette = {
   fg: Color("#fbfcf6"),
   grey: Color("#c0c7b7"),
   red: Color("#ea938b"),
-  orange: Color("#f5a764"), // ALT: #f7c775
+  orange: Color("#f7c775"), // ALT: #f5a764
   yellow: Color("#fbe09f"),
-  green: Color("#bccd80"), // ALT: #ecf6ae
+  green: Color("#ecf6ae"), // ALT: #bccd80
   aqua: Color("#a5d6cb"),  
   blue: Color("#90dde4"),
   purple: Color("#dac3ed"),

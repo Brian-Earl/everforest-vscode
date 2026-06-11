@@ -10,16 +10,14 @@ This is a collection light & dark themes both original & adaptations of existing
 - [Cosmic Latte](https://github.com/haystackandroid/cosmic_latte)
 - [Rusticated](https://github.com/haystackandroid/rusticated)
 - [Everforest](https://github.com/sainnhe/everforest)
-- [Grimoire](https://github.com/sainnhe/archived-colors/blob/master/colors/grimoire.vim)
-- [Old Book](https://github.com/PoisonIsBestType/OldBook/)
+- [Evergarden](https://github.com/everviolet/nvim)
+- [Lunaria](https://lunaria.design/)
+- [olive-crt](https://github.com/vimcolorschemes/olive-crt.nvim)
+- [scholar](https://github.com/abreujp/scholar.nvim)
 
 ### Icon
 
 [30 Doradus Tarantula Nebula](https://esahubble.org/images/heic1206a/) by NASA/ESA
-
-## Inspirations
-
-- [Flexoki](https://stephango.com/flexoki)
 
 ## License
 

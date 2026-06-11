@@ -3,15 +3,15 @@
 	"displayName": "Stellarized",
 	"description": "✦ Painting Visual Studio Code With Stars & Galaxies ✦",
 	"version": "0.1.0",
-	"publisher": "sainnhe",
-	"author": "sainnhe (https://github.com/sainnhe)",
-	"homepage": "https://github.com/sainnhe/stellarized-vscode",
+	"publisher": "bearl",
+	"author": "bearl (https://github.com/Brian-Earl)",
+	"homepage": "https://github.com/Brian-Earl/everforest-vscode",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sainnhe/stellarized-vscode.git"
+		"url": "https://github.com/Brian-Earl/everforest-vscode.git"
 	},
 	"bugs": {
-		"url": "https://github.com/sainnhe/stellarized-vscode/issues"
+		"url": "https://github.com/Brian-Earl/everforest-vscode/issues"
 	},
 	"license": "MIT",
 	"icon": "icon.png",
@@ -140,6 +140,16 @@
 				"label": "Olive CRT Light",
 				"uiTheme": "vs",
 				"path": "./themes/olive-crt-light.json"
+			},
+			{
+				"label": "Scholar Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/scholar-dark.json"
+			},
+			{
+				"label": "Scholar Light",
+				"uiTheme": "vs",
+				"path": "./themes/scholar-light.json"
 			},
 			{
 				"label": "Rusticated (Simple)",
