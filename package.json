@@ -175,10 +175,9 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
-		"clean": "rimraf dist *.vsix",
 		"compile:ts": "tsc",
 		"compile:themes": "node dist/hook/generateThemes.js",
-		"compile": "npm run clean && npm run compile:ts && npm run compile:themes",
+		"compile": "npm run compile:ts && npm run compile:themes",
 		"package": "vsce package && git checkout -- themes",
 		"lint": "eslint . --ext .ts"
 	},
@@ -192,18 +191,7 @@
 	"devDependencies": {
 		"@types/color": "^4.2.0",
 		"@types/node": "^18.19.130",
-		"@types/vscode": "1.55.0",
-		"@typescript-eslint/eslint-plugin": "5.46.1",
-		"@typescript-eslint/parser": "5.46.1",
-		"@vscode/test-web": "0.0.33",
-		"@vscode/vsce": "^2.15.0",
 		"color": "^4.2.3",
-		"eslint": "8.29.0",
-		"eslint-config-prettier": "8.5.0",
-		"eslint-plugin-prettier": "4.2.1",
-		"lint-staged": "13.1.0",
-		"prettier": "2.8.1",
-		"rimraf": "3.0.2",
 		"typescript": "4.9.4"
 	}
 }
