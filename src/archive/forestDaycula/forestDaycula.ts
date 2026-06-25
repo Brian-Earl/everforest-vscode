@@ -5,7 +5,7 @@ import Color = require("color");
 // Theme inspired by everforest and Daycula
 
 const ForestDayculaTheme: ThemeBasePalette = {
-  fg: Color("#E0B3A5"),
+  fg: Color("#e0b3a5"),
   grey: Color("#82756f"),
   red: Color("#f37c88"),
   orange: Color("#db8a6e"),

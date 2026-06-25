@@ -10,10 +10,10 @@ export const RusticatedTheme: ThemeBasePalette = {
   red: Color("#834742"),
   orange: Color("#7d491b"), // Created for Theme
   yellow: Color("#645826"),
-  green: Color("#2c633f"), // Alternative made by me: #4b5e26
-  aqua: Color("#006470"), // Alternative made by me: #106659 
+  green: Color("#4b5e26"), // Original: #2c633f // Alternative made by me: #4b5e26
+  aqua: Color("#106659"), // Original: #006470 // Alternative made by me: #106659 
   blue: Color("#3c5a89"),
-  purple: Color("#605188"), // Created for Theme
+  purple: Color("#605188"), // Made by me
   magenta: Color("#784872"),
   bg: Color("#d3d2ce"),
   badge: Badge.Yellow

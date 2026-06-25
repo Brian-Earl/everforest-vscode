@@ -21,7 +21,7 @@ export function getSyntax(palette: Palette) {
       name: "Types",
       scope: "entity.name.type",
       settings: {
-        foreground: palette.red,
+        foreground: palette.purple,
       },
     },
 

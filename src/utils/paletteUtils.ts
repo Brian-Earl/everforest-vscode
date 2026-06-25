@@ -7,8 +7,6 @@ import Color = require("color");
 import { ThemeVariant } from "../types/themeVariant";
 
 function generateBackground(base: ThemeBasePalette, variant: ThemeVariant): BackgroundPalette {
-  // These can probably be combined and have the if statement removed
-  // Maybe give dark theme the same mixing as the light theme
   if (variant === ThemeVariant.DARK) {
     return {
       bg0: base.bg.darken(0.26).hex(),

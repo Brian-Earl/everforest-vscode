@@ -298,6 +298,7 @@
     "menubar.selectionBorder": "#FCEEE0",
     "menu.foreground": "#60667F",
     "menu.background": "#EEE1D6",
+    "menu.border": "#E3D8CF",
     "menu.selectionForeground": "#4A5067",
     "menu.selectionBackground": "#FCEEE0",
     "gitDecoration.addedResourceForeground": "#007F25",
@@ -425,36 +426,8 @@
     "testing.iconQueued": "#006DCC",
     "testing.iconUnset": "#8B6800",
     "testing.iconSkipped": "#A348AE",
-    "gitlens.gutterBackgroundColor": "#FCEEE0",
-    "gitlens.gutterForegroundColor": "#4A5067",
-    "gitlens.gutterUncommittedForegroundColor": "#006DCC",
-    "gitlens.trailingLineForegroundColor": "#666C85",
-    "gitlens.lineHighlightBackgroundColor": "#F5E8DB",
-    "gitlens.lineHighlightOverviewRulerColor": "#8B6800",
-    "gitlens.closedPullRequestIconColor": "#C6394C",
-    "gitlens.openPullRequestIconColor": "#007989",
-    "gitlens.mergedPullRequestIconColor": "#A348AE",
-    "gitlens.unpushlishedChangesIconColor": "#006DCC",
-    "gitlens.unpublishedCommitIconColor": "#8B6800",
-    "gitlens.unpulledChangesIconColor": "#B15612",
-    "gitlens.decorations.addedForegroundColor": "#007F25",
-    "gitlens.decorations.copiedForegroundColor": "#A348AE",
-    "gitlens.decorations.deletedForegroundColor": "#C6394C",
-    "gitlens.decorations.ignoredForegroundColor": "#60667F",
-    "gitlens.decorations.modifiedForegroundColor": "#006DCC",
-    "gitlens.decorations.untrackedForegroundColor": "#8B6800",
-    "gitlens.decorations.renamedForegroundColor": "#A348AE",
-    "gitlens.decorations.branchAheadForegroundColor": "#007989",
-    "gitlens.decorations.branchBehindForegroundColor": "#B15612",
-    "gitlens.decorations.branchDivergedForegroundColor": "#8B6800",
-    "gitlens.decorations.branchUpToDateForegroundColor": "#4A5067",
-    "gitlens.decorations.branchUnpublishedForegroundColor": "#006DCC",
-    "gitlens.decorations.branchMissingUpstreamForegroundColor": "#C6394C",
     "issues.open": "#007989",
     "issues.closed": "#C6394C",
-    "rust_analyzer.inlayHints.foreground": "#7D8093a0",
-    "rust_analyzer.inlayHints.background": "#FCEEE000",
-    "rust_analyzer.syntaxTreeBorder": "#C6394C",
     "contrastBorder": "#E3D8CF"
   },
   "tokenColors": [
@@ -476,7 +449,7 @@
       "name": "Types",
       "scope": "entity.name.type",
       "settings": {
-        "foreground": "#C6394C"
+        "foreground": "#A348AE"
       }
     },
     {
