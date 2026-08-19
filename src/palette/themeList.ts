@@ -23,6 +23,8 @@ import { OliveCRTLightTheme } from "./oliveCRT/light";
 import { OliveCRTDarkTheme } from "./oliveCRT/dark";
 import { ScholarDarkTheme } from "./scholar/dark";
 import { ScholarLightTheme } from "./scholar/light";
+import { EvermountainDarkTheme } from "./evermountain/dark";
+import { EvermountainLightTheme } from "./evermountain/light";
 
 export const themes: Array<Theme> = [
     {
@@ -88,7 +90,7 @@ export const themes: Array<Theme> = [
         output: "evergarden-fall.json",
         palette: EvergardenFallTheme
     },
-        {
+    {
         name: "Evergarden Winter",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
@@ -101,6 +103,20 @@ export const themes: Array<Theme> = [
         syntax: ThemeSyntax.EVERFOREST,
         output: "evergarden-lunar.json",
         palette: EvergardenLunarTheme
+    },
+    {
+        name: "Evermountain Dark",
+        variant: ThemeVariant.DARK,
+        syntax: ThemeSyntax.EVERFOREST,
+        output: "evermountain-dark.json",
+        palette: EvermountainDarkTheme
+    },
+    {
+        name: "Evermountain Light",
+        variant: ThemeVariant.LIGHT,
+        syntax: ThemeSyntax.EVERFOREST,
+        output: "evermountain-light.json",
+        palette: EvermountainLightTheme
     },
     {
         name: "Rusticated",
@@ -152,13 +168,6 @@ export const themes: Array<Theme> = [
         palette: LunariaVividLightTheme
     },
     {
-        name: "Rusticated (Simple)",
-        variant: ThemeVariant.LIGHT,
-        syntax: ThemeSyntax.SIMPLE,
-        output: "rusticated-simple.json",
-        palette: RusticatedTheme
-    },
-        {
         name: "Stellarized Dark (Simple)",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.SIMPLE,
@@ -171,6 +180,13 @@ export const themes: Array<Theme> = [
         syntax: ThemeSyntax.SIMPLE,
         output: "stellarized-light-simple.json",
         palette: StellarizedLightTheme
+    },
+    {
+        name: "Everforest Light (Simple)",
+        variant: ThemeVariant.LIGHT,
+        syntax: ThemeSyntax.SIMPLE,
+        output: "everforest-light-simple.json",
+        palette: EverforestLightTheme
     },
     {
         name: "Everforest Dark (Simple)",

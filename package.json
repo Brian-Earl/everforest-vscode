@@ -97,6 +97,16 @@
 				"path": "./themes/evergarden-lunar.json"
 			},
 			{
+				"label": "Evermountain Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/evermountain-dark.json"
+			},
+			{
+				"label": "Evermountain Light",
+				"uiTheme": "vs",
+				"path": "./themes/evermountain-light.json"
+			},
+			{
 				"label": "Rusticated",
 				"uiTheme": "vs",
 				"path": "./themes/rusticated.json"
@@ -152,11 +162,6 @@
 				"path": "./themes/scholar-light.json"
 			},
 			{
-				"label": "Rusticated (Simple)",
-				"uiTheme": "vs",
-				"path": "./themes/rusticated-simple.json"
-			},
-			{
 				"label": "Stellarized Dark (Simple)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/stellarized-dark-simple.json"
@@ -170,6 +175,11 @@
 				"label": "Everforest Dark (Simple)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/everforest-dark-simple.json"
+			},
+			{
+				"label": "Everforest Light (Simple)",
+				"uiTheme": "vs",
+				"path": "./themes/everforest-light-simple.json"
 			}
 		]
 	},
@@ -185,7 +195,7 @@
 	},
 	"devDependencies": {
 		"@types/color": "4.2.1",
-		"@types/node": "18.19.130",
+		"@types/node": "^18.19.130",
 		"color": "4.2.3",
 		"typescript": "4.9.4"
 	}
