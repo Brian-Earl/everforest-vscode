@@ -23,8 +23,8 @@ import { OliveCRTLightTheme } from "./oliveCRT/light";
 import { OliveCRTDarkTheme } from "./oliveCRT/dark";
 import { ScholarDarkTheme } from "./scholar/dark";
 import { ScholarLightTheme } from "./scholar/light";
-import { EvermountainDarkTheme } from "./evermountain/dark";
-import { EvermountainLightTheme } from "./evermountain/light";
+import { PetroglyphNightTheme } from "./petroglyph/night";
+import { PetroglyphEveningTheme } from "./petroglyph/evening";
 import { ThemeWorkbench } from "../types/workbench";
 
 export const themes: Array<Theme> = [
@@ -32,7 +32,7 @@ export const themes: Array<Theme> = [
         name: "Stellarized Dark",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.STELLARIZED,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "stellarized-dark.json",
         palette: StellarizedDarkTheme
     },
@@ -40,7 +40,7 @@ export const themes: Array<Theme> = [
         name: "Stellarized Light",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.STELLARIZED,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "stellarized-light.json",
         palette: StellarizedLightTheme
     },
@@ -48,7 +48,7 @@ export const themes: Array<Theme> = [
         name: "Cosmic Latte Dark",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.STELLARIZED,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "cosmic-latte-dark.json",
         palette: CosmicLatteDarkTheme
     },
@@ -56,7 +56,7 @@ export const themes: Array<Theme> = [
         name: "Cosmic Latte Light",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.STELLARIZED,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "cosmic-latte-light.json",
         palette: CosmicLatteLightTheme
     },
@@ -64,7 +64,7 @@ export const themes: Array<Theme> = [
         name: "Everforest Dark",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "everforest-dark.json",
         palette: EverforestDarkTheme
     },
@@ -72,7 +72,7 @@ export const themes: Array<Theme> = [
         name: "Everforest Light",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "everforest-light.json",
         palette: EverforestLightTheme
     },
@@ -80,7 +80,7 @@ export const themes: Array<Theme> = [
         name: "Evergarden Spring",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "evergarden-spring.json",
         palette: EvergardenSpringTheme
     },
@@ -88,7 +88,7 @@ export const themes: Array<Theme> = [
         name: "Evergarden Summer",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "evergarden-summer.json",
         palette: EvergardenSummerTheme
     },
@@ -96,7 +96,7 @@ export const themes: Array<Theme> = [
         name: "Evergarden Fall",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "evergarden-fall.json",
         palette: EvergardenFallTheme
     },
@@ -104,7 +104,7 @@ export const themes: Array<Theme> = [
         name: "Evergarden Winter",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "evergarden-winter.json",
         palette: EvergardenWinterTheme
     },
@@ -112,31 +112,31 @@ export const themes: Array<Theme> = [
         name: "Evergarden Lunar",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "evergarden-lunar.json",
         palette: EvergardenLunarTheme
     },
     {
-        name: "Evermountain Dark",
+        name: "Petroglyph Night",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.NEW,
-        output: "evermountain-dark.json",
-        palette: EvermountainDarkTheme
+        workbench: ThemeWorkbench.MODERN,
+        output: "petroglyph-night.json",
+        palette: PetroglyphNightTheme
     },
     {
-        name: "Evermountain Light",
+        name: "Petroglyph Evening",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.NEW,
-        output: "evermountain-light.json",
-        palette: EvermountainLightTheme
+        workbench: ThemeWorkbench.MODERN,
+        output: "petroglyph-evening.json",
+        palette: PetroglyphEveningTheme
     },
     {
         name: "Rusticated",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.STELLARIZED,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "rusticated.json",
         palette: RusticatedTheme
     },
@@ -144,7 +144,7 @@ export const themes: Array<Theme> = [
         name: "Sanctuary Ink Vault",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "sanctuary-ink-vault.json",
         palette: SanctuaryInkVaultTheme
     },
@@ -152,7 +152,7 @@ export const themes: Array<Theme> = [
         name: "Sanctuary Morning Sun",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "sanctuary-morning-sun.json",
         palette: SanctuaryMorningSunTheme
     },
@@ -160,7 +160,7 @@ export const themes: Array<Theme> = [
         name: "Night in the Sanctuary",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "sanctuary-night.json",
         palette: SanctuaryNightTheme
     },
@@ -168,7 +168,7 @@ export const themes: Array<Theme> = [
         name: "Stargazing in the Sanctuary",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "sanctuary-stargazing.json",
         palette: SanctuaryStargazingTheme
     },
@@ -176,7 +176,7 @@ export const themes: Array<Theme> = [
         name: "Lunaria Soft Light",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.STELLARIZED,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "lunaria-soft-light.json",
         palette: LunariaSoftLightTheme
     },
@@ -184,7 +184,7 @@ export const themes: Array<Theme> = [
         name: "Lunaria Vivid Light",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.STELLARIZED,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "lunaria-vivid-light.json",
         palette: LunariaVividLightTheme
     },
@@ -192,7 +192,7 @@ export const themes: Array<Theme> = [
         name: "Stellarized Dark (Simple)",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.SIMPLE,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "stellarized-dark-simple.json",
         palette: StellarizedDarkTheme
     },
@@ -200,7 +200,7 @@ export const themes: Array<Theme> = [
         name: "Stellarized Light (Simple)",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.SIMPLE,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "stellarized-light-simple.json",
         palette: StellarizedLightTheme
     },
@@ -208,7 +208,7 @@ export const themes: Array<Theme> = [
         name: "Everforest Light (Simple)",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.SIMPLE,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "everforest-light-simple.json",
         palette: EverforestLightTheme
     },
@@ -216,7 +216,7 @@ export const themes: Array<Theme> = [
         name: "Everforest Dark (Simple)",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.SIMPLE,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "everforest-dark-simple.json",
         palette: EverforestDarkTheme
     },
@@ -224,7 +224,7 @@ export const themes: Array<Theme> = [
         name: "Olive CRT Dark",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "olive-crt-dark.json",
         palette: OliveCRTDarkTheme
     },
@@ -232,7 +232,7 @@ export const themes: Array<Theme> = [
         name: "Olive CRT Light",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "olive-crt-light.json",
         palette: OliveCRTLightTheme
     },
@@ -240,7 +240,7 @@ export const themes: Array<Theme> = [
         name: "Scholar Dark",
         variant: ThemeVariant.DARK,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "scholar-dark.json",
         palette: ScholarDarkTheme
     },
@@ -248,7 +248,7 @@ export const themes: Array<Theme> = [
         name: "Scholar Light",
         variant: ThemeVariant.LIGHT,
         syntax: ThemeSyntax.EVERFOREST,
-        workbench: ThemeWorkbench.EVERFOREST,
+        workbench: ThemeWorkbench.CLASSIC,
         output: "scholar-light.json",
         palette: ScholarLightTheme
     }

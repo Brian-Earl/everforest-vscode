@@ -1,5 +1,5 @@
-import { Badge } from "../../types/badge";
-import { ThemeBasePalette } from "../../types/themeBasePalette";
+import { Badge } from "../../src/types/badge";
+import { ThemeBasePalette } from "../../src/types/themeBasePalette";
 import Color = require("color");
 
 // Modified version of https://github.com/haystackandroid/rusticated

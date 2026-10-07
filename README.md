@@ -11,7 +11,7 @@ This is a collection light & dark themes both original & adaptations of existing
 - [Rusticated](https://github.com/haystackandroid/rusticated)
 - [Everforest](https://github.com/sainnhe/everforest)
 - [Evergarden](https://github.com/everviolet/nvim)
-- Evermountain (Original)
+- Petroglyph (Original)
 - Sanctuary (Original)
 - [Lunaria](https://lunaria.design/)
 - [olive-crt](https://github.com/vimcolorschemes/olive-crt.nvim)

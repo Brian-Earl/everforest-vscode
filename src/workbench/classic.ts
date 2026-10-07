@@ -1,9 +1,3 @@
-/*---------------------------------------------------------------------------------------------
- *  Homepage:   https://github.com/sainnhe/everforest-vscode
- *  Copyright:  2020 Sainnhe Park <i@sainnhe.dev>
- *  License:    MIT
- *--------------------------------------------------------------------------------------------*/
-
 import { getPalette } from "../palette";
 import { Palette } from "../types/palette";
 import { Theme } from "../types/theme";

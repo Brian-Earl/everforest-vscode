@@ -1,4 +1,4 @@
-import { Palette } from "../types/palette";
+import { Palette } from "../../src/types/palette";
 
 // Implementation of the syntax highlighting from this article https://tonsky.me/blog/syntax-highlighting/
 export function getSyntax(palette: Palette) {

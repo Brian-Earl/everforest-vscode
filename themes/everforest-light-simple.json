@@ -1,7 +1,7 @@
 {
   "name": "Everforest Light (Simple)",
   "type": 0,
-  "syntax": 3,
+  "syntax": 2,
   "output": "everforest-light-simple.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {},

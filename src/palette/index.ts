@@ -1,9 +1,3 @@
-/*---------------------------------------------------------------------------------------------
- *  Homepage:   https://github.com/sainnhe/everforest-vscode
- *  Copyright:  2020 Sainnhe Park <i@sainnhe.dev>
- *  License:    MIT
- *--------------------------------------------------------------------------------------------*/
-
 import { Palette } from "../types/palette";
 import {
   generateForeground,
@@ -16,9 +10,7 @@ import { ThemeBasePalette } from "../types/themeBasePalette";
 import { Theme } from "../types/theme";
 import { ThemeVariant } from "../types/themeVariant";
 
-export function getPalette(
-  theme: Theme
-): Palette {
+export function getPalette(theme: Theme): Palette {
   let palette: ThemeBasePalette = theme.palette;
   let variant: ThemeVariant = theme.variant
   let paletteBackground: BackgroundPalette = generateBackground(palette, variant);

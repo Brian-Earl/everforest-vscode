@@ -29,8 +29,7 @@
 		"Themes"
 	],
 	"extensionKind": [
-		"ui",
-		"workspace"
+		"ui"
 	],
 	"capabilities": {
 		"untrustedWorkspaces": {
@@ -97,14 +96,14 @@
 				"path": "./themes/evergarden-lunar.json"
 			},
 			{
-				"label": "Evermountain Dark",
+				"label": "Petroglyph Night",
 				"uiTheme": "vs-dark",
-				"path": "./themes/evermountain-dark.json"
+				"path": "./themes/petroglyph-night.json"
 			},
 			{
-				"label": "Evermountain Light",
+				"label": "Petroglyph Evening",
 				"uiTheme": "vs",
-				"path": "./themes/evermountain-light.json"
+				"path": "./themes/petroglyph-Evening.json"
 			},
 			{
 				"label": "Rusticated",
@@ -184,11 +183,7 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile:ts": "tsc",
-		"compile:themes": "node dist/hook/generateThemes.js",
-		"compile": "npm run compile:ts && npm run compile:themes",
-		"package": "vsce package && git checkout -- themes"
+		"generate": "tsc && node dist/generate.js"
 	},
 	"engines": {
 		"vscode": "^1.55.0"

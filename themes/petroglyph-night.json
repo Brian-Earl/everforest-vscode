@@ -1,8 +1,8 @@
 {
-  "name": "Evermountain Dark",
+  "name": "Petroglyph Night",
   "type": 1,
   "syntax": 0,
-  "output": "evermountain-dark.json",
+  "output": "petroglyph-night.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "operatorOverload": "#ED9C6A",

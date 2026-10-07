@@ -1,4 +1,4 @@
 export enum ThemeWorkbench {
-    EVERFOREST,
-    NEW
+    CLASSIC,
+    MODERN
 }

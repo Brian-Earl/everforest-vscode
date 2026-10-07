@@ -1,7 +1,7 @@
 {
   "name": "Stellarized Dark (Simple)",
   "type": 1,
-  "syntax": 3,
+  "syntax": 2,
   "output": "stellarized-dark-simple.json",
   "semanticHighlighting": true,
   "semanticTokenColors": {},

@@ -1,5 +1,5 @@
-import { Badge } from "../../types/badge";
-import { ThemeBasePalette } from "../../types/themeBasePalette";
+import { Badge } from "../../../src/types/badge";
+import { ThemeBasePalette } from "../../../src/types/themeBasePalette";
 import Color = require("color");
 
 // Implementation of https://github.com/jpwol/thorn.nvim/tree/main
