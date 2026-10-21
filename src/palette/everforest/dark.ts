@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -17,7 +17,7 @@ export const EverforestDarkTheme: ThemeBasePalette = {
   purple: Color("#d699b6"),
   magenta: Color("#d699b6"),
   bg: Color("#2d353b"),
-  badge: Badge.Green
+  accent: Accent.Green
 };
 
 // Reference:

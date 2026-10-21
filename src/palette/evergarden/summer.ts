@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const EvergardenSummerTheme: ThemeBasePalette = {
   purple: Color("#A897B8"),
   magenta: Color("#C499B8"),
   bg: Color("#F5EFE6"),
-  badge: Badge.Green
+  accent: Accent.Green
 };

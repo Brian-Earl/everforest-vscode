@@ -7,6 +7,7 @@ export type ForegroundPalette = {
   aqua: string;
   blue: string;
   purple: string;
+  magenta: string;
   dimRed: string;
   dimOrange: string;
   dimYellow: string;
@@ -14,5 +15,6 @@ export type ForegroundPalette = {
   dimAqua: string;
   dimBlue: string;
   dimPurple: string;
+  dimMagenta: string;
   badge: string;
 };

@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const RusticatedTheme: ThemeBasePalette = {
   purple: Color("#5a517e"), // Made by me
   magenta: Color("#784872"),
   bg: Color("#d3d2ce"),
-  badge: Badge.Yellow
+  accent: Accent.Yellow
 };

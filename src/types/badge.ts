@@ -1,4 +1,4 @@
-export enum Badge {
+export enum Accent {
     Red,
     Orange,
     Yellow,

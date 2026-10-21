@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -14,5 +14,5 @@ export const SanctuaryInkVaultTheme: ThemeBasePalette = {
   purple: Color("#7045ba"),
   magenta: Color("#904184"),
   bg: Color("#e7e5e2"),
-  badge: Badge.Blue
+  accent: Accent.Blue
 };

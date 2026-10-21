@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const PetroglyphNightTheme: ThemeBasePalette = {
   purple: Color("#c29fd2"),
   magenta: Color("#d699b6"),
   bg: Color("#2b3438"), // #34392d
-  badge: Badge.Green
+  accent: Accent.Green
 };

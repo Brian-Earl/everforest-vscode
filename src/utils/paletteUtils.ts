@@ -2,7 +2,7 @@ import { BackgroundPalette } from "../types/backgroundPalette";
 import { ForegroundPalette } from "../types/foregroundPalette";
 import { ThemeBasePalette } from "../types/themeBasePalette";
 import { Palette } from "../types/palette";
-import { Badge } from "../types/badge";
+import { Accent } from "../types/badge";
 import Color = require("color");
 import { ThemeVariant } from "../types/themeVariant";
 
@@ -51,6 +51,7 @@ function generateForeground(base: ThemeBasePalette): ForegroundPalette {
     aqua: base.aqua.hex(),
     blue: base.blue.hex(),
     purple: base.purple.hex(),
+    magenta: base.magenta.hex(),
     dimRed: base.red.mix(base.fg, 0.1).hex(),
     dimOrange: base.orange.mix(base.fg, 0.1).hex(),
     dimYellow: base.yellow.mix(base.fg, 0.1).hex(),
@@ -58,34 +59,35 @@ function generateForeground(base: ThemeBasePalette): ForegroundPalette {
     dimAqua: base.aqua.mix(base.fg, 0.1).hex(),
     dimBlue: base.blue.mix(base.fg, 0.1).hex(),
     dimPurple: base.purple.mix(base.fg, 0.1).hex(),
+    dimMagenta: base.magenta.mix(base.fg, 0.1).hex(),
     badge: badgeColor(base).hex(),
   };
   return palette;
 }
 
 function badgeColor(base: ThemeBasePalette): Color {
-  switch(base.badge) {
-    case Badge.Red:
+  switch(base.accent) {
+    case Accent.Red:
       return base.red;
-    case Badge.Orange:
+    case Accent.Orange:
       return base.orange;
-    case Badge.Yellow:
+    case Accent.Yellow:
       return base.yellow;
-    case Badge.Green:
+    case Accent.Green:
       return base.green;
-    case Badge.Aqua:
+    case Accent.Aqua:
       return base.aqua;
-    case Badge.Blue:
+    case Accent.Blue:
       return base.blue;
-    case Badge.Purple:
+    case Accent.Purple:
       return base.purple;
-    case Badge.Magenta:
+    case Accent.Magenta:
       return base.magenta;
-    case Badge.White:
+    case Accent.White:
       return base.fg;
-    case Badge.Grey:
+    case Accent.Grey:
       return base.grey;
-    case Badge.Black:
+    case Accent.Black:
       return base.bg;
     default:
       return base.grey;
@@ -113,6 +115,7 @@ function generatePalette(foreground: ForegroundPalette, background: BackgroundPa
     aqua: foreground.aqua,
     blue: foreground.blue,
     purple: foreground.purple,
+    magenta: foreground.magenta,
     dimRed: foreground.dimRed,
     dimOrange: foreground.dimOrange,
     dimYellow: foreground.dimYellow,
@@ -120,7 +123,8 @@ function generatePalette(foreground: ForegroundPalette, background: BackgroundPa
     dimAqua: foreground.dimAqua,
     dimBlue: foreground.dimBlue,
     dimPurple: foreground.dimPurple,
-    badge: foreground.badge,
+    dimMagenta: foreground.dimMagenta,
+    accent: foreground.badge,
   };
   return palette;
 }

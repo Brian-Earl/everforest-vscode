@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const LunariaSoftLightTheme: ThemeBasePalette = {
   purple: Color("#6c6686"),
   magenta: Color("#815f73"),
   bg: Color("#ebe4e1"),
-  badge: Badge.Grey
+  accent: Accent.Grey
 };

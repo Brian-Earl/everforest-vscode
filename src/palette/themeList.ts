@@ -23,8 +23,9 @@ import { OliveCRTLightTheme } from "./oliveCRT/light";
 import { OliveCRTDarkTheme } from "./oliveCRT/dark";
 import { ScholarDarkTheme } from "./scholar/dark";
 import { ScholarLightTheme } from "./scholar/light";
-import { PetroglyphNightTheme } from "./petroglyph/night";
+import { PetroglyphMorningTheme } from "./petroglyph/morning";
 import { PetroglyphEveningTheme } from "./petroglyph/evening";
+import { PetroglyphNightTheme } from "./petroglyph/night";
 import { ThemeWorkbench } from "../types/workbench";
 
 export const themes: Array<Theme> = [
@@ -117,20 +118,28 @@ export const themes: Array<Theme> = [
         palette: EvergardenLunarTheme
     },
     {
-        name: "Petroglyph Night",
-        variant: ThemeVariant.DARK,
-        syntax: ThemeSyntax.EVERFOREST,
+        name: "Petroglyph Morning",
+        variant: ThemeVariant.LIGHT,
+        syntax: ThemeSyntax.SIMPLE,
         workbench: ThemeWorkbench.MODERN,
-        output: "petroglyph-night.json",
-        palette: PetroglyphNightTheme
+        output: "petroglyph-morning.json",
+        palette: PetroglyphMorningTheme
     },
     {
         name: "Petroglyph Evening",
         variant: ThemeVariant.LIGHT,
-        syntax: ThemeSyntax.EVERFOREST,
+        syntax: ThemeSyntax.SIMPLE,
         workbench: ThemeWorkbench.MODERN,
         output: "petroglyph-evening.json",
         palette: PetroglyphEveningTheme
+    },
+    {
+        name: "Petroglyph Night",
+        variant: ThemeVariant.DARK,
+        syntax: ThemeSyntax.SIMPLE,
+        workbench: ThemeWorkbench.MODERN,
+        output: "petroglyph-night.json",
+        palette: PetroglyphNightTheme
     },
     {
         name: "Rusticated",

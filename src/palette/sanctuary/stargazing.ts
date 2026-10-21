@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const SanctuaryStargazingTheme: ThemeBasePalette = {
   purple: Color("#b091bf"),
   magenta: Color("#c991a9"),
   bg: Color("#222532"),
-  badge: Badge.Yellow
+  accent: Accent.Yellow
 };

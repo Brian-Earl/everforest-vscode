@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -14,5 +14,5 @@ export const SanctuaryNightTheme: ThemeBasePalette = {
   purple: Color("#d3b3fc"),
   magenta: Color("#ffbde3"),
   bg: Color("#3C4855"),
-  badge: Badge.Yellow
+  accent: Accent.Yellow
 };

@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -15,6 +15,6 @@ export const ScholarDarkTheme: ThemeBasePalette = {
   blue: Color("#BAAA8C"),
   purple: Color("#D8A27A"),
   magenta: Color("#D8A27A"),
-  bg: Color("#221B18"), // #1F1815
-  badge: Badge.Green
+  bg: Color("#221B18"), // Alt BG: #1F1815
+  accent: Accent.Green
 };

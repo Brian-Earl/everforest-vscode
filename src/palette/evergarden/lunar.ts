@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const EvergardenLunarTheme: ThemeBasePalette = {
   purple: Color("#A69FD5"),
   magenta: Color("#D6ABC3"),
   bg: Color("#1C1D29"),
-  badge: Badge.Blue
+  accent: Accent.Blue
 };

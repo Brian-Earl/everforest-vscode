@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const OliveCRTLightTheme: ThemeBasePalette = {
   purple: Color("#72579f"),
   magenta: Color("#72579f"),
   bg: Color("#d7d9d3"),
-  badge: Badge.Green
+  accent: Accent.Green
 };

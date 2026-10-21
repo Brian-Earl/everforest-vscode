@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const OliveCRTDarkTheme: ThemeBasePalette = {
   purple: Color("#dac3ed"),
   magenta: Color("#dac3ed"),
   bg: Color("#171a15"),
-  badge: Badge.Green
+  accent: Accent.Green
 };

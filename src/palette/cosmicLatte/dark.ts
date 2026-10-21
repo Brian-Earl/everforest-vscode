@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const CosmicLatteDarkTheme: ThemeBasePalette = {
   purple: Color("#9b85bb"),
   magenta: Color("#be7695"), // Made for theme
   bg: Color("#202a31"),
-  badge: Badge.Aqua
+  accent: Accent.Aqua
 };

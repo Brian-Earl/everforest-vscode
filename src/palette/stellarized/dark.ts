@@ -1,4 +1,4 @@
-import { Badge } from "../../types/badge";
+import { Accent } from "../../types/badge";
 import { ThemeBasePalette } from "../../types/themeBasePalette";
 import Color = require("color");
 
@@ -16,5 +16,5 @@ export const StellarizedDarkTheme: ThemeBasePalette = {
   purple: Color("#b178b5"),
   magenta: Color("#be7695"), // Made for theme
   bg: Color("#222532"),
-  badge: Badge.Yellow
+  accent: Accent.Yellow
 };

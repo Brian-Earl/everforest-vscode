@@ -1,9 +1,3 @@
-/*---------------------------------------------------------------
- *  Homepage:   https://github.com/sainnhe/everforest-vscode
- *  Copyright:  2020 Sainnhe Park <i@sainnhe.dev>
- *  License:    MIT
- *--------------------------------------------------------------*/
-
 export interface Palette {
   bg0: string;
   bg1: string;
@@ -23,6 +17,7 @@ export interface Palette {
   aqua: string;
   blue: string;
   purple: string;
+  magenta: string;
   dimRed: string;
   dimOrange: string;
   dimYellow: string;
@@ -30,6 +25,7 @@ export interface Palette {
   dimAqua: string;
   dimBlue: string;
   dimPurple: string;
+  dimMagenta: string;
   shadow: string;
-  badge: string;
+  accent: string;
 }
