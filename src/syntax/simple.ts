@@ -24,7 +24,6 @@ export function getSyntax(palette: Palette) {
         foreground: palette.magenta,
       },
     },
-
     {
       name: "Punctuation, Delimiter, Operator",
       scope: "punctuation, meta.brace, meta.delimiter, meta.bracket, keyword.operator",
